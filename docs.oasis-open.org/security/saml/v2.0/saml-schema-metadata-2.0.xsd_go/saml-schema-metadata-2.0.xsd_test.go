@@ -9,7 +9,7 @@ import (
 	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
 )
 
-func TestXMLMarshal(t *testing.T) {
+func TestMarshalEntityDescriptor(t *testing.T) {
 
 	// EntitiesDescriptor represents the SAML object of the same name.
 	type EntityDescriptor struct {
@@ -63,7 +63,7 @@ func TestXMLMarshal(t *testing.T) {
 	}
 }
 
-func TestXMLUnmarshal(t *testing.T) {
+func TestUnmarshalEntityDescriptor(t *testing.T) {
 
 	// EntitiesDescriptor represents the SAML object of the same name.
 	type EntityDescriptor struct {
