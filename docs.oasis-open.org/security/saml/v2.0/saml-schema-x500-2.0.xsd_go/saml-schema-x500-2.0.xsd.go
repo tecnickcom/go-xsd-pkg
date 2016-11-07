@@ -9,7 +9,7 @@ import (
 
 // XAttrEncoding defines attribute Encoding
 type XAttrEncoding struct {
-	Encoding xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500 Encoding,attr"`
+	Encoding xsdt.String `xml:"Encoding,attr"`
 }
 
 // XCdata defines type CDATA

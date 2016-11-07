@@ -20,7 +20,7 @@ type XAttrLang struct {
 	//	Registration authority for ISO 639-1 and -2
 	//	Registration authority for ISO 3166
 	//	IANA-registered language codes
-	Lang xsdt.Nmtoken `xml:"http://www.w3.org/XML/1998/namespace lang,attr"`
+	Lang xsdt.Nmtoken `xml:"lang,attr"`
 }
 
 // TxsdSpace defines type xsdSpace
@@ -43,12 +43,12 @@ func (me TxsdSpace) IsPreserve() bool { return me.String() == "preserve" }
 
 // XAttrSpace defines attribute Space
 type XAttrSpace struct {
-	Space TxsdSpace `xml:"http://www.w3.org/XML/1998/namespace space,attr"`
+	Space TxsdSpace `xml:"space,attr"`
 }
 
 // XAttrBase defines attribute Base
 type XAttrBase struct {
-	Base xsdt.AnyURI `xml:"http://www.w3.org/XML/1998/namespace base,attr"`
+	Base xsdt.AnyURI `xml:"base,attr"`
 }
 
 // XCdata defines type CDATA

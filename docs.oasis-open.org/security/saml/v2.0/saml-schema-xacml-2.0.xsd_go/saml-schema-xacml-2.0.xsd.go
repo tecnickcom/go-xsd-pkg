@@ -9,7 +9,7 @@ import (
 
 // XAttrDataType defines attribute DataType
 type XAttrDataType struct {
-	DataType xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:profiles:attribute:XACML DataType,attr"`
+	DataType xsdt.AnyURI `xml:"DataType,attr"`
 }
 
 // XCdata defines type CDATA

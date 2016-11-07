@@ -49,13 +49,65 @@ func TestXMLMarshal(t *testing.T) {
 	data.IDPSSODescriptors = nil
 
 	xmldata, err := xml.MarshalIndent(data, "", "\t")
-
-	//fmt.Printf("\n\n%v\n\n", string(xmldata)) // DEBUG
-
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<EmailAddress xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\">second@example.com</EmailAddress>") {
+		t.Error(fmt.Errorf("The resulting XML is not correct"))
+	}
+
+	result := new(EntityDescriptor)
+	err = xml.Unmarshal(xmldata, result)
+	if err != nil {
+		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
+	}
+}
+
+func TestXMLUnmarshal(t *testing.T) {
+
+	// EntitiesDescriptor represents the SAML object of the same name.
+	type EntityDescriptor struct {
+		XMLName xml.Name `xml:"urn:oasis:names:tc:SAML:2.0:metadata EntityDescriptor"`
+		TEntityDescriptorType
+	}
+
+	xmlstr := `<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2016-11-09T10:39:21.942036958Z" cacheDuration="PT48H" entityID="http://127.0.0.1:8000/metadata">
+<IDPSSODescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<KeyDescriptor use="signing">
+<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+<X509Data>
+<X509Certificate>MIIDMTCCABC</X509Certificate>
+</X509Data>
+</KeyInfo>
+</KeyDescriptor>
+<KeyDescriptor use="encryption">
+<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+<X509Data>
+<X509Certificate>MIIDMTCCAABC</X509Certificate>
+</X509Data>
+</KeyInfo>
+<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"></EncryptionMethod>
+<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"></EncryptionMethod>
+<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"></EncryptionMethod>
+<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"></EncryptionMethod>
+</KeyDescriptor>
+<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://127.0.0.1:8000/sso"></SingleSignOnService>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://127.0.0.1:8000/sso"></SingleSignOnService>
+</IDPSSODescriptor>
+</EntityDescriptor>`
+
+	data := new(EntityDescriptor)
+	err := xml.Unmarshal([]byte(xmlstr), data)
+	if err != nil {
+		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
+	}
+
+	xmldata, err := xml.MarshalIndent(data, "", "\t")
+	if err != nil {
+		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
+	}
+	if !strings.Contains(string(xmldata), "<NameIDFormat xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\">urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>") {
 		t.Error(fmt.Errorf("The resulting XML is not correct"))
 	}
 }

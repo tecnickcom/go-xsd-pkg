@@ -8,7 +8,7 @@ import (
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorContract ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthenticatorBaseType defines type AuthenticatorBaseType
@@ -78,7 +78,7 @@ func (me TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium) ToTmediumTyp
 
 // XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium defines attribute MediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium
 type XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium struct {
-	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorContract medium,attr"`
+	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr"`
 }
 
 // TKeyStorageType defines type KeyStorageType
@@ -221,7 +221,7 @@ func (me *TxsdRedefineIdentificationTypeComplexContentRestrictionNym) Set(s stri
 
 // XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym defines attribute NymTxsdRedefineIdentificationTypeComplexContentRestrictionNym
 type XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym struct {
-	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorContract nym,attr"`
+	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType

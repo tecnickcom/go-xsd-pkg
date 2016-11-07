@@ -8,7 +8,7 @@ import (
 
 // XAttrURIXsdtAnyURI defines attribute Uri
 type XAttrURIXsdtAnyURI struct {
-	URI xsdt.AnyURI `xml:"http://www.w3.org/2001/04/xmlenc# URI,attr"`
+	URI xsdt.AnyURI `xml:"URI,attr"`
 }
 
 // TransformsType defines type ransformsType
@@ -241,7 +241,7 @@ func (me *XElemsCipherReference) Walk() (err error) {
 
 // XAttrAlgorithmXsdtAnyURI defines attribute Algorithm
 type XAttrAlgorithmXsdtAnyURI struct {
-	Algorithm xsdt.AnyURI `xml:"http://www.w3.org/2001/04/xmlenc# Algorithm,attr"`
+	Algorithm xsdt.AnyURI `xml:"Algorithm,attr"`
 }
 
 // XCdata defines type CDATA
@@ -383,12 +383,12 @@ func (me *XElemEncryptionMethodsequenceEncryptedTypeschemaEncryptionMethodTEncry
 
 // XAttrTargetXsdtAnyURI defines attribute Target
 type XAttrTargetXsdtAnyURI struct {
-	Target xsdt.AnyURI `xml:"http://www.w3.org/2001/04/xmlenc# Target,attr"`
+	Target xsdt.AnyURI `xml:"Target,attr"`
 }
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"http://www.w3.org/2001/04/xmlenc# Id,attr"`
+	ID xsdt.ID `xml:"Id,attr"`
 }
 
 // TEncryptionPropertyType defines type EncryptionPropertyType
@@ -498,17 +498,17 @@ func (me *XElemEncryptionProperties) Walk() (err error) {
 
 // XAttrMimeTypeXsdtString defines attribute MimeType
 type XAttrMimeTypeXsdtString struct {
-	MimeType xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# MimeType,attr"`
+	MimeType xsdt.String `xml:"MimeType,attr"`
 }
 
 // XAttrEncodingXsdtAnyURI defines attribute Encoding
 type XAttrEncodingXsdtAnyURI struct {
-	Encoding xsdt.AnyURI `xml:"http://www.w3.org/2001/04/xmlenc# Encoding,attr"`
+	Encoding xsdt.AnyURI `xml:"Encoding,attr"`
 }
 
 // XAttrTypeXsdtAnyURI defines attribute Type
 type XAttrTypeXsdtAnyURI struct {
-	Type xsdt.AnyURI `xml:"http://www.w3.org/2001/04/xmlenc# Type,attr"`
+	Type xsdt.AnyURI `xml:"Type,attr"`
 }
 
 // TEncryptedType defines type EncryptedType
@@ -628,7 +628,7 @@ func (me *XElemsEncryptedData) Walk() (err error) {
 
 // XAttrRecipientXsdtString defines attribute Recipient
 type XAttrRecipientXsdtString struct {
-	Recipient xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# Recipient,attr"`
+	Recipient xsdt.String `xml:"Recipient,attr"`
 }
 
 // TReferenceType defines type ReferenceType

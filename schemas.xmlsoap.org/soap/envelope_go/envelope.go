@@ -19,12 +19,12 @@ func (me TxsdMustUnderstand) ToXsdtBoolean() xsdt.Boolean { return xsdt.Boolean(
 
 // XAttrMustUnderstand defines attribute MustUnderstand
 type XAttrMustUnderstand struct {
-	MustUnderstand TxsdMustUnderstand `xml:"http://schemas.xmlsoap.org/soap/envelope/ mustUnderstand,attr"`
+	MustUnderstand TxsdMustUnderstand `xml:"mustUnderstand,attr"`
 }
 
 // XAttrActor defines attribute Actor
 type XAttrActor struct {
-	Actor xsdt.AnyURI `xml:"http://schemas.xmlsoap.org/soap/envelope/ actor,attr"`
+	Actor xsdt.AnyURI `xml:"actor,attr"`
 }
 
 // TencodingStyle 'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification
@@ -51,7 +51,7 @@ func (me TencodingStyle) Values() (list []xsdt.AnyURI) {
 
 // XAttrEncodingStyle defines attribute EncodingStyle
 type XAttrEncodingStyle struct {
-	EncodingStyle TencodingStyle `xml:"http://schemas.xmlsoap.org/soap/envelope/ encodingStyle,attr"`
+	EncodingStyle TencodingStyle `xml:"encodingStyle,attr"`
 }
 
 // XAttsEncodingStyle defines XAttsEncodingStyle

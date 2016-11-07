@@ -31,7 +31,7 @@ func (me TxsdType) IsExtended() bool { return me.String() == "extended" }
 
 // XAttrType defines attribute Type
 type XAttrType struct {
-	Type TxsdType `xml:"http://www.w3.org/1999/xlink type,attr"`
+	Type TxsdType `xml:"type,attr"`
 }
 
 // TypeDefault : Returns the default value for Type -- "simple"
@@ -39,22 +39,22 @@ func (me XAttrType) TypeDefault() TxsdType { return TxsdType("simple") }
 
 // XAttrHref defines attribute Href
 type XAttrHref struct {
-	Href xsdt.AnyURI `xml:"http://www.w3.org/1999/xlink href,attr"`
+	Href xsdt.AnyURI `xml:"href,attr"`
 }
 
 // XAttrRole defines attribute Role
 type XAttrRole struct {
-	Role xsdt.String `xml:"http://www.w3.org/1999/xlink role,attr"`
+	Role xsdt.String `xml:"role,attr"`
 }
 
 // XAttrArcrole defines attribute Arcrole
 type XAttrArcrole struct {
-	Arcrole xsdt.String `xml:"http://www.w3.org/1999/xlink arcrole,attr"`
+	Arcrole xsdt.String `xml:"arcrole,attr"`
 }
 
 // XAttrTitle defines attribute Title
 type XAttrTitle struct {
-	Title xsdt.String `xml:"http://www.w3.org/1999/xlink title,attr"`
+	Title xsdt.String `xml:"title,attr"`
 }
 
 // TxsdShow defines type xsdShow
@@ -86,7 +86,7 @@ func (me TxsdShow) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrShow defines attribute Show
 type XAttrShow struct {
-	Show TxsdShow `xml:"http://www.w3.org/1999/xlink show,attr"`
+	Show TxsdShow `xml:"show,attr"`
 }
 
 // ShowDefault : Returns the default value for Show -- "embed"
@@ -118,7 +118,7 @@ func (me TxsdActuate) IsOther() bool { return me.String() == "other" }
 
 // XAttrActuate defines attribute Actuate
 type XAttrActuate struct {
-	Actuate TxsdActuate `xml:"http://www.w3.org/1999/xlink actuate,attr"`
+	Actuate TxsdActuate `xml:"actuate,attr"`
 }
 
 // ActuateDefault : Returns the default value for Actuate -- "onLoad"
@@ -126,12 +126,12 @@ func (me XAttrActuate) ActuateDefault() TxsdActuate { return TxsdActuate("onLoad
 
 // XAttrFrom defines attribute From
 type XAttrFrom struct {
-	From xsdt.String `xml:"http://www.w3.org/1999/xlink from,attr"`
+	From xsdt.String `xml:"from,attr"`
 }
 
 // XAttrTo defines attribute To
 type XAttrTo struct {
-	To xsdt.String `xml:"http://www.w3.org/1999/xlink to,attr"`
+	To xsdt.String `xml:"to,attr"`
 }
 
 // XCdata defines type CDATA

@@ -8,7 +8,7 @@ import (
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:Kerberos preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr"`
 }
 
 // TPrincipalAuthenticationMechanismType defines type PrincipalAuthenticationMechanismType
@@ -62,7 +62,7 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:Kerberos ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -128,7 +128,7 @@ func (me *TAuthnMethodBaseType) Walk() (err error) {
 
 // XAttrMethodXsdtAnyURIUrnOasisNamesTcSaml20AcClassesKerberos defines attribute Method
 type XAttrMethodXsdtAnyURIUrnOasisNamesTcSaml20AcClassesKerberos struct {
-	Method xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:Kerberos method,attr"`
+	Method xsdt.AnyURI `xml:"method,attr"`
 }
 
 // MethodFixed : Returns the fixed value for Method -- "urn:oasis:names:tc:SAML:2.0:ac:classes:Kerberos"

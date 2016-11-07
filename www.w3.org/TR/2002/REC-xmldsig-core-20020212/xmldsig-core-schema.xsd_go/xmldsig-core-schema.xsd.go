@@ -29,17 +29,17 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"http://www.w3.org/2000/09/xmldsig# Id,attr"`
+	ID xsdt.ID `xml:"Id,attr"`
 }
 
 // XAttrMimeTypeXsdtString defines attribute MimeType
 type XAttrMimeTypeXsdtString struct {
-	MimeType xsdt.String `xml:"http://www.w3.org/2000/09/xmldsig# MimeType,attr"`
+	MimeType xsdt.String `xml:"MimeType,attr"`
 }
 
 // XAttrEncodingXsdtAnyURI defines attribute Encoding
 type XAttrEncodingXsdtAnyURI struct {
-	Encoding xsdt.AnyURI `xml:"http://www.w3.org/2000/09/xmldsig# Encoding,attr"`
+	Encoding xsdt.AnyURI `xml:"Encoding,attr"`
 }
 
 // TObjectType defines type ObjectType
@@ -99,7 +99,7 @@ func (me *XElemsObject) Walk() (err error) {
 
 // XAttrAlgorithmXsdtAnyURI defines attribute Algorithm
 type XAttrAlgorithmXsdtAnyURI struct {
-	Algorithm xsdt.AnyURI `xml:"http://www.w3.org/2000/09/xmldsig# Algorithm,attr"`
+	Algorithm xsdt.AnyURI `xml:"Algorithm,attr"`
 }
 
 // TCanonicalizationMethodType defines type CanonicalizationMethodType
@@ -244,12 +244,12 @@ func (me *XElemSignatureMethod) Walk() (err error) {
 
 // XAttrURIXsdtAnyURI defines attribute Uri
 type XAttrURIXsdtAnyURI struct {
-	URI xsdt.AnyURI `xml:"http://www.w3.org/2000/09/xmldsig# URI,attr"`
+	URI xsdt.AnyURI `xml:"URI,attr"`
 }
 
 // XAttrTypeXsdtAnyURI defines attribute Type
 type XAttrTypeXsdtAnyURI struct {
-	Type xsdt.AnyURI `xml:"http://www.w3.org/2000/09/xmldsig# Type,attr"`
+	Type xsdt.AnyURI `xml:"Type,attr"`
 }
 
 // XElemsXPathchoiceTransformTypeschemaXPathXsdtString defines element XPath
@@ -2269,7 +2269,7 @@ func (me *XElemsManifest) Walk() (err error) {
 
 // XAttrTargetXsdtAnyURI defines attribute Target
 type XAttrTargetXsdtAnyURI struct {
-	Target xsdt.AnyURI `xml:"http://www.w3.org/2000/09/xmldsig# Target,attr"`
+	Target xsdt.AnyURI `xml:"Target,attr"`
 }
 
 // TSignaturePropertyType defines type SignaturePropertyType

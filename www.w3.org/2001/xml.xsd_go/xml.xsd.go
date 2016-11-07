@@ -19,7 +19,7 @@ func (me TxsdLang) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrLang defines attribute Lang
 type XAttrLang struct {
-	Lang TxsdLang `xml:"http://www.w3.org/XML/1998/namespace lang,attr"`
+	Lang TxsdLang `xml:"lang,attr"`
 }
 
 // TxsdSpace defines type xsdSpace
@@ -42,17 +42,17 @@ func (me *TxsdSpace) Set(s string) { (*xsdt.NCName)(me).Set(s) }
 
 // XAttrSpace defines attribute Space
 type XAttrSpace struct {
-	Space TxsdSpace `xml:"http://www.w3.org/XML/1998/namespace space,attr"`
+	Space TxsdSpace `xml:"space,attr"`
 }
 
 // XAttrBase defines attribute Base
 type XAttrBase struct {
-	Base xsdt.AnyURI `xml:"http://www.w3.org/XML/1998/namespace base,attr"`
+	Base xsdt.AnyURI `xml:"base,attr"`
 }
 
 // XAttrID defines attribute Id
 type XAttrID struct {
-	ID xsdt.ID `xml:"http://www.w3.org/XML/1998/namespace id,attr"`
+	ID xsdt.ID `xml:"id,attr"`
 }
 
 // XAttsSpecialAttrs defines XAttsSpecialAttrs

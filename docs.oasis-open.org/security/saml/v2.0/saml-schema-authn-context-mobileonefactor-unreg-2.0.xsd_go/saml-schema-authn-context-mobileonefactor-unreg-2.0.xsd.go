@@ -42,12 +42,12 @@ func (me *TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium) Set(s strin
 
 // XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium defines attribute MediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium
 type XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium struct {
-	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorUnregistered medium,attr"`
+	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr"`
 }
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorUnregistered ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -166,7 +166,7 @@ func (me *TxsdRedefineIdentificationTypeComplexContentRestrictionNym) Set(s stri
 
 // XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym defines attribute NymTxsdRedefineIdentificationTypeComplexContentRestrictionNym
 type XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym struct {
-	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:MobileOneFactorUnregistered nym,attr"`
+	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr"`
 }
 
 // TIdentificationType defines type IdentificationType

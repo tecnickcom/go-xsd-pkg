@@ -9,7 +9,7 @@ import (
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:TimeSyncToken ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -163,17 +163,17 @@ func (me TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand) IsT
 
 // XAttrDeviceInHandTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand defines attribute DeviceInHandTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand
 type XAttrDeviceInHandTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand struct {
-	DeviceInHand TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:TimeSyncToken DeviceInHand,attr"`
+	DeviceInHand TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceInHand `xml:"DeviceInHand,attr"`
 }
 
 // XAttrDeviceTypeTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceType defines attribute DeviceTypeTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceType
 type XAttrDeviceTypeTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceType struct {
-	DeviceType TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceType `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:TimeSyncToken DeviceType,attr"`
+	DeviceType TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionDeviceType `xml:"DeviceType,attr"`
 }
 
 // XAttrSeedLengthTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionSeedLength defines attribute SeedLengthTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionSeedLength
 type XAttrSeedLengthTxsdRedefineTimeSyncTokenTypeComplexContentRestrictionSeedLength struct {
-	SeedLength TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionSeedLength `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:TimeSyncToken SeedLength,attr"`
+	SeedLength TxsdRedefineTimeSyncTokenTypeComplexContentRestrictionSeedLength `xml:"SeedLength,attr"`
 }
 
 // TimeSyncTokenType defines type imeSyncTokenType

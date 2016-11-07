@@ -9,12 +9,12 @@ import (
 
 // XAttrRealm defines attribute Realm
 type XAttrRealm struct {
-	Realm xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:profiles:attribute:DCE Realm,attr"`
+	Realm xsdt.AnyURI `xml:"Realm,attr"`
 }
 
 // XAttrFriendlyName defines attribute FriendlyName
 type XAttrFriendlyName struct {
-	FriendlyName xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:profiles:attribute:DCE FriendlyName,attr"`
+	FriendlyName xsdt.String `xml:"FriendlyName,attr"`
 }
 
 // XAnyURICdata defines XAnyURICdata

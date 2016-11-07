@@ -9,7 +9,7 @@ import (
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:SoftwarePKI ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -179,7 +179,7 @@ func (me TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium) ToTmediumTyp
 
 // XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium defines attribute MediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium
 type XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium struct {
-	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:SoftwarePKI medium,attr"`
+	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr"`
 }
 
 // TAuthnMethodBaseType defines type AuthnMethodBaseType

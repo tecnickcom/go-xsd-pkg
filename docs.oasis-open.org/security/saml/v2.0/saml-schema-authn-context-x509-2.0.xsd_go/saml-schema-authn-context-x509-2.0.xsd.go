@@ -9,7 +9,7 @@ import (
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:X509 ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -46,7 +46,7 @@ func (me *TAuthnContextDeclarationBaseType) Walk() (err error) {
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:X509 preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr"`
 }
 
 // TPrincipalAuthenticationMechanismType defines type PrincipalAuthenticationMechanismType
@@ -78,7 +78,7 @@ func (me *TPrincipalAuthenticationMechanismType) Walk() (err error) {
 
 // XAttrKeyValidationXsdtAnyURIUrnOasisNamesTcSaml20AcClassesX509 defines attribute KeyValidation
 type XAttrKeyValidationXsdtAnyURIUrnOasisNamesTcSaml20AcClassesX509 struct {
-	KeyValidation xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:ac:classes:X509 keyValidation,attr"`
+	KeyValidation xsdt.AnyURI `xml:"keyValidation,attr"`
 }
 
 // KeyValidationFixed : Returns the fixed value for KeyValidation -- "urn:oasis:names:tc:SAML:2.0:ac:classes:X509"

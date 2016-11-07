@@ -12,12 +12,12 @@ import (
 
 // XAttrProviderNameXsdtString defines attribute ProviderName
 type XAttrProviderNameXsdtString struct {
-	ProviderName xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp ProviderName,attr"`
+	ProviderName xsdt.String `xml:"ProviderName,attr"`
 }
 
 // XAttrIsPassiveXsdtBoolean defines attribute IsPassive
 type XAttrIsPassiveXsdtBoolean struct {
-	IsPassive xsdt.Boolean `xml:"urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp IsPassive,attr"`
+	IsPassive xsdt.Boolean `xml:"IsPassive,attr"`
 }
 
 // TRequestType defines type RequestType
@@ -101,7 +101,7 @@ func (me *XElemsRequest) Walk() (err error) {
 
 // XAttrAssertionConsumerServiceURLXsdtAnyURI defines attribute AssertionConsumerServiceURL
 type XAttrAssertionConsumerServiceURLXsdtAnyURI struct {
-	AssertionConsumerServiceURL xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp AssertionConsumerServiceURL,attr"`
+	AssertionConsumerServiceURL xsdt.AnyURI `xml:"AssertionConsumerServiceURL,attr"`
 }
 
 // TResponseType defines type ResponseType

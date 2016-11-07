@@ -9,7 +9,7 @@ import (
 
 // XAttrIDXsdtID All elements have an ID
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"http://www.w3.org/2000/svg id,attr"`
+	ID xsdt.ID `xml:"id,attr"`
 }
 
 // XAttsStdAttrs defines XAttsStdAttrs
@@ -39,7 +39,7 @@ func (me TFeatureListType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrRequiredFeaturesTFeatureListType defines attribute RequiredFeaturesTFeatureListType
 type XAttrRequiredFeaturesTFeatureListType struct {
-	RequiredFeatures TFeatureListType `xml:"http://www.w3.org/2000/svg requiredFeatures,attr"`
+	RequiredFeatures TFeatureListType `xml:"requiredFeatures,attr"`
 }
 
 // TExtensionListType extension list specification
@@ -56,7 +56,7 @@ func (me TExtensionListType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrRequiredExtensionsTExtensionListType defines attribute RequiredExtensionsTExtensionListType
 type XAttrRequiredExtensionsTExtensionListType struct {
-	RequiredExtensions TExtensionListType `xml:"http://www.w3.org/2000/svg requiredExtensions,attr"`
+	RequiredExtensions TExtensionListType `xml:"requiredExtensions,attr"`
 }
 
 // TLanguageCodesType a comma-separated list of language codes, as per [RFC3066]
@@ -73,7 +73,7 @@ func (me TLanguageCodesType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrSystemLanguageTLanguageCodesType defines attribute SystemLanguageTLanguageCodesType
 type XAttrSystemLanguageTLanguageCodesType struct {
-	SystemLanguage TLanguageCodesType `xml:"http://www.w3.org/2000/svg systemLanguage,attr"`
+	SystemLanguage TLanguageCodesType `xml:"systemLanguage,attr"`
 }
 
 // XAttsTestAttrs defines XAttsTestAttrs
@@ -107,52 +107,52 @@ func (me TScriptType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrOnmousemoveTScriptType defines attribute OnmousemoveTScriptType
 type XAttrOnmousemoveTScriptType struct {
-	Onmousemove TScriptType `xml:"http://www.w3.org/2000/svg onmousemove,attr"`
+	Onmousemove TScriptType `xml:"onmousemove,attr"`
 }
 
 // XAttrOnmouseoutTScriptType defines attribute OnmouseoutTScriptType
 type XAttrOnmouseoutTScriptType struct {
-	Onmouseout TScriptType `xml:"http://www.w3.org/2000/svg onmouseout,attr"`
+	Onmouseout TScriptType `xml:"onmouseout,attr"`
 }
 
 // XAttrOnfocusinTScriptType defines attribute OnfocusinTScriptType
 type XAttrOnfocusinTScriptType struct {
-	Onfocusin TScriptType `xml:"http://www.w3.org/2000/svg onfocusin,attr"`
+	Onfocusin TScriptType `xml:"onfocusin,attr"`
 }
 
 // XAttrOnclickTScriptType defines attribute OnclickTScriptType
 type XAttrOnclickTScriptType struct {
-	Onclick TScriptType `xml:"http://www.w3.org/2000/svg onclick,attr"`
+	Onclick TScriptType `xml:"onclick,attr"`
 }
 
 // XAttrOnmouseupTScriptType defines attribute OnmouseupTScriptType
 type XAttrOnmouseupTScriptType struct {
-	Onmouseup TScriptType `xml:"http://www.w3.org/2000/svg onmouseup,attr"`
+	Onmouseup TScriptType `xml:"onmouseup,attr"`
 }
 
 // XAttrOnmouseoverTScriptType defines attribute OnmouseoverTScriptType
 type XAttrOnmouseoverTScriptType struct {
-	Onmouseover TScriptType `xml:"http://www.w3.org/2000/svg onmouseover,attr"`
+	Onmouseover TScriptType `xml:"onmouseover,attr"`
 }
 
 // XAttrOnloadTScriptType defines attribute OnloadTScriptType
 type XAttrOnloadTScriptType struct {
-	Onload TScriptType `xml:"http://www.w3.org/2000/svg onload,attr"`
+	Onload TScriptType `xml:"onload,attr"`
 }
 
 // XAttrOnfocusoutTScriptType defines attribute OnfocusoutTScriptType
 type XAttrOnfocusoutTScriptType struct {
-	Onfocusout TScriptType `xml:"http://www.w3.org/2000/svg onfocusout,attr"`
+	Onfocusout TScriptType `xml:"onfocusout,attr"`
 }
 
 // XAttrOnactivateTScriptType defines attribute OnactivateTScriptType
 type XAttrOnactivateTScriptType struct {
-	Onactivate TScriptType `xml:"http://www.w3.org/2000/svg onactivate,attr"`
+	Onactivate TScriptType `xml:"onactivate,attr"`
 }
 
 // XAttrOnmousedownTScriptType defines attribute OnmousedownTScriptType
 type XAttrOnmousedownTScriptType struct {
-	Onmousedown TScriptType `xml:"http://www.w3.org/2000/svg onmousedown,attr"`
+	Onmousedown TScriptType `xml:"onmousedown,attr"`
 }
 
 // XAttsGraphicsElementEvents defines XAttsGraphicsElementEvents
@@ -171,32 +171,32 @@ type XAttsGraphicsElementEvents struct {
 
 // XAttrOnscrollTScriptType defines attribute OnscrollTScriptType
 type XAttrOnscrollTScriptType struct {
-	Onscroll TScriptType `xml:"http://www.w3.org/2000/svg onscroll,attr"`
+	Onscroll TScriptType `xml:"onscroll,attr"`
 }
 
 // XAttrOnzoomTScriptType defines attribute OnzoomTScriptType
 type XAttrOnzoomTScriptType struct {
-	Onzoom TScriptType `xml:"http://www.w3.org/2000/svg onzoom,attr"`
+	Onzoom TScriptType `xml:"onzoom,attr"`
 }
 
 // XAttrOnunloadTScriptType defines attribute OnunloadTScriptType
 type XAttrOnunloadTScriptType struct {
-	Onunload TScriptType `xml:"http://www.w3.org/2000/svg onunload,attr"`
+	Onunload TScriptType `xml:"onunload,attr"`
 }
 
 // XAttrOnabortTScriptType defines attribute OnabortTScriptType
 type XAttrOnabortTScriptType struct {
-	Onabort TScriptType `xml:"http://www.w3.org/2000/svg onabort,attr"`
+	Onabort TScriptType `xml:"onabort,attr"`
 }
 
 // XAttrOnerrorTScriptType defines attribute OnerrorTScriptType
 type XAttrOnerrorTScriptType struct {
-	Onerror TScriptType `xml:"http://www.w3.org/2000/svg onerror,attr"`
+	Onerror TScriptType `xml:"onerror,attr"`
 }
 
 // XAttrOnresizeTScriptType defines attribute OnresizeTScriptType
 type XAttrOnresizeTScriptType struct {
-	Onresize TScriptType `xml:"http://www.w3.org/2000/svg onresize,attr"`
+	Onresize TScriptType `xml:"onresize,attr"`
 }
 
 // XAttsDocumentEvents defines XAttsDocumentEvents
@@ -211,17 +211,17 @@ type XAttsDocumentEvents struct {
 
 // XAttrOnbeginTScriptType defines attribute OnbeginTScriptType
 type XAttrOnbeginTScriptType struct {
-	Onbegin TScriptType `xml:"http://www.w3.org/2000/svg onbegin,attr"`
+	Onbegin TScriptType `xml:"onbegin,attr"`
 }
 
 // XAttrOnendTScriptType defines attribute OnendTScriptType
 type XAttrOnendTScriptType struct {
-	Onend TScriptType `xml:"http://www.w3.org/2000/svg onend,attr"`
+	Onend TScriptType `xml:"onend,attr"`
 }
 
 // XAttrOnrepeatTScriptType defines attribute OnrepeatTScriptType
 type XAttrOnrepeatTScriptType struct {
-	Onrepeat TScriptType `xml:"http://www.w3.org/2000/svg onrepeat,attr"`
+	Onrepeat TScriptType `xml:"onrepeat,attr"`
 }
 
 // XAttsAnimationEvents defines XAttsAnimationEvents
@@ -247,7 +247,7 @@ func (me TColorType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrColorTColorType defines attribute ColorTColorType
 type XAttrColorTColorType struct {
-	Color TColorType `xml:"http://www.w3.org/2000/svg color,attr"`
+	Color TColorType `xml:"color,attr"`
 }
 
 // TxsdPresentationAttributesColorColorInterpolation defines type xsdPresentationAttributesColorColorInterpolation
@@ -288,7 +288,7 @@ func (me TxsdPresentationAttributesColorColorInterpolation) IsInherit() bool {
 
 // XAttrColorInterpolationTxsdPresentationAttributesColorColorInterpolation defines attribute ColorInterpolationTxsdPresentationAttributesColorColorInterpolation
 type XAttrColorInterpolationTxsdPresentationAttributesColorColorInterpolation struct {
-	ColorInterpolation TxsdPresentationAttributesColorColorInterpolation `xml:"http://www.w3.org/2000/svg color-interpolation,attr"`
+	ColorInterpolation TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation,attr"`
 }
 
 // TxsdPresentationAttributesColorColorRendering defines type xsdPresentationAttributesColorColorRendering
@@ -327,7 +327,7 @@ func (me TxsdPresentationAttributesColorColorRendering) ToXsdtString() xsdt.Stri
 
 // XAttrColorRenderingTxsdPresentationAttributesColorColorRendering defines attribute ColorRenderingTxsdPresentationAttributesColorColorRendering
 type XAttrColorRenderingTxsdPresentationAttributesColorColorRendering struct {
-	ColorRendering TxsdPresentationAttributesColorColorRendering `xml:"http://www.w3.org/2000/svg color-rendering,attr"`
+	ColorRendering TxsdPresentationAttributesColorColorRendering `xml:"color-rendering,attr"`
 }
 
 // XAttsPresentationAttributesColor defines XAttsPresentationAttributesColor
@@ -352,7 +352,7 @@ func (me TEnableBackgroundValueType) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrEnableBackgroundTEnableBackgroundValueType defines attribute EnableBackgroundTEnableBackgroundValueType
 type XAttrEnableBackgroundTEnableBackgroundValueType struct {
-	EnableBackground TEnableBackgroundValueType `xml:"http://www.w3.org/2000/svg enable-background,attr"`
+	EnableBackground TEnableBackgroundValueType `xml:"enable-background,attr"`
 }
 
 // XAttsPresentationAttributesContainers defines XAttsPresentationAttributesContainers
@@ -376,7 +376,7 @@ func (me TOpacityValueType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrFloodOpacityTOpacityValueType defines attribute FloodOpacityTOpacityValueType
 type XAttrFloodOpacityTOpacityValueType struct {
-	FloodOpacity TOpacityValueType `xml:"http://www.w3.org/2000/svg flood-opacity,attr"`
+	FloodOpacity TOpacityValueType `xml:"flood-opacity,attr"`
 }
 
 // TSVGColorType An SVG color value (sRGB plus optional ICC)
@@ -393,7 +393,7 @@ func (me TSVGColorType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrFloodColorTSVGColorType defines attribute FloodColorTSVGColorType
 type XAttrFloodColorTSVGColorType struct {
-	FloodColor TSVGColorType `xml:"http://www.w3.org/2000/svg flood-color,attr"`
+	FloodColor TSVGColorType `xml:"flood-color,attr"`
 }
 
 // XAttsPresentationAttributesFeFlood defines XAttsPresentationAttributesFeFlood
@@ -404,7 +404,7 @@ type XAttsPresentationAttributesFeFlood struct {
 
 // XAttrColorInterpolationFiltersTxsdPresentationAttributesFilterPrimitivesColorInterpolationFilters The following presentation attributes apply to filter primitives
 type XAttrColorInterpolationFiltersTxsdPresentationAttributesFilterPrimitivesColorInterpolationFilters struct {
-	ColorInterpolationFilters TxsdPresentationAttributesColorColorInterpolation `xml:"http://www.w3.org/2000/svg color-interpolation-filters,attr"`
+	ColorInterpolationFilters TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation-filters,attr"`
 }
 
 // XAttsPresentationAttributesFilterPrimitives defines XAttsPresentationAttributesFilterPrimitives
@@ -452,7 +452,7 @@ func (me TxsdPresentationAttributesFillStrokeStrokeLinejoin) String() string {
 
 // XAttrStrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin defines attribute StrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin
 type XAttrStrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin struct {
-	StrokeLinejoin TxsdPresentationAttributesFillStrokeStrokeLinejoin `xml:"http://www.w3.org/2000/svg stroke-linejoin,attr"`
+	StrokeLinejoin TxsdPresentationAttributesFillStrokeStrokeLinejoin `xml:"stroke-linejoin,attr"`
 }
 
 // TStrokeMiterLimitValueType 'stroke-miterlimit' property/attribute value (e.g., <number>)
@@ -469,7 +469,7 @@ func (me *TStrokeMiterLimitValueType) Set(s string) { (*xsdt.String)(me).Set(s) 
 
 // XAttrStrokeMiterlimitTStrokeMiterLimitValueType defines attribute StrokeMiterlimitTStrokeMiterLimitValueType
 type XAttrStrokeMiterlimitTStrokeMiterLimitValueType struct {
-	StrokeMiterlimit TStrokeMiterLimitValueType `xml:"http://www.w3.org/2000/svg stroke-miterlimit,attr"`
+	StrokeMiterlimit TStrokeMiterLimitValueType `xml:"stroke-miterlimit,attr"`
 }
 
 // TPaintType a 'fill' or 'stroke' property/attribute value
@@ -486,12 +486,12 @@ func (me TPaintType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrFillTPaintType defines attribute FillTPaintType
 type XAttrFillTPaintType struct {
-	Fill TPaintType `xml:"http://www.w3.org/2000/svg fill,attr"`
+	Fill TPaintType `xml:"fill,attr"`
 }
 
 // XAttrStrokeTPaintType defines attribute StrokeTPaintType
 type XAttrStrokeTPaintType struct {
-	Stroke TPaintType `xml:"http://www.w3.org/2000/svg stroke,attr"`
+	Stroke TPaintType `xml:"stroke,attr"`
 }
 
 // TStrokeDashArrayValueType 'stroke-dasharray' property/attribute value (e.g., 'none', list of <number>s)
@@ -508,7 +508,7 @@ func (me TStrokeDashArrayValueType) ToXsdtString() xsdt.String { return xsdt.Str
 
 // XAttrStrokeDasharrayTStrokeDashArrayValueType defines attribute StrokeDasharrayTStrokeDashArrayValueType
 type XAttrStrokeDasharrayTStrokeDashArrayValueType struct {
-	StrokeDasharray TStrokeDashArrayValueType `xml:"http://www.w3.org/2000/svg stroke-dasharray,attr"`
+	StrokeDasharray TStrokeDashArrayValueType `xml:"stroke-dasharray,attr"`
 }
 
 // TStrokeDashOffsetValueType 'stroke-dashoffset' property/attribute value (e.g., 'none', >length>)
@@ -525,7 +525,7 @@ func (me TStrokeDashOffsetValueType) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrStrokeDashoffsetTStrokeDashOffsetValueType defines attribute StrokeDashoffsetTStrokeDashOffsetValueType
 type XAttrStrokeDashoffsetTStrokeDashOffsetValueType struct {
-	StrokeDashoffset TStrokeDashOffsetValueType `xml:"http://www.w3.org/2000/svg stroke-dashoffset,attr"`
+	StrokeDashoffset TStrokeDashOffsetValueType `xml:"stroke-dashoffset,attr"`
 }
 
 // TStrokeWidthValueType 'stroke-width' property/attribute value (e.g., <length>)
@@ -542,12 +542,12 @@ func (me TStrokeWidthValueType) ToXsdtString() xsdt.String { return xsdt.String(
 
 // XAttrStrokeWidthTStrokeWidthValueType defines attribute StrokeWidthTStrokeWidthValueType
 type XAttrStrokeWidthTStrokeWidthValueType struct {
-	StrokeWidth TStrokeWidthValueType `xml:"http://www.w3.org/2000/svg stroke-width,attr"`
+	StrokeWidth TStrokeWidthValueType `xml:"stroke-width,attr"`
 }
 
 // XAttrFillOpacityTOpacityValueType defines attribute FillOpacityTOpacityValueType
 type XAttrFillOpacityTOpacityValueType struct {
-	FillOpacity TOpacityValueType `xml:"http://www.w3.org/2000/svg fill-opacity,attr"`
+	FillOpacity TOpacityValueType `xml:"fill-opacity,attr"`
 }
 
 // TClipFillRuleType 'clip-rule' or fill-rule property/attribute value
@@ -573,7 +573,7 @@ func (me TClipFillRuleType) IsNonzero() bool { return me.String() == "nonzero" }
 
 // XAttrFillRuleTClipFillRuleType defines attribute FillRuleTClipFillRuleType
 type XAttrFillRuleTClipFillRuleType struct {
-	FillRule TClipFillRuleType `xml:"http://www.w3.org/2000/svg fill-rule,attr"`
+	FillRule TClipFillRuleType `xml:"fill-rule,attr"`
 }
 
 // TxsdPresentationAttributesFillStrokeStrokeLinecap defines type xsdPresentationAttributesFillStrokeStrokeLinecap
@@ -614,12 +614,12 @@ func (me TxsdPresentationAttributesFillStrokeStrokeLinecap) IsButt() bool {
 
 // XAttrStrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap defines attribute StrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap
 type XAttrStrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap struct {
-	StrokeLinecap TxsdPresentationAttributesFillStrokeStrokeLinecap `xml:"http://www.w3.org/2000/svg stroke-linecap,attr"`
+	StrokeLinecap TxsdPresentationAttributesFillStrokeStrokeLinecap `xml:"stroke-linecap,attr"`
 }
 
 // XAttrStrokeOpacityTOpacityValueType defines attribute StrokeOpacityTOpacityValueType
 type XAttrStrokeOpacityTOpacityValueType struct {
-	StrokeOpacity TOpacityValueType `xml:"http://www.w3.org/2000/svg stroke-opacity,attr"`
+	StrokeOpacity TOpacityValueType `xml:"stroke-opacity,attr"`
 }
 
 // XAttsPresentationAttributesFillStroke defines XAttsPresentationAttributesFillStroke
@@ -717,7 +717,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontStretch) IsExpanded() bo
 
 // XAttrFontStretchTxsdPresentationAttributesFontSpecificationFontStretch defines attribute FontStretchTxsdPresentationAttributesFontSpecificationFontStretch
 type XAttrFontStretchTxsdPresentationAttributesFontSpecificationFontStretch struct {
-	FontStretch TxsdPresentationAttributesFontSpecificationFontStretch `xml:"http://www.w3.org/2000/svg font-stretch,attr"`
+	FontStretch TxsdPresentationAttributesFontSpecificationFontStretch `xml:"font-stretch,attr"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontStyle defines type xsdPresentationAttributesFontSpecificationFontStyle
@@ -760,7 +760,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontStyle) IsItalic() bool {
 
 // XAttrFontStyleTxsdPresentationAttributesFontSpecificationFontStyle defines attribute FontStyleTxsdPresentationAttributesFontSpecificationFontStyle
 type XAttrFontStyleTxsdPresentationAttributesFontSpecificationFontStyle struct {
-	FontStyle TxsdPresentationAttributesFontSpecificationFontStyle `xml:"http://www.w3.org/2000/svg font-style,attr"`
+	FontStyle TxsdPresentationAttributesFontSpecificationFontStyle `xml:"font-style,attr"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontVariant defines type xsdPresentationAttributesFontSpecificationFontVariant
@@ -798,7 +798,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontVariant) IsNormal() bool
 
 // XAttrFontVariantTxsdPresentationAttributesFontSpecificationFontVariant defines attribute FontVariantTxsdPresentationAttributesFontSpecificationFontVariant
 type XAttrFontVariantTxsdPresentationAttributesFontSpecificationFontVariant struct {
-	FontVariant TxsdPresentationAttributesFontSpecificationFontVariant `xml:"http://www.w3.org/2000/svg font-variant,attr"`
+	FontVariant TxsdPresentationAttributesFontSpecificationFontVariant `xml:"font-variant,attr"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontWeight defines type xsdPresentationAttributesFontSpecificationFontWeight
@@ -891,7 +891,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontWeight) String() string 
 
 // XAttrFontWeightTxsdPresentationAttributesFontSpecificationFontWeight defines attribute FontWeightTxsdPresentationAttributesFontSpecificationFontWeight
 type XAttrFontWeightTxsdPresentationAttributesFontSpecificationFontWeight struct {
-	FontWeight TxsdPresentationAttributesFontSpecificationFontWeight `xml:"http://www.w3.org/2000/svg font-weight,attr"`
+	FontWeight TxsdPresentationAttributesFontSpecificationFontWeight `xml:"font-weight,attr"`
 }
 
 // TFontFamilyValueType [[ <family-name> | <generic-family> ],]* [<family-name> | <generic-family>] | inherit
@@ -909,7 +909,7 @@ func (me TFontFamilyValueType) ToXsdtString() xsdt.String { return xsdt.String(m
 
 // XAttrFontFamilyTFontFamilyValueType defines attribute FontFamilyTFontFamilyValueType
 type XAttrFontFamilyTFontFamilyValueType struct {
-	FontFamily TFontFamilyValueType `xml:"http://www.w3.org/2000/svg font-family,attr"`
+	FontFamily TFontFamilyValueType `xml:"font-family,attr"`
 }
 
 // TFontSizeValueType 'font-size' property/attribute value
@@ -927,7 +927,7 @@ func (me TFontSizeValueType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrFontSizeTFontSizeValueType defines attribute FontSizeTFontSizeValueType
 type XAttrFontSizeTFontSizeValueType struct {
-	FontSize TFontSizeValueType `xml:"http://www.w3.org/2000/svg font-size,attr"`
+	FontSize TFontSizeValueType `xml:"font-size,attr"`
 }
 
 // TFontSizeAdjustValueType 'font-size-adjust' property/attribute value
@@ -945,7 +945,7 @@ func (me TFontSizeAdjustValueType) ToXsdtString() xsdt.String { return xsdt.Stri
 
 // XAttrFontSizeAdjustTFontSizeAdjustValueType defines attribute FontSizeAdjustTFontSizeAdjustValueType
 type XAttrFontSizeAdjustTFontSizeAdjustValueType struct {
-	FontSizeAdjust TFontSizeAdjustValueType `xml:"http://www.w3.org/2000/svg font-size-adjust,attr"`
+	FontSizeAdjust TFontSizeAdjustValueType `xml:"font-size-adjust,attr"`
 }
 
 // XAttsPresentationAttributesFontSpecification defines XAttsPresentationAttributesFontSpecification
@@ -961,12 +961,12 @@ type XAttsPresentationAttributesFontSpecification struct {
 
 // XAttrStopColorTSVGColorType The following presentation attributes apply to gradient 'stop' elements
 type XAttrStopColorTSVGColorType struct {
-	StopColor TSVGColorType `xml:"http://www.w3.org/2000/svg stop-color,attr"`
+	StopColor TSVGColorType `xml:"stop-color,attr"`
 }
 
 // XAttrStopOpacityTOpacityValueType defines attribute StopOpacityTOpacityValueType
 type XAttrStopOpacityTOpacityValueType struct {
-	StopOpacity TOpacityValueType `xml:"http://www.w3.org/2000/svg stop-opacity,attr"`
+	StopOpacity TOpacityValueType `xml:"stop-opacity,attr"`
 }
 
 // XAttsPresentationAttributesGradients defines XAttsPresentationAttributesGradients
@@ -990,12 +990,12 @@ func (me TClipPathValueType) String() string { return xsdt.String(me).String() }
 
 // XAttrClipPathTClipPathValueType defines attribute ClipPathTClipPathValueType
 type XAttrClipPathTClipPathValueType struct {
-	ClipPath TClipPathValueType `xml:"http://www.w3.org/2000/svg clip-path,attr"`
+	ClipPath TClipPathValueType `xml:"clip-path,attr"`
 }
 
 // XAttrClipRuleTClipFillRuleType defines attribute ClipRuleTClipFillRuleType
 type XAttrClipRuleTClipFillRuleType struct {
-	ClipRule TClipFillRuleType `xml:"http://www.w3.org/2000/svg clip-rule,attr"`
+	ClipRule TClipFillRuleType `xml:"clip-rule,attr"`
 }
 
 // TFilterValueType <uri> | none | inherit
@@ -1012,7 +1012,7 @@ func (me TFilterValueType) String() string { return xsdt.String(me).String() }
 
 // XAttrFilterTFilterValueType defines attribute FilterTFilterValueType
 type XAttrFilterTFilterValueType struct {
-	Filter TFilterValueType `xml:"http://www.w3.org/2000/svg filter,attr"`
+	Filter TFilterValueType `xml:"filter,attr"`
 }
 
 // TxsdPresentationAttributesGraphicsPointerEvents defines type xsdPresentationAttributesGraphicsPointerEvents
@@ -1087,7 +1087,7 @@ func (me TxsdPresentationAttributesGraphicsPointerEvents) IsStroke() bool {
 
 // XAttrPointerEventsTxsdPresentationAttributesGraphicsPointerEvents defines attribute PointerEventsTxsdPresentationAttributesGraphicsPointerEvents
 type XAttrPointerEventsTxsdPresentationAttributesGraphicsPointerEvents struct {
-	PointerEvents TxsdPresentationAttributesGraphicsPointerEvents `xml:"http://www.w3.org/2000/svg pointer-events,attr"`
+	PointerEvents TxsdPresentationAttributesGraphicsPointerEvents `xml:"pointer-events,attr"`
 }
 
 // TxsdPresentationAttributesGraphicsShapeRendering defines type xsdPresentationAttributesGraphicsShapeRendering
@@ -1133,7 +1133,7 @@ func (me TxsdPresentationAttributesGraphicsShapeRendering) ToXsdtString() xsdt.S
 
 // XAttrShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering defines attribute ShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering
 type XAttrShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering struct {
-	ShapeRendering TxsdPresentationAttributesGraphicsShapeRendering `xml:"http://www.w3.org/2000/svg shape-rendering,attr"`
+	ShapeRendering TxsdPresentationAttributesGraphicsShapeRendering `xml:"shape-rendering,attr"`
 }
 
 // TxsdPresentationAttributesGraphicsVisibility defines type xsdPresentationAttributesGraphicsVisibility
@@ -1169,7 +1169,7 @@ func (me TxsdPresentationAttributesGraphicsVisibility) ToXsdtString() xsdt.Strin
 
 // XAttrVisibilityTxsdPresentationAttributesGraphicsVisibility defines attribute VisibilityTxsdPresentationAttributesGraphicsVisibility
 type XAttrVisibilityTxsdPresentationAttributesGraphicsVisibility struct {
-	Visibility TxsdPresentationAttributesGraphicsVisibility `xml:"http://www.w3.org/2000/svg visibility,attr"`
+	Visibility TxsdPresentationAttributesGraphicsVisibility `xml:"visibility,attr"`
 }
 
 // TCursorValueType Value is an optional comma-separated list orf uri references followed by one token from an enumerated list.
@@ -1187,7 +1187,7 @@ func (me TCursorValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrCursorTCursorValueType defines attribute CursorTCursorValueType
 type XAttrCursorTCursorValueType struct {
-	Cursor TCursorValueType `xml:"http://www.w3.org/2000/svg cursor,attr"`
+	Cursor TCursorValueType `xml:"cursor,attr"`
 }
 
 // TxsdPresentationAttributesGraphicsDisplay defines type xsdPresentationAttributesGraphicsDisplay
@@ -1280,12 +1280,12 @@ func (me TxsdPresentationAttributesGraphicsDisplay) IsMarker() bool { return me.
 
 // XAttrDisplayTxsdPresentationAttributesGraphicsDisplay defines attribute DisplayTxsdPresentationAttributesGraphicsDisplay
 type XAttrDisplayTxsdPresentationAttributesGraphicsDisplay struct {
-	Display TxsdPresentationAttributesGraphicsDisplay `xml:"http://www.w3.org/2000/svg display,attr"`
+	Display TxsdPresentationAttributesGraphicsDisplay `xml:"display,attr"`
 }
 
 // XAttrImageRenderingTxsdPresentationAttributesGraphicsImageRendering defines attribute ImageRenderingTxsdPresentationAttributesGraphicsImageRendering
 type XAttrImageRenderingTxsdPresentationAttributesGraphicsImageRendering struct {
-	ImageRendering TxsdPresentationAttributesColorColorRendering `xml:"http://www.w3.org/2000/svg image-rendering,attr"`
+	ImageRendering TxsdPresentationAttributesColorColorRendering `xml:"image-rendering,attr"`
 }
 
 // TMaskValueType 'mask' property/attribute value (e.g., 'none', %URI;)
@@ -1303,12 +1303,12 @@ func (me *TMaskValueType) Set(s string) { (*xsdt.String)(me).Set(s) }
 
 // XAttrMaskTMaskValueType defines attribute MaskTMaskValueType
 type XAttrMaskTMaskValueType struct {
-	Mask TMaskValueType `xml:"http://www.w3.org/2000/svg mask,attr"`
+	Mask TMaskValueType `xml:"mask,attr"`
 }
 
 // XAttrOpacityTOpacityValueType defines attribute OpacityTOpacityValueType
 type XAttrOpacityTOpacityValueType struct {
-	Opacity TOpacityValueType `xml:"http://www.w3.org/2000/svg opacity,attr"`
+	Opacity TOpacityValueType `xml:"opacity,attr"`
 }
 
 // TxsdPresentationAttributesGraphicsTextRendering defines type xsdPresentationAttributesGraphicsTextRendering
@@ -1352,7 +1352,7 @@ func (me TxsdPresentationAttributesGraphicsTextRendering) IsGeometricPrecision()
 
 // XAttrTextRenderingTxsdPresentationAttributesGraphicsTextRendering defines attribute TextRenderingTxsdPresentationAttributesGraphicsTextRendering
 type XAttrTextRenderingTxsdPresentationAttributesGraphicsTextRendering struct {
-	TextRendering TxsdPresentationAttributesGraphicsTextRendering `xml:"http://www.w3.org/2000/svg text-rendering,attr"`
+	TextRendering TxsdPresentationAttributesGraphicsTextRendering `xml:"text-rendering,attr"`
 }
 
 // XAttsPresentationAttributesGraphics defines XAttsPresentationAttributesGraphics
@@ -1373,7 +1373,7 @@ type XAttsPresentationAttributesGraphics struct {
 
 // XAttrColorProfileXsdtString The following presentation attributes apply to 'image' elements
 type XAttrColorProfileXsdtString struct {
-	ColorProfile xsdt.String `xml:"http://www.w3.org/2000/svg color-profile,attr"`
+	ColorProfile xsdt.String `xml:"color-profile,attr"`
 }
 
 // XAttsPresentationAttributesImages defines XAttsPresentationAttributesImages
@@ -1383,7 +1383,7 @@ type XAttsPresentationAttributesImages struct {
 
 // XAttrLightingColorTSVGColorType The following presentation attributes apply to 'feDiffuseLighting' and 'feSpecularLighting' elements
 type XAttrLightingColorTSVGColorType struct {
-	LightingColor TSVGColorType `xml:"http://www.w3.org/2000/svg lighting-color,attr"`
+	LightingColor TSVGColorType `xml:"lighting-color,attr"`
 }
 
 // XAttsPresentationAttributesLightingEffects defines XAttsPresentationAttributesLightingEffects
@@ -1406,17 +1406,17 @@ func (me TMarkerValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrMarkerStartTMarkerValueType defines attribute MarkerStartTMarkerValueType
 type XAttrMarkerStartTMarkerValueType struct {
-	MarkerStart TMarkerValueType `xml:"http://www.w3.org/2000/svg marker-start,attr"`
+	MarkerStart TMarkerValueType `xml:"marker-start,attr"`
 }
 
 // XAttrMarkerMidTMarkerValueType defines attribute MarkerMidTMarkerValueType
 type XAttrMarkerMidTMarkerValueType struct {
-	MarkerMid TMarkerValueType `xml:"http://www.w3.org/2000/svg marker-mid,attr"`
+	MarkerMid TMarkerValueType `xml:"marker-mid,attr"`
 }
 
 // XAttrMarkerEndTMarkerValueType defines attribute MarkerEndTMarkerValueType
 type XAttrMarkerEndTMarkerValueType struct {
-	MarkerEnd TMarkerValueType `xml:"http://www.w3.org/2000/svg marker-end,attr"`
+	MarkerEnd TMarkerValueType `xml:"marker-end,attr"`
 }
 
 // XAttsPresentationAttributesMarkers defines XAttsPresentationAttributesMarkers
@@ -1442,7 +1442,7 @@ func (me TGlyphOrientationHorizontalValueType) ToXsdtString() xsdt.String { retu
 
 // XAttrGlyphOrientationHorizontalTGlyphOrientationHorizontalValueType defines attribute GlyphOrientationHorizontalTGlyphOrientationHorizontalValueType
 type XAttrGlyphOrientationHorizontalTGlyphOrientationHorizontalValueType struct {
-	GlyphOrientationHorizontal TGlyphOrientationHorizontalValueType `xml:"http://www.w3.org/2000/svg glyph-orientation-horizontal,attr"`
+	GlyphOrientationHorizontal TGlyphOrientationHorizontalValueType `xml:"glyph-orientation-horizontal,attr"`
 }
 
 // TGlyphOrientationVerticalValueType 'glyph-orientation-vertical' property/attribute value (e.g., 'auto', <angle>)
@@ -1460,7 +1460,7 @@ func (me TGlyphOrientationVerticalValueType) ToXsdtString() xsdt.String { return
 
 // XAttrGlyphOrientationVerticalTGlyphOrientationVerticalValueType defines attribute GlyphOrientationVerticalTGlyphOrientationVerticalValueType
 type XAttrGlyphOrientationVerticalTGlyphOrientationVerticalValueType struct {
-	GlyphOrientationVertical TGlyphOrientationVerticalValueType `xml:"http://www.w3.org/2000/svg glyph-orientation-vertical,attr"`
+	GlyphOrientationVertical TGlyphOrientationVerticalValueType `xml:"glyph-orientation-vertical,attr"`
 }
 
 // TSpacingValueType 'letter-spacing' or 'word-spacing' property/attribute value (e.g., normal | <length>)
@@ -1477,7 +1477,7 @@ func (me TSpacingValueType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrLetterSpacingTSpacingValueType defines attribute LetterSpacingTSpacingValueType
 type XAttrLetterSpacingTSpacingValueType struct {
-	LetterSpacing TSpacingValueType `xml:"http://www.w3.org/2000/svg letter-spacing,attr"`
+	LetterSpacing TSpacingValueType `xml:"letter-spacing,attr"`
 }
 
 // TxsdPresentationAttributesTextContentElementsUnicodeBidi defines type xsdPresentationAttributesTextContentElementsUnicodeBidi
@@ -1520,12 +1520,12 @@ func (me TxsdPresentationAttributesTextContentElementsUnicodeBidi) IsBidiOverrid
 
 // XAttrUnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi defines attribute UnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi
 type XAttrUnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi struct {
-	UnicodeBidi TxsdPresentationAttributesTextContentElementsUnicodeBidi `xml:"http://www.w3.org/2000/svg unicode-bidi,attr"`
+	UnicodeBidi TxsdPresentationAttributesTextContentElementsUnicodeBidi `xml:"unicode-bidi,attr"`
 }
 
 // XAttrWordSpacingTSpacingValueType defines attribute WordSpacingTSpacingValueType
 type XAttrWordSpacingTSpacingValueType struct {
-	WordSpacing TSpacingValueType `xml:"http://www.w3.org/2000/svg word-spacing,attr"`
+	WordSpacing TSpacingValueType `xml:"word-spacing,attr"`
 }
 
 // TxsdPresentationAttributesTextContentElementsDominantBaseline defines type xsdPresentationAttributesTextContentElementsDominantBaseline
@@ -1593,7 +1593,7 @@ func (me TxsdPresentationAttributesTextContentElementsDominantBaseline) IsAuto()
 
 // XAttrDominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline defines attribute DominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline
 type XAttrDominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline struct {
-	DominantBaseline TxsdPresentationAttributesTextContentElementsDominantBaseline `xml:"http://www.w3.org/2000/svg dominant-baseline,attr"`
+	DominantBaseline TxsdPresentationAttributesTextContentElementsDominantBaseline `xml:"dominant-baseline,attr"`
 }
 
 // TBaselineShiftValueType The actual definition is
@@ -1612,7 +1612,7 @@ func (me TBaselineShiftValueType) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrBaselineShiftTBaselineShiftValueType defines attribute BaselineShiftTBaselineShiftValueType
 type XAttrBaselineShiftTBaselineShiftValueType struct {
-	BaselineShift TBaselineShiftValueType `xml:"http://www.w3.org/2000/svg baseline-shift,attr"`
+	BaselineShift TBaselineShiftValueType `xml:"baseline-shift,attr"`
 }
 
 // TxsdPresentationAttributesTextContentElementsDirection defines type xsdPresentationAttributesTextContentElementsDirection
@@ -1650,7 +1650,7 @@ func (me *TxsdPresentationAttributesTextContentElementsDirection) Set(s string) 
 
 // XAttrDirectionTxsdPresentationAttributesTextContentElementsDirection defines attribute DirectionTxsdPresentationAttributesTextContentElementsDirection
 type XAttrDirectionTxsdPresentationAttributesTextContentElementsDirection struct {
-	Direction TxsdPresentationAttributesTextContentElementsDirection `xml:"http://www.w3.org/2000/svg direction,attr"`
+	Direction TxsdPresentationAttributesTextContentElementsDirection `xml:"direction,attr"`
 }
 
 // TxsdPresentationAttributesTextContentElementsTextAnchor defines type xsdPresentationAttributesTextContentElementsTextAnchor
@@ -1693,7 +1693,7 @@ func (me TxsdPresentationAttributesTextContentElementsTextAnchor) IsInherit() bo
 
 // XAttrTextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor defines attribute TextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor
 type XAttrTextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor struct {
-	TextAnchor TxsdPresentationAttributesTextContentElementsTextAnchor `xml:"http://www.w3.org/2000/svg text-anchor,attr"`
+	TextAnchor TxsdPresentationAttributesTextContentElementsTextAnchor `xml:"text-anchor,attr"`
 }
 
 // TextDecorationValueType 'text-decoration' property/attribute value (e.g., 'none', 'underline')
@@ -1710,7 +1710,7 @@ func (me TextDecorationValueType) String() string { return xsdt.String(me).Strin
 
 // XAttrTextDecorationTextDecorationValueType defines attribute TextDecorationTextDecorationValueType
 type XAttrTextDecorationTextDecorationValueType struct {
-	TextDecoration TextDecorationValueType `xml:"http://www.w3.org/2000/svg text-decoration,attr"`
+	TextDecoration TextDecorationValueType `xml:"text-decoration,attr"`
 }
 
 // TxsdPresentationAttributesTextContentElementsAlignmentBaseline defines type xsdPresentationAttributesTextContentElementsAlignmentBaseline
@@ -1808,7 +1808,7 @@ func (me TxsdPresentationAttributesTextContentElementsAlignmentBaseline) IsHangi
 
 // XAttrAlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline defines attribute AlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline
 type XAttrAlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline struct {
-	AlignmentBaseline TxsdPresentationAttributesTextContentElementsAlignmentBaseline `xml:"http://www.w3.org/2000/svg alignment-baseline,attr"`
+	AlignmentBaseline TxsdPresentationAttributesTextContentElementsAlignmentBaseline `xml:"alignment-baseline,attr"`
 }
 
 // XAttsPresentationAttributesTextContentElements defines XAttsPresentationAttributesTextContentElements
@@ -1873,7 +1873,7 @@ func (me TxsdPresentationAttributesTextElementsWritingMode) IsTbRl() bool {
 
 // XAttrWritingModeTxsdPresentationAttributesTextElementsWritingMode defines attribute WritingModeTxsdPresentationAttributesTextElementsWritingMode
 type XAttrWritingModeTxsdPresentationAttributesTextElementsWritingMode struct {
-	WritingMode TxsdPresentationAttributesTextElementsWritingMode `xml:"http://www.w3.org/2000/svg writing-mode,attr"`
+	WritingMode TxsdPresentationAttributesTextElementsWritingMode `xml:"writing-mode,attr"`
 }
 
 // XAttsPresentationAttributesTextElements defines XAttsPresentationAttributesTextElements
@@ -1896,7 +1896,7 @@ func (me TClipValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrClipTClipValueType defines attribute ClipTClipValueType
 type XAttrClipTClipValueType struct {
-	Clip TClipValueType `xml:"http://www.w3.org/2000/svg clip,attr"`
+	Clip TClipValueType `xml:"clip,attr"`
 }
 
 // TxsdPresentationAttributesViewportsOverflow defines type xsdPresentationAttributesViewportsOverflow
@@ -1936,7 +1936,7 @@ func (me TxsdPresentationAttributesViewportsOverflow) IsAuto() bool { return me.
 
 // XAttrOverflowTxsdPresentationAttributesViewportsOverflow defines attribute OverflowTxsdPresentationAttributesViewportsOverflow
 type XAttrOverflowTxsdPresentationAttributesViewportsOverflow struct {
-	Overflow TxsdPresentationAttributesViewportsOverflow `xml:"http://www.w3.org/2000/svg overflow,attr"`
+	Overflow TxsdPresentationAttributesViewportsOverflow `xml:"overflow,attr"`
 }
 
 // XAttsPresentationAttributesViewports defines XAttsPresentationAttributesViewports
@@ -1965,7 +1965,7 @@ type XAttsPresentationAttributesAll struct {
 
 // XAttrResultXsdtString defines attribute Result
 type XAttrResultXsdtString struct {
-	Result xsdt.String `xml:"http://www.w3.org/2000/svg result,attr"`
+	Result xsdt.String `xml:"result,attr"`
 }
 
 // TCoordinateType a <co-ordinate>
@@ -1983,12 +1983,12 @@ func (me TCoordinateType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrXTCoordinateType defines attribute XTCoordinateType
 type XAttrXTCoordinateType struct {
-	X TCoordinateType `xml:"http://www.w3.org/2000/svg x,attr"`
+	X TCoordinateType `xml:"x,attr"`
 }
 
 // XAttrYTCoordinateType defines attribute YTCoordinateType
 type XAttrYTCoordinateType struct {
-	Y TCoordinateType `xml:"http://www.w3.org/2000/svg y,attr"`
+	Y TCoordinateType `xml:"y,attr"`
 }
 
 // TLengthType a <length>
@@ -2005,12 +2005,12 @@ func (me TLengthType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrWidthTLengthType defines attribute WidthTLengthType
 type XAttrWidthTLengthType struct {
-	Width TLengthType `xml:"http://www.w3.org/2000/svg width,attr"`
+	Width TLengthType `xml:"width,attr"`
 }
 
 // XAttrHeightTLengthType defines attribute HeightTLengthType
 type XAttrHeightTLengthType struct {
-	Height TLengthType `xml:"http://www.w3.org/2000/svg height,attr"`
+	Height TLengthType `xml:"height,attr"`
 }
 
 // XAttsFilterPrimitiveAttributes defines XAttsFilterPrimitiveAttributes
@@ -2024,7 +2024,7 @@ type XAttsFilterPrimitiveAttributes struct {
 
 // XAttrInXsdtString defines attribute In
 type XAttrInXsdtString struct {
-	In xsdt.String `xml:"http://www.w3.org/2000/svg in,attr"`
+	In xsdt.String `xml:"in,attr"`
 }
 
 // XAttsFilterPrimitiveAttributesWithIn defines XAttsFilterPrimitiveAttributesWithIn
@@ -2035,27 +2035,27 @@ type XAttsFilterPrimitiveAttributesWithIn struct {
 
 // XAttrSlopeXsdtDouble defines attribute Slope
 type XAttrSlopeXsdtDouble struct {
-	Slope xsdt.Double `xml:"http://www.w3.org/2000/svg slope,attr"`
+	Slope xsdt.Double `xml:"slope,attr"`
 }
 
 // XAttrInterceptXsdtDouble defines attribute Intercept
 type XAttrInterceptXsdtDouble struct {
-	Intercept xsdt.Double `xml:"http://www.w3.org/2000/svg intercept,attr"`
+	Intercept xsdt.Double `xml:"intercept,attr"`
 }
 
 // XAttrAmplitudeXsdtDouble defines attribute Amplitude
 type XAttrAmplitudeXsdtDouble struct {
-	Amplitude xsdt.Double `xml:"http://www.w3.org/2000/svg amplitude,attr"`
+	Amplitude xsdt.Double `xml:"amplitude,attr"`
 }
 
 // XAttrExponentXsdtDouble defines attribute Exponent
 type XAttrExponentXsdtDouble struct {
-	Exponent xsdt.Double `xml:"http://www.w3.org/2000/svg exponent,attr"`
+	Exponent xsdt.Double `xml:"exponent,attr"`
 }
 
 // XAttrOffsetXsdtDouble defines attribute Offset
 type XAttrOffsetXsdtDouble struct {
-	Offset xsdt.Double `xml:"http://www.w3.org/2000/svg offset,attr"`
+	Offset xsdt.Double `xml:"offset,attr"`
 }
 
 // TxsdComponentTransferFunctionAttributesType defines type xsdComponentTransferFunctionAttributesType
@@ -2095,12 +2095,12 @@ func (me TxsdComponentTransferFunctionAttributesType) IsGamma() bool { return me
 
 // XAttrTypeTxsdComponentTransferFunctionAttributesType defines attribute TypeTxsdComponentTransferFunctionAttributesType
 type XAttrTypeTxsdComponentTransferFunctionAttributesType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
 }
 
 // XAttrTableValuesXsdtString defines attribute TableValues
 type XAttrTableValuesXsdtString struct {
-	TableValues xsdt.String `xml:"http://www.w3.org/2000/svg tableValues,attr"`
+	TableValues xsdt.String `xml:"tableValues,attr"`
 }
 
 // XAttsComponentTransferFunctionAttributes defines XAttsComponentTransferFunctionAttributes
@@ -2122,12 +2122,12 @@ type XAttsAnimElementAttrs struct {
 
 // XAttrAttributeNameXsdtString defines attribute AttributeName
 type XAttrAttributeNameXsdtString struct {
-	AttributeName xsdt.String `xml:"http://www.w3.org/2000/svg attributeName,attr"`
+	AttributeName xsdt.String `xml:"attributeName,attr"`
 }
 
 // XAttrAttributeTypeXsdtString defines attribute AttributeType
 type XAttrAttributeTypeXsdtString struct {
-	AttributeType xsdt.String `xml:"http://www.w3.org/2000/svg attributeType,attr"`
+	AttributeType xsdt.String `xml:"attributeType,attr"`
 }
 
 // XAttsAnimAttributeAttrs defines XAttsAnimAttributeAttrs
@@ -2144,17 +2144,17 @@ type XAttsAnimTargetAttrs struct {
 
 // XAttrBeginXsdtString defines attribute Begin
 type XAttrBeginXsdtString struct {
-	Begin xsdt.String `xml:"http://www.w3.org/2000/svg begin,attr"`
+	Begin xsdt.String `xml:"begin,attr"`
 }
 
 // XAttrEndXsdtString defines attribute End
 type XAttrEndXsdtString struct {
-	End xsdt.String `xml:"http://www.w3.org/2000/svg end,attr"`
+	End xsdt.String `xml:"end,attr"`
 }
 
 // XAttrMaxXsdtString defines attribute Max
 type XAttrMaxXsdtString struct {
-	Max xsdt.String `xml:"http://www.w3.org/2000/svg max,attr"`
+	Max xsdt.String `xml:"max,attr"`
 }
 
 // TxsdAnimTimingAttrsRestart defines type xsdAnimTimingAttrsRestart
@@ -2180,7 +2180,7 @@ func (me TxsdAnimTimingAttrsRestart) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrRestartTxsdAnimTimingAttrsRestartAlways defines attribute RestartTxsdAnimTimingAttrsRestartAlways
 type XAttrRestartTxsdAnimTimingAttrsRestartAlways struct {
-	Restart TxsdAnimTimingAttrsRestart `xml:"http://www.w3.org/2000/svg restart,attr"`
+	Restart TxsdAnimTimingAttrsRestart `xml:"restart,attr"`
 }
 
 // RestartDefault : Returns the default value for Restart -- "always"
@@ -2190,22 +2190,22 @@ func (me XAttrRestartTxsdAnimTimingAttrsRestartAlways) RestartDefault() TxsdAnim
 
 // XAttrRepeatCountXsdtString defines attribute RepeatCount
 type XAttrRepeatCountXsdtString struct {
-	RepeatCount xsdt.String `xml:"http://www.w3.org/2000/svg repeatCount,attr"`
+	RepeatCount xsdt.String `xml:"repeatCount,attr"`
 }
 
 // XAttrRepeatDurXsdtString defines attribute RepeatDur
 type XAttrRepeatDurXsdtString struct {
-	RepeatDur xsdt.String `xml:"http://www.w3.org/2000/svg repeatDur,attr"`
+	RepeatDur xsdt.String `xml:"repeatDur,attr"`
 }
 
 // XAttrDurXsdtString defines attribute Dur
 type XAttrDurXsdtString struct {
-	Dur xsdt.String `xml:"http://www.w3.org/2000/svg dur,attr"`
+	Dur xsdt.String `xml:"dur,attr"`
 }
 
 // XAttrMinXsdtString defines attribute Min
 type XAttrMinXsdtString struct {
-	Min xsdt.String `xml:"http://www.w3.org/2000/svg min,attr"`
+	Min xsdt.String `xml:"min,attr"`
 }
 
 // TxsdAnimTimingAttrsFill defines type xsdAnimTimingAttrsFill
@@ -2228,7 +2228,7 @@ func (me TxsdAnimTimingAttrsFill) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrFillTxsdAnimTimingAttrsFillRemove defines attribute FillTxsdAnimTimingAttrsFillRemove
 type XAttrFillTxsdAnimTimingAttrsFillRemove struct {
-	Fill TxsdAnimTimingAttrsFill `xml:"http://www.w3.org/2000/svg fill,attr"`
+	Fill TxsdAnimTimingAttrsFill `xml:"fill,attr"`
 }
 
 // FillDefault : Returns the default value for Fill -- "remove"
@@ -2251,22 +2251,22 @@ type XAttsAnimTimingAttrs struct {
 
 // XAttrKeySplinesXsdtString defines attribute KeySplines
 type XAttrKeySplinesXsdtString struct {
-	KeySplines xsdt.String `xml:"http://www.w3.org/2000/svg keySplines,attr"`
+	KeySplines xsdt.String `xml:"keySplines,attr"`
 }
 
 // XAttrFromXsdtString defines attribute From
 type XAttrFromXsdtString struct {
-	From xsdt.String `xml:"http://www.w3.org/2000/svg from,attr"`
+	From xsdt.String `xml:"from,attr"`
 }
 
 // XAttrToXsdtString defines attribute To
 type XAttrToXsdtString struct {
-	To xsdt.String `xml:"http://www.w3.org/2000/svg to,attr"`
+	To xsdt.String `xml:"to,attr"`
 }
 
 // XAttrByXsdtString defines attribute By
 type XAttrByXsdtString struct {
-	By xsdt.String `xml:"http://www.w3.org/2000/svg by,attr"`
+	By xsdt.String `xml:"by,attr"`
 }
 
 // TxsdAnimValueAttrsCalcMode defines type xsdAnimValueAttrsCalcMode
@@ -2295,7 +2295,7 @@ func (me *TxsdAnimValueAttrsCalcMode) Set(s string) { (*xsdt.String)(me).Set(s) 
 
 // XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear defines attribute CalcModeTxsdAnimValueAttrsCalcModeLinear
 type XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear struct {
-	CalcMode TxsdAnimValueAttrsCalcMode `xml:"http://www.w3.org/2000/svg calcMode,attr"`
+	CalcMode TxsdAnimValueAttrsCalcMode `xml:"calcMode,attr"`
 }
 
 // CalcModeDefault : Returns the default value for CalcMode -- "linear"
@@ -2305,12 +2305,12 @@ func (me XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear) CalcModeDefault() TxsdAn
 
 // XAttrValuesXsdtString defines attribute Values
 type XAttrValuesXsdtString struct {
-	Values xsdt.String `xml:"http://www.w3.org/2000/svg values,attr"`
+	Values xsdt.String `xml:"values,attr"`
 }
 
 // XAttrKeyTimesXsdtString defines attribute KeyTimes
 type XAttrKeyTimesXsdtString struct {
-	KeyTimes xsdt.String `xml:"http://www.w3.org/2000/svg keyTimes,attr"`
+	KeyTimes xsdt.String `xml:"keyTimes,attr"`
 }
 
 // XAttsAnimValueAttrs defines XAttsAnimValueAttrs
@@ -2344,7 +2344,7 @@ func (me TxsdAnimAdditionAttrsAccumulate) IsNone() bool { return me.String() == 
 
 // XAttrAccumulateTxsdAnimAdditionAttrsAccumulateNone defines attribute AccumulateTxsdAnimAdditionAttrsAccumulateNone
 type XAttrAccumulateTxsdAnimAdditionAttrsAccumulateNone struct {
-	Accumulate TxsdAnimAdditionAttrsAccumulate `xml:"http://www.w3.org/2000/svg accumulate,attr"`
+	Accumulate TxsdAnimAdditionAttrsAccumulate `xml:"accumulate,attr"`
 }
 
 // AccumulateDefault : Returns the default value for Accumulate -- "none"
@@ -2372,7 +2372,7 @@ func (me TxsdAnimAdditionAttrsAdditive) String() string { return xsdt.String(me)
 
 // XAttrAdditiveTxsdAnimAdditionAttrsAdditiveReplace defines attribute AdditiveTxsdAnimAdditionAttrsAdditiveReplace
 type XAttrAdditiveTxsdAnimAdditionAttrsAdditiveReplace struct {
-	Additive TxsdAnimAdditionAttrsAdditive `xml:"http://www.w3.org/2000/svg additive,attr"`
+	Additive TxsdAnimAdditionAttrsAdditive `xml:"additive,attr"`
 }
 
 // AdditiveDefault : Returns the default value for Additive -- "replace"
@@ -2410,7 +2410,7 @@ func (me TClassListType) Values() (list []xsdt.String) {
 
 // XAttrClassTClassListType defines attribute ClassTClassListType
 type XAttrClassTClassListType struct {
-	Class TClassListType `xml:"http://www.w3.org/2000/svg class,attr"`
+	Class TClassListType `xml:"class,attr"`
 }
 
 // TStyleSheetType style sheet data
@@ -2427,17 +2427,17 @@ func (me TStyleSheetType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrStyleTStyleSheetType defines attribute StyleTStyleSheetType
 type XAttrStyleTStyleSheetType struct {
-	Style TStyleSheetType `xml:"http://www.w3.org/2000/svg style,attr"`
+	Style TStyleSheetType `xml:"style,attr"`
 }
 
 // XAttrExternalResourcesRequiredXsdtBoolean defines attribute ExternalResourcesRequired
 type XAttrExternalResourcesRequiredXsdtBoolean struct {
-	ExternalResourcesRequired xsdt.Boolean `xml:"http://www.w3.org/2000/svg externalResourcesRequired,attr"`
+	ExternalResourcesRequired xsdt.Boolean `xml:"externalResourcesRequired,attr"`
 }
 
 // XAttrContentXsdtStringStructuredText A bit simpler than the DTD, but see commented-out alternative
 type XAttrContentXsdtStringStructuredText struct {
-	Content xsdt.String `xml:"http://www.w3.org/2000/svg content,attr"`
+	Content xsdt.String `xml:"content,attr"`
 }
 
 // ContentFixed : Returns the fixed value for Content -- "structured text"
@@ -2735,7 +2735,7 @@ func (me TransformListType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrTransformTransformListType defines attribute TransformTransformListType
 type XAttrTransformTransformListType struct {
-	Transform TransformListType `xml:"http://www.w3.org/2000/svg transform,attr"`
+	Transform TransformListType `xml:"transform,attr"`
 }
 
 // TanimateColorType defines type animateColorType
@@ -2827,7 +2827,7 @@ func (me TxsdAnimateTransformTypeType) IsSkewX() bool { return me.String() == "s
 
 // XAttrTypeTxsdAnimateTransformTypeTypeTranslate defines attribute TypeTxsdAnimateTransformTypeTypeTranslate
 type XAttrTypeTxsdAnimateTransformTypeTypeTranslate struct {
-	Type TxsdAnimateTransformTypeType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdAnimateTransformTypeType `xml:"type,attr"`
 }
 
 // TypeDefault : Returns the default value for Type -- "translate"
@@ -2898,17 +2898,17 @@ func (me *XElemsAnimateTransform) Walk() (err error) {
 
 // XAttrRotateXsdtString defines attribute Rotate
 type XAttrRotateXsdtString struct {
-	Rotate xsdt.String `xml:"http://www.w3.org/2000/svg rotate,attr"`
+	Rotate xsdt.String `xml:"rotate,attr"`
 }
 
 // XAttrOriginXsdtString defines attribute Origin
 type XAttrOriginXsdtString struct {
-	Origin xsdt.String `xml:"http://www.w3.org/2000/svg origin,attr"`
+	Origin xsdt.String `xml:"origin,attr"`
 }
 
 // XAttrPathXsdtString defines attribute Path
 type XAttrPathXsdtString struct {
-	Path xsdt.String `xml:"http://www.w3.org/2000/svg path,attr"`
+	Path xsdt.String `xml:"path,attr"`
 }
 
 // TmpathType defines type mpathType
@@ -2967,7 +2967,7 @@ func (me *XElemMpath) Walk() (err error) {
 
 // XAttrKeyPointsXsdtString defines attribute KeyPoints
 type XAttrKeyPointsXsdtString struct {
-	KeyPoints xsdt.String `xml:"http://www.w3.org/2000/svg keyPoints,attr"`
+	KeyPoints xsdt.String `xml:"keyPoints,attr"`
 }
 
 // TanimateMotionType defines type animateMotionType
@@ -3040,17 +3040,17 @@ func (me *XElemsAnimateMotion) Walk() (err error) {
 
 // XAttrCxTCoordinateType defines attribute CxTCoordinateType
 type XAttrCxTCoordinateType struct {
-	Cx TCoordinateType `xml:"http://www.w3.org/2000/svg cx,attr"`
+	Cx TCoordinateType `xml:"cx,attr"`
 }
 
 // XAttrCyTCoordinateType defines attribute CyTCoordinateType
 type XAttrCyTCoordinateType struct {
-	Cy TCoordinateType `xml:"http://www.w3.org/2000/svg cy,attr"`
+	Cy TCoordinateType `xml:"cy,attr"`
 }
 
 // XAttrRTLengthType defines attribute RTLengthType
 type XAttrRTLengthType struct {
-	R TLengthType `xml:"http://www.w3.org/2000/svg r,attr"`
+	R TLengthType `xml:"r,attr"`
 }
 
 // TanimateType defines type animateType
@@ -3201,12 +3201,12 @@ func (me *XElemsCircle) Walk() (err error) {
 
 // XAttrLocalXsdtString defines attribute Local
 type XAttrLocalXsdtString struct {
-	Local xsdt.String `xml:"http://www.w3.org/2000/svg local,attr"`
+	Local xsdt.String `xml:"local,attr"`
 }
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"http://www.w3.org/2000/svg name,attr"`
+	Name xsdt.String `xml:"name,attr"`
 }
 
 // TxsdColorProfileTypeRenderingIntent defines type xsdColorProfileTypeRenderingIntent
@@ -3242,7 +3242,7 @@ func (me TxsdColorProfileTypeRenderingIntent) String() string { return xsdt.Stri
 
 // XAttrRenderingIntentTxsdColorProfileTypeRenderingIntentAuto defines attribute RenderingIntentTxsdColorProfileTypeRenderingIntentAuto
 type XAttrRenderingIntentTxsdColorProfileTypeRenderingIntentAuto struct {
-	RenderingIntent TxsdColorProfileTypeRenderingIntent `xml:"http://www.w3.org/2000/svg rendering-intent,attr"`
+	RenderingIntent TxsdColorProfileTypeRenderingIntent `xml:"rendering-intent,attr"`
 }
 
 // RenderingIntentDefault : Returns the default value for RenderingIntent -- "auto"
@@ -3322,17 +3322,17 @@ func (me TViewBoxSpecType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrViewBoxTViewBoxSpecType defines attribute ViewBoxTViewBoxSpecType
 type XAttrViewBoxTViewBoxSpecType struct {
-	ViewBox TViewBoxSpecType `xml:"http://www.w3.org/2000/svg viewBox,attr"`
+	ViewBox TViewBoxSpecType `xml:"viewBox,attr"`
 }
 
 // XAttrRyTLengthType defines attribute RyTLengthType
 type XAttrRyTLengthType struct {
-	Ry TLengthType `xml:"http://www.w3.org/2000/svg ry,attr"`
+	Ry TLengthType `xml:"ry,attr"`
 }
 
 // XAttrRxTLengthType defines attribute RxTLengthType
 type XAttrRxTLengthType struct {
-	Rx TLengthType `xml:"http://www.w3.org/2000/svg rx,attr"`
+	Rx TLengthType `xml:"rx,attr"`
 }
 
 // TrectType defines type rectType
@@ -3438,7 +3438,7 @@ func (me TPointsType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrPointsTPointsType defines attribute PointsTPointsType
 type XAttrPointsTPointsType struct {
-	Points TPointsType `xml:"http://www.w3.org/2000/svg points,attr"`
+	Points TPointsType `xml:"points,attr"`
 }
 
 // TpolygonType defines type polygonType
@@ -3617,7 +3617,7 @@ func (me *XElemsImage) Walk() (err error) {
 
 // XAttrPathLengthXsdtDouble defines attribute PathLength
 type XAttrPathLengthXsdtDouble struct {
-	PathLength xsdt.Double `xml:"http://www.w3.org/2000/svg pathLength,attr"`
+	PathLength xsdt.Double `xml:"pathLength,attr"`
 }
 
 // TPathDataType a path data specification
@@ -3635,7 +3635,7 @@ func (me TPathDataType) String() string { return xsdt.String(me).String() }
 
 // XAttrDTPathDataType defines attribute DTPathDataType
 type XAttrDTPathDataType struct {
-	D TPathDataType `xml:"http://www.w3.org/2000/svg d,attr"`
+	D TPathDataType `xml:"d,attr"`
 }
 
 // TpathType defines type pathType
@@ -3923,7 +3923,7 @@ func (me TxsdClipPathTypeClipPathUnits) IsObjectBoundingBox() bool {
 
 // XAttrClipPathUnitsTxsdClipPathTypeClipPathUnits defines attribute ClipPathUnitsTxsdClipPathTypeClipPathUnits
 type XAttrClipPathUnitsTxsdClipPathTypeClipPathUnits struct {
-	ClipPathUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg clipPathUnits,attr"`
+	ClipPathUnits TxsdClipPathTypeClipPathUnits `xml:"clipPathUnits,attr"`
 }
 
 // XElemsDesc defines element Desc
@@ -4002,7 +4002,7 @@ func (me TxsdTspanTypeLengthAdjust) IsSpacingAndGlyphs() bool {
 
 // XAttrLengthAdjustTxsdTspanTypeLengthAdjust defines attribute LengthAdjustTxsdTspanTypeLengthAdjust
 type XAttrLengthAdjustTxsdTspanTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"http://www.w3.org/2000/svg lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
 }
 
 // TCoordinatesType a space separated list of CoordinateType. Punt to 'string' for now
@@ -4019,7 +4019,7 @@ func (me TCoordinatesType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrYTCoordinatesType defines attribute YTCoordinatesType
 type XAttrYTCoordinatesType struct {
-	Y TCoordinatesType `xml:"http://www.w3.org/2000/svg y,attr"`
+	Y TCoordinatesType `xml:"y,attr"`
 }
 
 // TLengthsType a list of <length>s
@@ -4036,17 +4036,17 @@ func (me TLengthsType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrDxTLengthsType defines attribute DxTLengthsType
 type XAttrDxTLengthsType struct {
-	Dx TLengthsType `xml:"http://www.w3.org/2000/svg dx,attr"`
+	Dx TLengthsType `xml:"dx,attr"`
 }
 
 // XAttrTextLengthTLengthType defines attribute TextLengthTLengthType
 type XAttrTextLengthTLengthType struct {
-	TextLength TLengthType `xml:"http://www.w3.org/2000/svg textLength,attr"`
+	TextLength TLengthType `xml:"textLength,attr"`
 }
 
 // XAttrXTCoordinatesType defines attribute XTCoordinatesType
 type XAttrXTCoordinatesType struct {
-	X TCoordinatesType `xml:"http://www.w3.org/2000/svg x,attr"`
+	X TCoordinatesType `xml:"x,attr"`
 }
 
 // XElemsMetadata defines element Metadata
@@ -4078,12 +4078,12 @@ func (me *XElemsMetadata) Walk() (err error) {
 
 // XAttrLengthAdjustTxsdTrefTypeLengthAdjust defines attribute LengthAdjustTxsdTrefTypeLengthAdjust
 type XAttrLengthAdjustTxsdTrefTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"http://www.w3.org/2000/svg lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
 }
 
 // XAttrDyTLengthsType defines attribute DyTLengthsType
 type XAttrDyTLengthsType struct {
-	Dy TLengthsType `xml:"http://www.w3.org/2000/svg dy,attr"`
+	Dy TLengthsType `xml:"dy,attr"`
 }
 
 // TtrefType defines type trefType
@@ -4216,7 +4216,7 @@ func (me TContentTypeType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrTypeTContentTypeType defines attribute TypeTContentTypeType
 type XAttrTypeTContentTypeType struct {
-	Type TContentTypeType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TContentTypeType `xml:"type,attr"`
 }
 
 // TscriptType defines type scriptType
@@ -4377,12 +4377,12 @@ func (me TMediaDescType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrMediaTMediaDescType defines attribute MediaTMediaDescType
 type XAttrMediaTMediaDescType struct {
-	Media TMediaDescType `xml:"http://www.w3.org/2000/svg media,attr"`
+	Media TMediaDescType `xml:"media,attr"`
 }
 
 // XAttrTitleXsdtString defines attribute Title
 type XAttrTitleXsdtString struct {
-	Title xsdt.String `xml:"http://www.w3.org/2000/svg title,attr"`
+	Title xsdt.String `xml:"title,attr"`
 }
 
 // TstyleType defines type styleType
@@ -4552,107 +4552,107 @@ func (me *XElemDefinitionSrc) Walk() (err error) {
 
 // XAttrStemhXsdtDouble defines attribute Stemh
 type XAttrStemhXsdtDouble struct {
-	Stemh xsdt.Double `xml:"http://www.w3.org/2000/svg stemh,attr"`
+	Stemh xsdt.Double `xml:"stemh,attr"`
 }
 
 // XAttrCapHeightXsdtDouble defines attribute CapHeight
 type XAttrCapHeightXsdtDouble struct {
-	CapHeight xsdt.Double `xml:"http://www.w3.org/2000/svg cap-height,attr"`
+	CapHeight xsdt.Double `xml:"cap-height,attr"`
 }
 
 // XAttrDescentXsdtDouble defines attribute Descent
 type XAttrDescentXsdtDouble struct {
-	Descent xsdt.Double `xml:"http://www.w3.org/2000/svg descent,attr"`
+	Descent xsdt.Double `xml:"descent,attr"`
 }
 
 // XAttrFontStyleXsdtString defines attribute FontStyle
 type XAttrFontStyleXsdtString struct {
-	FontStyle xsdt.String `xml:"http://www.w3.org/2000/svg font-style,attr"`
+	FontStyle xsdt.String `xml:"font-style,attr"`
 }
 
 // XAttrAscentXsdtDouble defines attribute Ascent
 type XAttrAscentXsdtDouble struct {
-	Ascent xsdt.Double `xml:"http://www.w3.org/2000/svg ascent,attr"`
+	Ascent xsdt.Double `xml:"ascent,attr"`
 }
 
 // XAttrUnicodeRangeXsdtString defines attribute UnicodeRange
 type XAttrUnicodeRangeXsdtString struct {
-	UnicodeRange xsdt.String `xml:"http://www.w3.org/2000/svg unicode-range,attr"`
+	UnicodeRange xsdt.String `xml:"unicode-range,attr"`
 }
 
 // XAttrPanose1XsdtString defines attribute Panose1
 type XAttrPanose1XsdtString struct {
-	Panose1 xsdt.String `xml:"http://www.w3.org/2000/svg panose-1,attr"`
+	Panose1 xsdt.String `xml:"panose-1,attr"`
 }
 
 // XAttrIDeographicXsdtDouble defines attribute Ideographic
 type XAttrIDeographicXsdtDouble struct {
-	Ideographic xsdt.Double `xml:"http://www.w3.org/2000/svg ideographic,attr"`
+	Ideographic xsdt.Double `xml:"ideographic,attr"`
 }
 
 // XAttrBaselineXsdtDouble defines attribute Baseline
 type XAttrBaselineXsdtDouble struct {
-	Baseline xsdt.Double `xml:"http://www.w3.org/2000/svg baseline,attr"`
+	Baseline xsdt.Double `xml:"baseline,attr"`
 }
 
 // XAttrStrikethroughPositionXsdtDouble defines attribute StrikethroughPosition
 type XAttrStrikethroughPositionXsdtDouble struct {
-	StrikethroughPosition xsdt.Double `xml:"http://www.w3.org/2000/svg strikethrough-position,attr"`
+	StrikethroughPosition xsdt.Double `xml:"strikethrough-position,attr"`
 }
 
 // XAttrOverlinePositionXsdtDouble defines attribute OverlinePosition
 type XAttrOverlinePositionXsdtDouble struct {
-	OverlinePosition xsdt.Double `xml:"http://www.w3.org/2000/svg overline-position,attr"`
+	OverlinePosition xsdt.Double `xml:"overline-position,attr"`
 }
 
 // XAttrUnderlinePositionXsdtDouble defines attribute UnderlinePosition
 type XAttrUnderlinePositionXsdtDouble struct {
-	UnderlinePosition xsdt.Double `xml:"http://www.w3.org/2000/svg underline-position,attr"`
+	UnderlinePosition xsdt.Double `xml:"underline-position,attr"`
 }
 
 // XAttrXHeightXsdtDouble defines attribute XHeight
 type XAttrXHeightXsdtDouble struct {
-	XHeight xsdt.Double `xml:"http://www.w3.org/2000/svg x-height,attr"`
+	XHeight xsdt.Double `xml:"x-height,attr"`
 }
 
 // XAttrStrikethroughThicknessXsdtDouble defines attribute StrikethroughThickness
 type XAttrStrikethroughThicknessXsdtDouble struct {
-	StrikethroughThickness xsdt.Double `xml:"http://www.w3.org/2000/svg strikethrough-thickness,attr"`
+	StrikethroughThickness xsdt.Double `xml:"strikethrough-thickness,attr"`
 }
 
 // XAttrHangingXsdtDouble defines attribute Hanging
 type XAttrHangingXsdtDouble struct {
-	Hanging xsdt.Double `xml:"http://www.w3.org/2000/svg hanging,attr"`
+	Hanging xsdt.Double `xml:"hanging,attr"`
 }
 
 // XAttrCenterlineXsdtDouble defines attribute Centerline
 type XAttrCenterlineXsdtDouble struct {
-	Centerline xsdt.Double `xml:"http://www.w3.org/2000/svg centerline,attr"`
+	Centerline xsdt.Double `xml:"centerline,attr"`
 }
 
 // XAttrStemvXsdtDouble defines attribute Stemv
 type XAttrStemvXsdtDouble struct {
-	Stemv xsdt.Double `xml:"http://www.w3.org/2000/svg stemv,attr"`
+	Stemv xsdt.Double `xml:"stemv,attr"`
 }
 
 // XAttrFontVariantXsdtString defines attribute FontVariant
 type XAttrFontVariantXsdtString struct {
-	FontVariant xsdt.String `xml:"http://www.w3.org/2000/svg font-variant,attr"`
+	FontVariant xsdt.String `xml:"font-variant,attr"`
 }
 
 // XAttrFontStretchXsdtString defines attribute FontStretch
 type XAttrFontStretchXsdtString struct {
-	FontStretch xsdt.String `xml:"http://www.w3.org/2000/svg font-stretch,attr"`
+	FontStretch xsdt.String `xml:"font-stretch,attr"`
 }
 
 // XAttrAccentHeightXsdtDouble defines attribute AccentHeight
 type XAttrAccentHeightXsdtDouble struct {
-	AccentHeight xsdt.Double `xml:"http://www.w3.org/2000/svg accent-height,attr"`
+	AccentHeight xsdt.Double `xml:"accent-height,attr"`
 }
 
 // XAttrStringXsdtString defines attribute String
 type XAttrStringXsdtString struct {
-	String xsdt.String `xml:"http://www.w3.org/2000/svg string,attr"`
+	String xsdt.String `xml:"string,attr"`
 }
 
 // TfontFaceFormatType defines type fontFaceFormatType
@@ -4865,42 +4865,42 @@ func (me *XElemFontFaceSrc) Walk() (err error) {
 
 // XAttrFontWeightXsdtString defines attribute FontWeight
 type XAttrFontWeightXsdtString struct {
-	FontWeight xsdt.String `xml:"http://www.w3.org/2000/svg font-weight,attr"`
+	FontWeight xsdt.String `xml:"font-weight,attr"`
 }
 
 // XAttrUnitsPerEmXsdtDouble defines attribute UnitsPerEm
 type XAttrUnitsPerEmXsdtDouble struct {
-	UnitsPerEm xsdt.Double `xml:"http://www.w3.org/2000/svg units-per-em,attr"`
+	UnitsPerEm xsdt.Double `xml:"units-per-em,attr"`
 }
 
 // XAttrWidthsXsdtString defines attribute Widths
 type XAttrWidthsXsdtString struct {
-	Widths xsdt.String `xml:"http://www.w3.org/2000/svg widths,attr"`
+	Widths xsdt.String `xml:"widths,attr"`
 }
 
 // XAttrToplineXsdtDouble defines attribute Topline
 type XAttrToplineXsdtDouble struct {
-	Topline xsdt.Double `xml:"http://www.w3.org/2000/svg topline,attr"`
+	Topline xsdt.Double `xml:"topline,attr"`
 }
 
 // XAttrOverlineThicknessXsdtDouble defines attribute OverlineThickness
 type XAttrOverlineThicknessXsdtDouble struct {
-	OverlineThickness xsdt.Double `xml:"http://www.w3.org/2000/svg overline-thickness,attr"`
+	OverlineThickness xsdt.Double `xml:"overline-thickness,attr"`
 }
 
 // XAttrMathlineXsdtDouble defines attribute Mathline
 type XAttrMathlineXsdtDouble struct {
-	Mathline xsdt.Double `xml:"http://www.w3.org/2000/svg mathline,attr"`
+	Mathline xsdt.Double `xml:"mathline,attr"`
 }
 
 // XAttrUnderlineThicknessXsdtDouble defines attribute UnderlineThickness
 type XAttrUnderlineThicknessXsdtDouble struct {
-	UnderlineThickness xsdt.Double `xml:"http://www.w3.org/2000/svg underline-thickness,attr"`
+	UnderlineThickness xsdt.Double `xml:"underline-thickness,attr"`
 }
 
 // XAttrBboxXsdtString defines attribute Bbox
 type XAttrBboxXsdtString struct {
-	Bbox xsdt.String `xml:"http://www.w3.org/2000/svg bbox,attr"`
+	Bbox xsdt.String `xml:"bbox,attr"`
 }
 
 // TfontFaceType defines type fontFaceType
@@ -5009,7 +5009,7 @@ func (me TPreserveAspectRatioSpecType) ToXsdtString() xsdt.String { return xsdt.
 
 // XAttrPreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet defines attribute PreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet
 type XAttrPreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet struct {
-	PreserveAspectRatio TPreserveAspectRatioSpecType `xml:"http://www.w3.org/2000/svg preserveAspectRatio,attr"`
+	PreserveAspectRatio TPreserveAspectRatioSpecType `xml:"preserveAspectRatio,attr"`
 }
 
 // PreserveAspectRatioDefault : Returns the default value for PreserveAspectRatio -- "xMidYMid meet"
@@ -5040,12 +5040,12 @@ func (me *TxsdMarkerTypeMarkerUnits) Set(s string) { (*xsdt.String)(me).Set(s) }
 
 // XAttrMarkerUnitsTxsdMarkerTypeMarkerUnits defines attribute MarkerUnitsTxsdMarkerTypeMarkerUnits
 type XAttrMarkerUnitsTxsdMarkerTypeMarkerUnits struct {
-	MarkerUnits TxsdMarkerTypeMarkerUnits `xml:"http://www.w3.org/2000/svg markerUnits,attr"`
+	MarkerUnits TxsdMarkerTypeMarkerUnits `xml:"markerUnits,attr"`
 }
 
 // XAttrY1TCoordinateType defines attribute Y1TCoordinateType
 type XAttrY1TCoordinateType struct {
-	Y1 TCoordinateType `xml:"http://www.w3.org/2000/svg y1,attr"`
+	Y1 TCoordinateType `xml:"y1,attr"`
 }
 
 // TxsdLinearGradientTypeSpreadMethod defines type xsdLinearGradientTypeSpreadMethod
@@ -5071,7 +5071,7 @@ func (me TxsdLinearGradientTypeSpreadMethod) IsRepeat() bool { return me.String(
 
 // XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad defines attribute SpreadMethodTxsdLinearGradientTypeSpreadMethodPad
 type XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad struct {
-	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"http://www.w3.org/2000/svg spreadMethod,attr"`
+	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr"`
 }
 
 // SpreadMethodDefault : Returns the default value for SpreadMethod -- "pad"
@@ -5081,17 +5081,17 @@ func (me XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad) SpreadMethodDef
 
 // XAttrY2TCoordinateType defines attribute Y2TCoordinateType
 type XAttrY2TCoordinateType struct {
-	Y2 TCoordinateType `xml:"http://www.w3.org/2000/svg y2,attr"`
+	Y2 TCoordinateType `xml:"y2,attr"`
 }
 
 // XAttrX1TCoordinateType defines attribute X1TCoordinateType
 type XAttrX1TCoordinateType struct {
-	X1 TCoordinateType `xml:"http://www.w3.org/2000/svg x1,attr"`
+	X1 TCoordinateType `xml:"x1,attr"`
 }
 
 // XAttrOffsetTLengthType defines attribute OffsetTLengthType
 type XAttrOffsetTLengthType struct {
-	Offset TLengthType `xml:"http://www.w3.org/2000/svg offset,attr"`
+	Offset TLengthType `xml:"offset,attr"`
 }
 
 // TstopType defines type stopType
@@ -5161,17 +5161,17 @@ func (me *XElemsStop) Walk() (err error) {
 
 // XAttrGradientUnitsTxsdLinearGradientTypeGradientUnits defines attribute GradientUnitsTxsdLinearGradientTypeGradientUnits
 type XAttrGradientUnitsTxsdLinearGradientTypeGradientUnits struct {
-	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg gradientUnits,attr"`
+	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr"`
 }
 
 // XAttrX2TCoordinateType defines attribute X2TCoordinateType
 type XAttrX2TCoordinateType struct {
-	X2 TCoordinateType `xml:"http://www.w3.org/2000/svg x2,attr"`
+	X2 TCoordinateType `xml:"x2,attr"`
 }
 
 // XAttrGradientTransformTransformListType defines attribute GradientTransformTransformListType
 type XAttrGradientTransformTransformListType struct {
-	GradientTransform TransformListType `xml:"http://www.w3.org/2000/svg gradientTransform,attr"`
+	GradientTransform TransformListType `xml:"gradientTransform,attr"`
 }
 
 // TlinearGradientType defines type linearGradientType
@@ -5284,7 +5284,7 @@ func (me TxsdFeBlendTypeMode) String() string { return xsdt.String(me).String() 
 
 // XAttrModeTxsdFeBlendTypeModeNormal defines attribute ModeTxsdFeBlendTypeModeNormal
 type XAttrModeTxsdFeBlendTypeModeNormal struct {
-	Mode TxsdFeBlendTypeMode `xml:"http://www.w3.org/2000/svg mode,attr"`
+	Mode TxsdFeBlendTypeMode `xml:"mode,attr"`
 }
 
 // ModeDefault : Returns the default value for Mode -- "normal"
@@ -5294,7 +5294,7 @@ func (me XAttrModeTxsdFeBlendTypeModeNormal) ModeDefault() TxsdFeBlendTypeMode {
 
 // XAttrIn2XsdtString defines attribute In2
 type XAttrIn2XsdtString struct {
-	In2 xsdt.String `xml:"http://www.w3.org/2000/svg in2,attr"`
+	In2 xsdt.String `xml:"in2,attr"`
 }
 
 // TfeBlendType defines type feBlendType
@@ -5359,7 +5359,7 @@ func (me *XElemsFeBlend) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncRTypeType defines attribute TypeTxsdFeFuncRTypeType
 type XAttrTypeTxsdFeFuncRTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
 }
 
 // TfeFuncRType defines type feFuncRType
@@ -5421,7 +5421,7 @@ func (me *XElemFeFuncR) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncGTypeType defines attribute TypeTxsdFeFuncGTypeType
 type XAttrTypeTxsdFeFuncGTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
 }
 
 // TfeFuncGType defines type feFuncGType
@@ -5483,7 +5483,7 @@ func (me *XElemFeFuncG) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncBTypeType defines attribute TypeTxsdFeFuncBTypeType
 type XAttrTypeTxsdFeFuncBTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
 }
 
 // TfeFuncBType defines type feFuncBType
@@ -5545,7 +5545,7 @@ func (me *XElemFeFuncB) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncATypeType defines attribute TypeTxsdFeFuncATypeType
 type XAttrTypeTxsdFeFuncATypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
 }
 
 // TfeFuncAType defines type feFuncAType
@@ -5694,7 +5694,7 @@ func (me TxsdFeConvolveMatrixTypeEdgeMode) IsNone() bool { return me.String() ==
 
 // XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate defines attribute EdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate
 type XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate struct {
-	EdgeMode TxsdFeConvolveMatrixTypeEdgeMode `xml:"http://www.w3.org/2000/svg edgeMode,attr"`
+	EdgeMode TxsdFeConvolveMatrixTypeEdgeMode `xml:"edgeMode,attr"`
 }
 
 // EdgeModeDefault : Returns the default value for EdgeMode -- "duplicate"
@@ -5704,42 +5704,42 @@ func (me XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate) EdgeModeDefault
 
 // XAttrPreserveAlphaXsdtBoolean defines attribute PreserveAlpha
 type XAttrPreserveAlphaXsdtBoolean struct {
-	PreserveAlpha xsdt.Boolean `xml:"http://www.w3.org/2000/svg preserveAlpha,attr"`
+	PreserveAlpha xsdt.Boolean `xml:"preserveAlpha,attr"`
 }
 
 // XAttrBiasXsdtDouble defines attribute Bias
 type XAttrBiasXsdtDouble struct {
-	Bias xsdt.Double `xml:"http://www.w3.org/2000/svg bias,attr"`
+	Bias xsdt.Double `xml:"bias,attr"`
 }
 
 // XAttrTargetXXsdtInteger defines attribute TargetX
 type XAttrTargetXXsdtInteger struct {
-	TargetX xsdt.Integer `xml:"http://www.w3.org/2000/svg targetX,attr"`
+	TargetX xsdt.Integer `xml:"targetX,attr"`
 }
 
 // XAttrKernelUnitLengthXsdtString defines attribute KernelUnitLength
 type XAttrKernelUnitLengthXsdtString struct {
-	KernelUnitLength xsdt.String `xml:"http://www.w3.org/2000/svg kernelUnitLength,attr"`
+	KernelUnitLength xsdt.String `xml:"kernelUnitLength,attr"`
 }
 
 // XAttrKernelMatrixXsdtString defines attribute KernelMatrix
 type XAttrKernelMatrixXsdtString struct {
-	KernelMatrix xsdt.String `xml:"http://www.w3.org/2000/svg kernelMatrix,attr"`
+	KernelMatrix xsdt.String `xml:"kernelMatrix,attr"`
 }
 
 // XAttrTargetYXsdtInteger defines attribute TargetY
 type XAttrTargetYXsdtInteger struct {
-	TargetY xsdt.Integer `xml:"http://www.w3.org/2000/svg targetY,attr"`
+	TargetY xsdt.Integer `xml:"targetY,attr"`
 }
 
 // XAttrDivisorXsdtDouble defines attribute Divisor
 type XAttrDivisorXsdtDouble struct {
-	Divisor xsdt.Double `xml:"http://www.w3.org/2000/svg divisor,attr"`
+	Divisor xsdt.Double `xml:"divisor,attr"`
 }
 
 // XAttrOrderXsdtString defines attribute Order
 type XAttrOrderXsdtString struct {
-	Order xsdt.String `xml:"http://www.w3.org/2000/svg order,attr"`
+	Order xsdt.String `xml:"order,attr"`
 }
 
 // TfeConvolveMatrixType defines type feConvolveMatrixType
@@ -5875,12 +5875,12 @@ func (me *XElemsFeFlood) Walk() (err error) {
 
 // XAttrPrimitiveUnitsTxsdFilterTypePrimitiveUnits defines attribute PrimitiveUnitsTxsdFilterTypePrimitiveUnits
 type XAttrPrimitiveUnitsTxsdFilterTypePrimitiveUnits struct {
-	PrimitiveUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg primitiveUnits,attr"`
+	PrimitiveUnits TxsdClipPathTypeClipPathUnits `xml:"primitiveUnits,attr"`
 }
 
 // XAttrStdDeviationXsdtString defines attribute StdDeviation
 type XAttrStdDeviationXsdtString struct {
-	StdDeviation xsdt.String `xml:"http://www.w3.org/2000/svg stdDeviation,attr"`
+	StdDeviation xsdt.String `xml:"stdDeviation,attr"`
 }
 
 // TfeGaussianBlurType defines type feGaussianBlurType
@@ -5944,12 +5944,12 @@ func (me *XElemsFeGaussianBlur) Walk() (err error) {
 
 // XAttrAzimuthXsdtDouble defines attribute Azimuth
 type XAttrAzimuthXsdtDouble struct {
-	Azimuth xsdt.Double `xml:"http://www.w3.org/2000/svg azimuth,attr"`
+	Azimuth xsdt.Double `xml:"azimuth,attr"`
 }
 
 // XAttrElevationXsdtDouble defines attribute Elevation
 type XAttrElevationXsdtDouble struct {
-	Elevation xsdt.Double `xml:"http://www.w3.org/2000/svg elevation,attr"`
+	Elevation xsdt.Double `xml:"elevation,attr"`
 }
 
 // TfeDistantLightType defines type feDistantLightType
@@ -6011,42 +6011,42 @@ func (me *XElemFeDistantLight) Walk() (err error) {
 
 // XAttrYXsdtDouble defines attribute Y
 type XAttrYXsdtDouble struct {
-	Y xsdt.Double `xml:"http://www.w3.org/2000/svg y,attr"`
+	Y xsdt.Double `xml:"y,attr"`
 }
 
 // XAttrPointsAtYXsdtDouble defines attribute PointsAtY
 type XAttrPointsAtYXsdtDouble struct {
-	PointsAtY xsdt.Double `xml:"http://www.w3.org/2000/svg pointsAtY,attr"`
+	PointsAtY xsdt.Double `xml:"pointsAtY,attr"`
 }
 
 // XAttrSpecularExponentXsdtDouble defines attribute SpecularExponent
 type XAttrSpecularExponentXsdtDouble struct {
-	SpecularExponent xsdt.Double `xml:"http://www.w3.org/2000/svg specularExponent,attr"`
+	SpecularExponent xsdt.Double `xml:"specularExponent,attr"`
 }
 
 // XAttrLimitingConeAngleXsdtDouble defines attribute LimitingConeAngle
 type XAttrLimitingConeAngleXsdtDouble struct {
-	LimitingConeAngle xsdt.Double `xml:"http://www.w3.org/2000/svg limitingConeAngle,attr"`
+	LimitingConeAngle xsdt.Double `xml:"limitingConeAngle,attr"`
 }
 
 // XAttrXXsdtDouble defines attribute X
 type XAttrXXsdtDouble struct {
-	X xsdt.Double `xml:"http://www.w3.org/2000/svg x,attr"`
+	X xsdt.Double `xml:"x,attr"`
 }
 
 // XAttrZXsdtDouble defines attribute Z
 type XAttrZXsdtDouble struct {
-	Z xsdt.Double `xml:"http://www.w3.org/2000/svg z,attr"`
+	Z xsdt.Double `xml:"z,attr"`
 }
 
 // XAttrPointsAtXXsdtDouble defines attribute PointsAtX
 type XAttrPointsAtXXsdtDouble struct {
-	PointsAtX xsdt.Double `xml:"http://www.w3.org/2000/svg pointsAtX,attr"`
+	PointsAtX xsdt.Double `xml:"pointsAtX,attr"`
 }
 
 // XAttrPointsAtZXsdtDouble defines attribute PointsAtZ
 type XAttrPointsAtZXsdtDouble struct {
-	PointsAtZ xsdt.Double `xml:"http://www.w3.org/2000/svg pointsAtZ,attr"`
+	PointsAtZ xsdt.Double `xml:"pointsAtZ,attr"`
 }
 
 // TfeSpotLightType defines type feSpotLightType
@@ -6114,7 +6114,7 @@ func (me *XElemFeSpotLight) Walk() (err error) {
 
 // XAttrSpecularConstantXsdtDouble defines attribute SpecularConstant
 type XAttrSpecularConstantXsdtDouble struct {
-	SpecularConstant xsdt.Double `xml:"http://www.w3.org/2000/svg specularConstant,attr"`
+	SpecularConstant xsdt.Double `xml:"specularConstant,attr"`
 }
 
 // TfePointLightType defines type fePointLightType
@@ -6177,7 +6177,7 @@ func (me *XElemFePointLight) Walk() (err error) {
 
 // XAttrSurfaceScaleXsdtDouble defines attribute SurfaceScale
 type XAttrSurfaceScaleXsdtDouble struct {
-	SurfaceScale xsdt.Double `xml:"http://www.w3.org/2000/svg surfaceScale,attr"`
+	SurfaceScale xsdt.Double `xml:"surfaceScale,attr"`
 }
 
 // TfeSpecularLightingType defines type feSpecularLightingType
@@ -6280,7 +6280,7 @@ func (me TxsdFeTurbulenceTypeType) IsTurbulence() bool { return me.String() == "
 
 // XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence defines attribute TypeTxsdFeTurbulenceTypeTypeTurbulence
 type XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence struct {
-	Type TxsdFeTurbulenceTypeType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdFeTurbulenceTypeType `xml:"type,attr"`
 }
 
 // TypeDefault : Returns the default value for Type -- "turbulence"
@@ -6290,12 +6290,12 @@ func (me XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence) TypeDefault() TxsdFeTurbul
 
 // XAttrBaseFrequencyXsdtString defines attribute BaseFrequency
 type XAttrBaseFrequencyXsdtString struct {
-	BaseFrequency xsdt.String `xml:"http://www.w3.org/2000/svg baseFrequency,attr"`
+	BaseFrequency xsdt.String `xml:"baseFrequency,attr"`
 }
 
 // XAttrSeedXsdtDouble defines attribute Seed
 type XAttrSeedXsdtDouble struct {
-	Seed xsdt.Double `xml:"http://www.w3.org/2000/svg seed,attr"`
+	Seed xsdt.Double `xml:"seed,attr"`
 }
 
 // TxsdFeTurbulenceTypeStitchTiles defines type xsdFeTurbulenceTypeStitchTiles
@@ -6318,7 +6318,7 @@ func (me *TxsdFeTurbulenceTypeStitchTiles) Set(s string) { (*xsdt.String)(me).Se
 
 // XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch defines attribute StitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch
 type XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch struct {
-	StitchTiles TxsdFeTurbulenceTypeStitchTiles `xml:"http://www.w3.org/2000/svg stitchTiles,attr"`
+	StitchTiles TxsdFeTurbulenceTypeStitchTiles `xml:"stitchTiles,attr"`
 }
 
 // StitchTilesDefault : Returns the default value for StitchTiles -- "noStitch"
@@ -6328,7 +6328,7 @@ func (me XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch) StitchTilesDef
 
 // XAttrNumOctavesXsdtInteger defines attribute NumOctaves
 type XAttrNumOctavesXsdtInteger struct {
-	NumOctaves xsdt.Integer `xml:"http://www.w3.org/2000/svg numOctaves,attr"`
+	NumOctaves xsdt.Integer `xml:"numOctaves,attr"`
 }
 
 // TfeTurbulenceType defines type feTurbulenceType
@@ -6396,7 +6396,7 @@ func (me *XElemsFeTurbulence) Walk() (err error) {
 
 // XAttrK4XsdtDouble defines attribute K4
 type XAttrK4XsdtDouble struct {
-	K4 xsdt.Double `xml:"http://www.w3.org/2000/svg k4,attr"`
+	K4 xsdt.Double `xml:"k4,attr"`
 }
 
 // TxsdFeCompositeTypeOperator defines type xsdFeCompositeTypeOperator
@@ -6431,7 +6431,7 @@ func (me TxsdFeCompositeTypeOperator) IsOver() bool { return me.String() == "ove
 
 // XAttrOperatorTxsdFeCompositeTypeOperatorOver defines attribute OperatorTxsdFeCompositeTypeOperatorOver
 type XAttrOperatorTxsdFeCompositeTypeOperatorOver struct {
-	Operator TxsdFeCompositeTypeOperator `xml:"http://www.w3.org/2000/svg operator,attr"`
+	Operator TxsdFeCompositeTypeOperator `xml:"operator,attr"`
 }
 
 // OperatorDefault : Returns the default value for Operator -- "over"
@@ -6441,17 +6441,17 @@ func (me XAttrOperatorTxsdFeCompositeTypeOperatorOver) OperatorDefault() TxsdFeC
 
 // XAttrK1XsdtDouble defines attribute K1
 type XAttrK1XsdtDouble struct {
-	K1 xsdt.Double `xml:"http://www.w3.org/2000/svg k1,attr"`
+	K1 xsdt.Double `xml:"k1,attr"`
 }
 
 // XAttrK3XsdtDouble defines attribute K3
 type XAttrK3XsdtDouble struct {
-	K3 xsdt.Double `xml:"http://www.w3.org/2000/svg k3,attr"`
+	K3 xsdt.Double `xml:"k3,attr"`
 }
 
 // XAttrK2XsdtDouble defines attribute K2
 type XAttrK2XsdtDouble struct {
-	K2 xsdt.Double `xml:"http://www.w3.org/2000/svg k2,attr"`
+	K2 xsdt.Double `xml:"k2,attr"`
 }
 
 // TfeCompositeType defines type feCompositeType
@@ -6520,7 +6520,7 @@ func (me *XElemsFeComposite) Walk() (err error) {
 
 // XAttrScaleXsdtDouble defines attribute Scale
 type XAttrScaleXsdtDouble struct {
-	Scale xsdt.Double `xml:"http://www.w3.org/2000/svg scale,attr"`
+	Scale xsdt.Double `xml:"scale,attr"`
 }
 
 // TxsdFeDisplacementMapTypeXChannelSelector defines type xsdFeDisplacementMapTypeXChannelSelector
@@ -6551,7 +6551,7 @@ func (me TxsdFeDisplacementMapTypeXChannelSelector) IsG() bool { return me.Strin
 
 // XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA defines attribute XChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA
 type XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA struct {
-	XChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"http://www.w3.org/2000/svg xChannelSelector,attr"`
+	XChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"xChannelSelector,attr"`
 }
 
 // XChannelSelectorDefault : Returns the default value for XChannelSelector -- "A"
@@ -6561,7 +6561,7 @@ func (me XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA) XChann
 
 // XAttrYChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA defines attribute YChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA
 type XAttrYChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA struct {
-	YChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"http://www.w3.org/2000/svg yChannelSelector,attr"`
+	YChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"yChannelSelector,attr"`
 }
 
 // YChannelSelectorDefault : Returns the default value for YChannelSelector -- "A"
@@ -6659,7 +6659,7 @@ func (me TxsdFeColorMatrixTypeType) IsHueRotate() bool { return me.String() == "
 
 // XAttrTypeTxsdFeColorMatrixTypeTypeMatrix defines attribute TypeTxsdFeColorMatrixTypeTypeMatrix
 type XAttrTypeTxsdFeColorMatrixTypeTypeMatrix struct {
-	Type TxsdFeColorMatrixTypeType `xml:"http://www.w3.org/2000/svg type,attr"`
+	Type TxsdFeColorMatrixTypeType `xml:"type,attr"`
 }
 
 // TypeDefault : Returns the default value for Type -- "matrix"
@@ -6747,7 +6747,7 @@ func (me TxsdFeMorphologyTypeOperator) ToXsdtString() xsdt.String { return xsdt.
 
 // XAttrOperatorTxsdFeMorphologyTypeOperatorErode defines attribute OperatorTxsdFeMorphologyTypeOperatorErode
 type XAttrOperatorTxsdFeMorphologyTypeOperatorErode struct {
-	Operator TxsdFeMorphologyTypeOperator `xml:"http://www.w3.org/2000/svg operator,attr"`
+	Operator TxsdFeMorphologyTypeOperator `xml:"operator,attr"`
 }
 
 // OperatorDefault : Returns the default value for Operator -- "erode"
@@ -6757,7 +6757,7 @@ func (me XAttrOperatorTxsdFeMorphologyTypeOperatorErode) OperatorDefault() TxsdF
 
 // XAttrRadiusTLengthType defines attribute RadiusTLengthType
 type XAttrRadiusTLengthType struct {
-	Radius TLengthType `xml:"http://www.w3.org/2000/svg radius,attr"`
+	Radius TLengthType `xml:"radius,attr"`
 }
 
 // TfeMorphologyType defines type feMorphologyType
@@ -6880,7 +6880,7 @@ func (me *XElemsFeTile) Walk() (err error) {
 
 // XAttrDiffuseConstantXsdtDouble defines attribute DiffuseConstant
 type XAttrDiffuseConstantXsdtDouble struct {
-	DiffuseConstant xsdt.Double `xml:"http://www.w3.org/2000/svg diffuseConstant,attr"`
+	DiffuseConstant xsdt.Double `xml:"diffuseConstant,attr"`
 }
 
 // TfeDiffuseLightingType defines type feDiffuseLightingType
@@ -7034,12 +7034,12 @@ func (me *XElemsFeImage) Walk() (err error) {
 
 // XAttrDxTLengthType defines attribute DxTLengthType
 type XAttrDxTLengthType struct {
-	Dx TLengthType `xml:"http://www.w3.org/2000/svg dx,attr"`
+	Dx TLengthType `xml:"dx,attr"`
 }
 
 // XAttrDyTLengthType defines attribute DyTLengthType
 type XAttrDyTLengthType struct {
-	Dy TLengthType `xml:"http://www.w3.org/2000/svg dy,attr"`
+	Dy TLengthType `xml:"dy,attr"`
 }
 
 // TfeOffsetType defines type feOffsetType
@@ -7104,7 +7104,7 @@ func (me *XElemsFeOffset) Walk() (err error) {
 
 // XAttrFilterResXsdtString defines attribute FilterRes
 type XAttrFilterResXsdtString struct {
-	FilterRes xsdt.String `xml:"http://www.w3.org/2000/svg filterRes,attr"`
+	FilterRes xsdt.String `xml:"filterRes,attr"`
 }
 
 // TfeMergeNodeType defines type feMergeNodeType
@@ -7221,7 +7221,7 @@ func (me *XElemsFeMerge) Walk() (err error) {
 
 // XAttrFilterUnitsTxsdFilterTypeFilterUnits defines attribute FilterUnitsTxsdFilterTypeFilterUnits
 type XAttrFilterUnitsTxsdFilterTypeFilterUnits struct {
-	FilterUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg filterUnits,attr"`
+	FilterUnits TxsdClipPathTypeClipPathUnits `xml:"filterUnits,attr"`
 }
 
 // TfilterType defines type filterType
@@ -7365,17 +7365,17 @@ func (me *XElemsFilter) Walk() (err error) {
 
 // XAttrMarkerWidthTLengthType defines attribute MarkerWidthTLengthType
 type XAttrMarkerWidthTLengthType struct {
-	MarkerWidth TLengthType `xml:"http://www.w3.org/2000/svg markerWidth,attr"`
+	MarkerWidth TLengthType `xml:"markerWidth,attr"`
 }
 
 // XAttrRefYTCoordinateType defines attribute RefYTCoordinateType
 type XAttrRefYTCoordinateType struct {
-	RefY TCoordinateType `xml:"http://www.w3.org/2000/svg refY,attr"`
+	RefY TCoordinateType `xml:"refY,attr"`
 }
 
 // XAttrOrientXsdtString defines attribute Orient
 type XAttrOrientXsdtString struct {
-	Orient xsdt.String `xml:"http://www.w3.org/2000/svg orient,attr"`
+	Orient xsdt.String `xml:"orient,attr"`
 }
 
 // TforeignObjectType defines type foreignObjectType
@@ -7663,17 +7663,17 @@ func (me *XElemsSwitch) Walk() (err error) {
 
 // XAttrGradientUnitsTxsdRadialGradientTypeGradientUnits defines attribute GradientUnitsTxsdRadialGradientTypeGradientUnits
 type XAttrGradientUnitsTxsdRadialGradientTypeGradientUnits struct {
-	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg gradientUnits,attr"`
+	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr"`
 }
 
 // XAttrFxTCoordinateType defines attribute FxTCoordinateType
 type XAttrFxTCoordinateType struct {
-	Fx TCoordinateType `xml:"http://www.w3.org/2000/svg fx,attr"`
+	Fx TCoordinateType `xml:"fx,attr"`
 }
 
 // XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad defines attribute SpreadMethodTxsdRadialGradientTypeSpreadMethodPad
 type XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad struct {
-	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"http://www.w3.org/2000/svg spreadMethod,attr"`
+	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr"`
 }
 
 // SpreadMethodDefault : Returns the default value for SpreadMethod -- "pad"
@@ -7683,7 +7683,7 @@ func (me XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad) SpreadMethodDef
 
 // XAttrFyTCoordinateType defines attribute FyTCoordinateType
 type XAttrFyTCoordinateType struct {
-	Fy TCoordinateType `xml:"http://www.w3.org/2000/svg fy,attr"`
+	Fy TCoordinateType `xml:"fy,attr"`
 }
 
 // TradialGradientType defines type radialGradientType
@@ -7768,12 +7768,12 @@ func (me *XElemsRadialGradient) Walk() (err error) {
 
 // XAttrGlyphRefXsdtString defines attribute GlyphRef
 type XAttrGlyphRefXsdtString struct {
-	GlyphRef xsdt.String `xml:"http://www.w3.org/2000/svg glyphRef,attr"`
+	GlyphRef xsdt.String `xml:"glyphRef,attr"`
 }
 
 // XAttrFormatXsdtString defines attribute Format
 type XAttrFormatXsdtString struct {
-	Format xsdt.String `xml:"http://www.w3.org/2000/svg format,attr"`
+	Format xsdt.String `xml:"format,attr"`
 }
 
 // TglyphRefType defines type glyphRefType
@@ -7948,32 +7948,32 @@ func (me *XElemsAltGlyphDef) Walk() (err error) {
 
 // XAttrMarkerHeightTLengthType defines attribute MarkerHeightTLengthType
 type XAttrMarkerHeightTLengthType struct {
-	MarkerHeight TLengthType `xml:"http://www.w3.org/2000/svg markerHeight,attr"`
+	MarkerHeight TLengthType `xml:"markerHeight,attr"`
 }
 
 // XAttrU1XsdtString defines attribute U1
 type XAttrU1XsdtString struct {
-	U1 xsdt.String `xml:"http://www.w3.org/2000/svg u1,attr"`
+	U1 xsdt.String `xml:"u1,attr"`
 }
 
 // XAttrG1XsdtString defines attribute G1
 type XAttrG1XsdtString struct {
-	G1 xsdt.String `xml:"http://www.w3.org/2000/svg g1,attr"`
+	G1 xsdt.String `xml:"g1,attr"`
 }
 
 // XAttrU2XsdtString defines attribute U2
 type XAttrU2XsdtString struct {
-	U2 xsdt.String `xml:"http://www.w3.org/2000/svg u2,attr"`
+	U2 xsdt.String `xml:"u2,attr"`
 }
 
 // XAttrG2XsdtString defines attribute G2
 type XAttrG2XsdtString struct {
-	G2 xsdt.String `xml:"http://www.w3.org/2000/svg g2,attr"`
+	G2 xsdt.String `xml:"g2,attr"`
 }
 
 // XAttrKXsdtDouble defines attribute K
 type XAttrKXsdtDouble struct {
-	K xsdt.Double `xml:"http://www.w3.org/2000/svg k,attr"`
+	K xsdt.Double `xml:"k,attr"`
 }
 
 // TvkernType defines type vkernType
@@ -8032,7 +8032,7 @@ func (me *XElemsVkern) Walk() (err error) {
 
 // XAttrVertAdvYXsdtDouble defines attribute VertAdvY
 type XAttrVertAdvYXsdtDouble struct {
-	VertAdvY xsdt.Double `xml:"http://www.w3.org/2000/svg vert-adv-y,attr"`
+	VertAdvY xsdt.Double `xml:"vert-adv-y,attr"`
 }
 
 // TxsdViewTypeZoomAndPan defines type xsdViewTypeZoomAndPan
@@ -8058,7 +8058,7 @@ func (me TxsdViewTypeZoomAndPan) IsZoom() bool { return me.String() == "zoom" }
 
 // XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify defines attribute ZoomAndPanTxsdViewTypeZoomAndPanMagnify
 type XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify struct {
-	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"http://www.w3.org/2000/svg zoomAndPan,attr"`
+	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr"`
 }
 
 // ZoomAndPanDefault : Returns the default value for ZoomAndPan -- "magnify"
@@ -8068,7 +8068,7 @@ func (me XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify) ZoomAndPanDefault() TxsdV
 
 // XAttrViewTargetXsdtString defines attribute ViewTarget
 type XAttrViewTargetXsdtString struct {
-	ViewTarget xsdt.String `xml:"http://www.w3.org/2000/svg viewTarget,attr"`
+	ViewTarget xsdt.String `xml:"viewTarget,attr"`
 }
 
 // TviewType defines type viewType
@@ -8131,7 +8131,7 @@ func (me *XElemsView) Walk() (err error) {
 
 // XAttrHorizAdvXXsdtDouble defines attribute HorizAdvX
 type XAttrHorizAdvXXsdtDouble struct {
-	HorizAdvX xsdt.Double `xml:"http://www.w3.org/2000/svg horiz-adv-x,attr"`
+	HorizAdvX xsdt.Double `xml:"horiz-adv-x,attr"`
 }
 
 // TmissingGlyphType defines type missingGlyphType
@@ -8315,32 +8315,32 @@ func (me *XElemMissingGlyph) Walk() (err error) {
 
 // XAttrVertOriginYXsdtDouble defines attribute VertOriginY
 type XAttrVertOriginYXsdtDouble struct {
-	VertOriginY xsdt.Double `xml:"http://www.w3.org/2000/svg vert-origin-y,attr"`
+	VertOriginY xsdt.Double `xml:"vert-origin-y,attr"`
 }
 
 // XAttrHanXsdtString defines attribute Han
 type XAttrHanXsdtString struct {
-	Han xsdt.String `xml:"http://www.w3.org/2000/svg han,attr"`
+	Han xsdt.String `xml:"han,attr"`
 }
 
 // XAttrArabicXsdtString defines attribute Arabic
 type XAttrArabicXsdtString struct {
-	Arabic xsdt.String `xml:"http://www.w3.org/2000/svg arabic,attr"`
+	Arabic xsdt.String `xml:"arabic,attr"`
 }
 
 // XAttrGlyphNameXsdtString defines attribute GlyphName
 type XAttrGlyphNameXsdtString struct {
-	GlyphName xsdt.String `xml:"http://www.w3.org/2000/svg glyph-name,attr"`
+	GlyphName xsdt.String `xml:"glyph-name,attr"`
 }
 
 // XAttrVertTextOrientXsdtString defines attribute VertTextOrient
 type XAttrVertTextOrientXsdtString struct {
-	VertTextOrient xsdt.String `xml:"http://www.w3.org/2000/svg vert-text-orient,attr"`
+	VertTextOrient xsdt.String `xml:"vert-text-orient,attr"`
 }
 
 // XAttrUnicodeXsdtString defines attribute Unicode
 type XAttrUnicodeXsdtString struct {
-	Unicode xsdt.String `xml:"http://www.w3.org/2000/svg unicode,attr"`
+	Unicode xsdt.String `xml:"unicode,attr"`
 }
 
 // TglyphType defines type glyphType
@@ -8610,17 +8610,17 @@ func (me *XElemsHkern) Walk() (err error) {
 
 // XAttrHorizOriginYXsdtDouble defines attribute HorizOriginY
 type XAttrHorizOriginYXsdtDouble struct {
-	HorizOriginY xsdt.Double `xml:"http://www.w3.org/2000/svg horiz-origin-y,attr"`
+	HorizOriginY xsdt.Double `xml:"horiz-origin-y,attr"`
 }
 
 // XAttrVertOriginXXsdtDouble defines attribute VertOriginX
 type XAttrVertOriginXXsdtDouble struct {
-	VertOriginX xsdt.Double `xml:"http://www.w3.org/2000/svg vert-origin-x,attr"`
+	VertOriginX xsdt.Double `xml:"vert-origin-x,attr"`
 }
 
 // XAttrHorizOriginXXsdtDouble defines attribute HorizOriginX
 type XAttrHorizOriginXXsdtDouble struct {
-	HorizOriginX xsdt.Double `xml:"http://www.w3.org/2000/svg horiz-origin-x,attr"`
+	HorizOriginX xsdt.Double `xml:"horiz-origin-x,attr"`
 }
 
 // TfontType defines type fontType
@@ -8708,12 +8708,12 @@ func (me *XElemsFont) Walk() (err error) {
 
 // XAttrPatternTransformTransformListType defines attribute PatternTransformTransformListType
 type XAttrPatternTransformTransformListType struct {
-	PatternTransform TransformListType `xml:"http://www.w3.org/2000/svg patternTransform,attr"`
+	PatternTransform TransformListType `xml:"patternTransform,attr"`
 }
 
 // XAttrPatternUnitsTxsdPatternTypePatternUnits defines attribute PatternUnitsTxsdPatternTypePatternUnits
 type XAttrPatternUnitsTxsdPatternTypePatternUnits struct {
-	PatternUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg patternUnits,attr"`
+	PatternUnits TxsdClipPathTypeClipPathUnits `xml:"patternUnits,attr"`
 }
 
 // TpatternType defines type patternType
@@ -9101,7 +9101,7 @@ func (me *XElemsDefs) Walk() (err error) {
 
 // XAttrRefXTCoordinateType defines attribute RefXTCoordinateType
 type XAttrRefXTCoordinateType struct {
-	RefX TCoordinateType `xml:"http://www.w3.org/2000/svg refX,attr"`
+	RefX TCoordinateType `xml:"refX,attr"`
 }
 
 // TmarkerType defines type markerType
@@ -9498,7 +9498,7 @@ func (me *XElemsG) Walk() (err error) {
 
 // XAttrMaskUnitsTxsdMaskTypeMaskUnits defines attribute MaskUnitsTxsdMaskTypeMaskUnits
 type XAttrMaskUnitsTxsdMaskTypeMaskUnits struct {
-	MaskUnits TxsdClipPathTypeClipPathUnits `xml:"http://www.w3.org/2000/svg maskUnits,attr"`
+	MaskUnits TxsdClipPathTypeClipPathUnits `xml:"maskUnits,attr"`
 }
 
 // TmaskType defines type maskType
@@ -9705,7 +9705,7 @@ func (me *XElemsMask) Walk() (err error) {
 
 // XAttrTargetXsdtNmtoken defines attribute Target
 type XAttrTargetXsdtNmtoken struct {
-	Target xsdt.Nmtoken `xml:"http://www.w3.org/2000/svg target,attr"`
+	Target xsdt.Nmtoken `xml:"target,attr"`
 }
 
 // TaType defines type aType
@@ -10104,7 +10104,7 @@ func (me *XElemsTspan) Walk() (err error) {
 
 // XAttrLengthAdjustTxsdTextTypeLengthAdjust defines attribute LengthAdjustTxsdTextTypeLengthAdjust
 type XAttrLengthAdjustTxsdTextTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"http://www.w3.org/2000/svg lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
 }
 
 // TxsdTextPathTypeSpacing defines type xsdTextPathTypeSpacing
@@ -10127,17 +10127,17 @@ func (me TxsdTextPathTypeSpacing) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrSpacingTxsdTextPathTypeSpacing defines attribute SpacingTxsdTextPathTypeSpacing
 type XAttrSpacingTxsdTextPathTypeSpacing struct {
-	Spacing TxsdTextPathTypeSpacing `xml:"http://www.w3.org/2000/svg spacing,attr"`
+	Spacing TxsdTextPathTypeSpacing `xml:"spacing,attr"`
 }
 
 // XAttrStartOffsetXsdtString defines attribute StartOffset
 type XAttrStartOffsetXsdtString struct {
-	StartOffset xsdt.String `xml:"http://www.w3.org/2000/svg startOffset,attr"`
+	StartOffset xsdt.String `xml:"startOffset,attr"`
 }
 
 // XAttrLengthAdjustTxsdTextPathTypeLengthAdjust defines attribute LengthAdjustTxsdTextPathTypeLengthAdjust
 type XAttrLengthAdjustTxsdTextPathTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"http://www.w3.org/2000/svg lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
 }
 
 // TxsdTextPathTypeMethod defines type xsdTextPathTypeMethod
@@ -10160,7 +10160,7 @@ func (me TxsdTextPathTypeMethod) IsStretch() bool { return me.String() == "stret
 
 // XAttrMethodTxsdTextPathTypeMethod defines attribute MethodTxsdTextPathTypeMethod
 type XAttrMethodTxsdTextPathTypeMethod struct {
-	Method TxsdTextPathTypeMethod `xml:"http://www.w3.org/2000/svg method,attr"`
+	Method TxsdTextPathTypeMethod `xml:"method,attr"`
 }
 
 // TtextPathType defines type textPathType
@@ -10728,7 +10728,7 @@ func (me *XElemsSymbol) Walk() (err error) {
 
 // XAttrContentStyleTypeTContentTypeTypeTextCSS defines attribute ContentStyleTypeTContentTypeTypeTextCss
 type XAttrContentStyleTypeTContentTypeTypeTextCSS struct {
-	ContentStyleType TContentTypeType `xml:"http://www.w3.org/2000/svg contentStyleType,attr"`
+	ContentStyleType TContentTypeType `xml:"contentStyleType,attr"`
 }
 
 // ContentStyleTypeDefault : Returns the default value for ContentStyleType -- "text/css"
@@ -10738,7 +10738,7 @@ func (me XAttrContentStyleTypeTContentTypeTypeTextCSS) ContentStyleTypeDefault()
 
 // XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify defines attribute ZoomAndPanTxsdSvgTypeZoomAndPanMagnify
 type XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify struct {
-	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"http://www.w3.org/2000/svg zoomAndPan,attr"`
+	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr"`
 }
 
 // ZoomAndPanDefault : Returns the default value for ZoomAndPan -- "magnify"
@@ -10748,7 +10748,7 @@ func (me XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify) ZoomAndPanDefault() TxsdVi
 
 // XAttrContentScriptTypeTContentTypeTypeTextEcmascript defines attribute ContentScriptTypeTContentTypeTypeTextEcmascript
 type XAttrContentScriptTypeTContentTypeTypeTextEcmascript struct {
-	ContentScriptType TContentTypeType `xml:"http://www.w3.org/2000/svg contentScriptType,attr"`
+	ContentScriptType TContentTypeType `xml:"contentScriptType,attr"`
 }
 
 // ContentScriptTypeDefault : Returns the default value for ContentScriptType -- "text/ecmascript"

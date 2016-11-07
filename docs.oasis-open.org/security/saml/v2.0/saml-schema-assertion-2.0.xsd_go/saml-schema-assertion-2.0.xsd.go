@@ -11,12 +11,12 @@ import (
 
 // XAttrNameQualifierXsdtString defines attribute NameQualifier
 type XAttrNameQualifierXsdtString struct {
-	NameQualifier xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion NameQualifier,attr"`
+	NameQualifier xsdt.String `xml:"NameQualifier,attr"`
 }
 
 // XAttrSPNameQualifierXsdtString defines attribute SPNameQualifier
 type XAttrSPNameQualifierXsdtString struct {
-	SPNameQualifier xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion SPNameQualifier,attr"`
+	SPNameQualifier xsdt.String `xml:"SPNameQualifier,attr"`
 }
 
 // XAttsIDNameQualifiers defines XAttsIDNameQualifiers
@@ -101,12 +101,12 @@ func (me *XElemBaseID) Walk() (err error) {
 
 // XAttrFormatXsdtAnyURI defines attribute Format
 type XAttrFormatXsdtAnyURI struct {
-	Format xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion Format,attr"`
+	Format xsdt.AnyURI `xml:"Format,attr"`
 }
 
 // XAttrSPProvidedIDXsdtString defines attribute SPProvidedID
 type XAttrSPProvidedIDXsdtString struct {
-	SPProvidedID xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion SPProvidedID,attr"`
+	SPProvidedID xsdt.String `xml:"SPProvidedID,attr"`
 }
 
 // TNameIDType defines type NameIDType
@@ -424,12 +424,12 @@ func (me *TStatementAbstractType) Walk() (err error) {
 
 // XAttrAddressXsdtString defines attribute Address
 type XAttrAddressXsdtString struct {
-	Address xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion Address,attr"`
+	Address xsdt.String `xml:"Address,attr"`
 }
 
 // XAttrDNSNameXsdtString defines attribute DNSName
 type XAttrDNSNameXsdtString struct {
-	DNSName xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion DNSName,attr"`
+	DNSName xsdt.String `xml:"DNSName,attr"`
 }
 
 // TSubjectLocalityType defines type SubjectLocalityType
@@ -632,17 +632,17 @@ func (me *XElemAuthnContext) Walk() (err error) {
 
 // XAttrSessionNotOnOrAfterXsdtDateTime defines attribute SessionNotOnOrAfter
 type XAttrSessionNotOnOrAfterXsdtDateTime struct {
-	SessionNotOnOrAfter xsdt.DateTime `xml:"urn:oasis:names:tc:SAML:2.0:assertion SessionNotOnOrAfter,attr"`
+	SessionNotOnOrAfter xsdt.DateTime `xml:"SessionNotOnOrAfter,attr"`
 }
 
 // XAttrAuthnInstantXsdtDateTime defines attribute AuthnInstant
 type XAttrAuthnInstantXsdtDateTime struct {
-	AuthnInstant xsdt.DateTime `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnInstant,attr"`
+	AuthnInstant xsdt.DateTime `xml:"AuthnInstant,attr"`
 }
 
 // XAttrSessionIndexXsdtString defines attribute SessionIndex
 type XAttrSessionIndexXsdtString struct {
-	SessionIndex xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion SessionIndex,attr"`
+	SessionIndex xsdt.String `xml:"SessionIndex,attr"`
 }
 
 // TAuthnStatementType defines type AuthnStatementType
@@ -710,22 +710,22 @@ func (me *XElemsAuthnStatement) Walk() (err error) {
 
 // XAttrNotBeforeXsdtDateTime defines attribute NotBefore
 type XAttrNotBeforeXsdtDateTime struct {
-	NotBefore xsdt.DateTime `xml:"urn:oasis:names:tc:SAML:2.0:assertion NotBefore,attr"`
+	NotBefore xsdt.DateTime `xml:"NotBefore,attr"`
 }
 
 // XAttrNotOnOrAfterXsdtDateTime defines attribute NotOnOrAfter
 type XAttrNotOnOrAfterXsdtDateTime struct {
-	NotOnOrAfter xsdt.DateTime `xml:"urn:oasis:names:tc:SAML:2.0:assertion NotOnOrAfter,attr"`
+	NotOnOrAfter xsdt.DateTime `xml:"NotOnOrAfter,attr"`
 }
 
 // XAttrRecipientXsdtAnyURI defines attribute Recipient
 type XAttrRecipientXsdtAnyURI struct {
-	Recipient xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion Recipient,attr"`
+	Recipient xsdt.AnyURI `xml:"Recipient,attr"`
 }
 
 // XAttrInResponseToXsdtNCName defines attribute InResponseTo
 type XAttrInResponseToXsdtNCName struct {
-	InResponseTo xsdt.NCName `xml:"urn:oasis:names:tc:SAML:2.0:assertion InResponseTo,attr"`
+	InResponseTo xsdt.NCName `xml:"InResponseTo,attr"`
 }
 
 // XAnyTypeCdata defines XAnyTypeCdata
@@ -787,7 +787,7 @@ func (me *XElemSubjectConfirmationData) Walk() (err error) {
 
 // XAttrMethodXsdtAnyURI defines attribute Method
 type XAttrMethodXsdtAnyURI struct {
-	Method xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion Method,attr"`
+	Method xsdt.AnyURI `xml:"Method,attr"`
 }
 
 // TSubjectConfirmationType defines type SubjectConfirmationType
@@ -1030,12 +1030,12 @@ func (me *XElemAdvice) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"urn:oasis:names:tc:SAML:2.0:assertion ID,attr"`
+	ID xsdt.ID `xml:"ID,attr"`
 }
 
 // XAttrIssueInstantXsdtDateTime defines attribute IssueInstant
 type XAttrIssueInstantXsdtDateTime struct {
-	IssueInstant xsdt.DateTime `xml:"urn:oasis:names:tc:SAML:2.0:assertion IssueInstant,attr"`
+	IssueInstant xsdt.DateTime `xml:"IssueInstant,attr"`
 }
 
 // XElemsStatement defines element Statement
@@ -1067,7 +1067,7 @@ func (me *XElemsStatement) Walk() (err error) {
 
 // XAttrNamespaceXsdtAnyURI defines attribute Namespace
 type XAttrNamespaceXsdtAnyURI struct {
-	Namespace xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion Namespace,attr"`
+	Namespace xsdt.AnyURI `xml:"Namespace,attr"`
 }
 
 // TActionType defines type ActionType
@@ -1184,7 +1184,7 @@ func (me *XElemEvidence) Walk() (err error) {
 
 // XAttrResourceXsdtAnyURI defines attribute Resource
 type XAttrResourceXsdtAnyURI struct {
-	Resource xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion Resource,attr"`
+	Resource xsdt.AnyURI `xml:"Resource,attr"`
 }
 
 // TDecisionType defines type DecisionType
@@ -1210,7 +1210,7 @@ func (me TDecisionType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrDecisionTDecisionType defines attribute DecisionTDecisionType
 type XAttrDecisionTDecisionType struct {
-	Decision TDecisionType `xml:"urn:oasis:names:tc:SAML:2.0:assertion Decision,attr"`
+	Decision TDecisionType `xml:"Decision,attr"`
 }
 
 // TAuthzDecisionStatementType defines type AuthzDecisionStatementType
@@ -1299,17 +1299,17 @@ func (me *XElemsAttributeValue) Walk() (err error) {
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion Name,attr"`
+	Name xsdt.String `xml:"Name,attr"`
 }
 
 // XAttrNameFormatXsdtAnyURI defines attribute NameFormat
 type XAttrNameFormatXsdtAnyURI struct {
-	NameFormat xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion NameFormat,attr"`
+	NameFormat xsdt.AnyURI `xml:"NameFormat,attr"`
 }
 
 // XAttrFriendlyNameXsdtString defines attribute FriendlyName
 type XAttrFriendlyNameXsdtString struct {
-	FriendlyName xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion FriendlyName,attr"`
+	FriendlyName xsdt.String `xml:"FriendlyName,attr"`
 }
 
 // TAttributeType defines type AttributeType
@@ -1634,7 +1634,7 @@ func (me *XElemsOneTimeUse) Walk() (err error) {
 
 // XAttrCountXsdtNonNegativeInteger defines attribute Count
 type XAttrCountXsdtNonNegativeInteger struct {
-	Count xsdt.NonNegativeInteger `xml:"urn:oasis:names:tc:SAML:2.0:assertion Count,attr"`
+	Count xsdt.NonNegativeInteger `xml:"Count,attr"`
 }
 
 // TProxyRestrictionType defines type ProxyRestrictionType
@@ -1760,7 +1760,7 @@ func (me *XElemConditions) Walk() (err error) {
 
 // XAttrVersionXsdtString defines attribute Version
 type XAttrVersionXsdtString struct {
-	Version xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:assertion Version,attr"`
+	Version xsdt.String `xml:"Version,attr"`
 }
 
 // TAssertionType defines type AssertionType
