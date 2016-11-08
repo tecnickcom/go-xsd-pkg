@@ -6,6 +6,7 @@ import (
 	"strings"
 	"testing"
 
+	//"github.com/davecgh/go-spew/spew"
 	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
 )
 
@@ -102,6 +103,13 @@ func TestUnmarshalEntityDescriptor(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
 	}
+
+	//scsNoPtrAddr := &spew.ConfigState{
+	//	Indent:                  "\t",
+	//	DisablePointerAddresses: true,
+	//	DisableCapacities:       true,
+	//}
+	//scsNoPtrAddr.Dump(data)
 
 	xmldata, err := xml.MarshalIndent(data, "", "\t")
 	if err != nil {
