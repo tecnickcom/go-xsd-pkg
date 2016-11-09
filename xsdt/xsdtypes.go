@@ -106,8 +106,10 @@ func (me *Boolean) Set(v string) {
 	case "1":
 		*me = true
 	default:
-		b, _ := strconv.ParseBool(v)
-		*me = Boolean(b)
+		b, err := strconv.ParseBool(v)
+		if err != nil {
+			*me = Boolean(b)
+		}
 	}
 }
 
@@ -131,8 +133,10 @@ func (me Byte) N() int8 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Byte) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 8)
-	*me = Byte(v)
+	v, err := strconv.ParseInt(s, 0, 8)
+	if err != nil {
+		*me = Byte(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -228,8 +232,10 @@ func (me Double) N() float64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Double) Set(s string) {
-	v, _ := strconv.ParseFloat(s, 64)
-	*me = Double(v)
+	v, err := strconv.ParseFloat(s, 64)
+	if err != nil {
+		*me = Double(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -316,8 +322,10 @@ func (me Float) N() float32 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Float) Set(s string) {
-	v, _ := strconv.ParseFloat(s, 32)
-	*me = Float(v)
+	v, err := strconv.ParseFloat(s, 32)
+	if err != nil {
+		*me = Float(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -512,8 +520,10 @@ func (me Int) N() int32 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Int) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 32)
-	*me = Int(v)
+	v, err := strconv.ParseInt(s, 0, 32)
+	if err != nil {
+		*me = Int(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -536,8 +546,10 @@ func (me Integer) N() int64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Integer) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 64)
-	*me = Integer(v)
+	v, err := strconv.ParseInt(s, 0, 64)
+	if err != nil {
+		*me = Integer(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -578,8 +590,10 @@ func (me Long) N() int64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Long) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 64)
-	*me = Long(v)
+	v, err := strconv.ParseInt(s, 0, 64)
+	if err != nil {
+		*me = Long(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -638,8 +652,10 @@ func (me NegativeInteger) N() int64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *NegativeInteger) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 64)
-	*me = NegativeInteger(v)
+	v, err := strconv.ParseInt(s, 0, 64)
+	if err != nil {
+		*me = NegativeInteger(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -708,8 +724,10 @@ func (me NonNegativeInteger) N() uint64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *NonNegativeInteger) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 64)
-	*me = NonNegativeInteger(v)
+	v, err := strconv.ParseUint(s, 0, 64)
+	if err != nil {
+		*me = NonNegativeInteger(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -732,8 +750,10 @@ func (me NonPositiveInteger) N() int64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *NonPositiveInteger) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 64)
-	*me = NonPositiveInteger(v)
+	v, err := strconv.ParseInt(s, 0, 64)
+	if err != nil {
+		*me = NonPositiveInteger(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -802,8 +822,10 @@ func (me PositiveInteger) N() uint64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *PositiveInteger) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 64)
-	*me = PositiveInteger(v)
+	v, err := strconv.ParseUint(s, 0, 64)
+	if err != nil {
+		*me = PositiveInteger(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -844,8 +866,10 @@ func (me Short) N() int16 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *Short) Set(s string) {
-	v, _ := strconv.ParseInt(s, 0, 16)
-	*me = Short(v)
+	v, err := strconv.ParseInt(s, 0, 16)
+	if err != nil {
+		*me = Short(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -904,8 +928,10 @@ func (me UnsignedByte) N() uint8 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *UnsignedByte) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 8)
-	*me = UnsignedByte(v)
+	v, err := strconv.ParseUint(s, 0, 8)
+	if err != nil {
+		*me = UnsignedByte(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -928,8 +954,10 @@ func (me UnsignedInt) N() uint32 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *UnsignedInt) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 32)
-	*me = UnsignedInt(v)
+	v, err := strconv.ParseUint(s, 0, 32)
+	if err != nil {
+		*me = UnsignedInt(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -952,8 +980,10 @@ func (me UnsignedLong) N() uint64 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *UnsignedLong) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 64)
-	*me = UnsignedLong(v)
+	v, err := strconv.ParseUint(s, 0, 64)
+	if err != nil {
+		*me = UnsignedLong(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
@@ -976,8 +1006,10 @@ func (me UnsignedShort) N() uint16 {
 
 // Set : Since this is a non-string scalar type, sets its current value obtained from parsing the specified string.
 func (me *UnsignedShort) Set(s string) {
-	v, _ := strconv.ParseUint(s, 0, 16)
-	*me = UnsignedShort(v)
+	v, err := strconv.ParseUint(s, 0, 16)
+	if err != nil {
+		*me = UnsignedShort(v)
+	}
 }
 
 // String : Returns a string representation of its current non-string scalar value.
