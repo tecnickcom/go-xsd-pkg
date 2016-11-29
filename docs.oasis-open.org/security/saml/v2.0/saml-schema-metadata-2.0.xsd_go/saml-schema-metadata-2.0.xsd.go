@@ -865,8 +865,8 @@ func (me *XElemsArtifactResolutionService) Walk() (err error) {
 type TSSODescriptorType struct {
 	XElemsSingleLogoutService
 	XElemsManageNameIDService
-	XElemsNameIDFormat
 	TRoleDescriptorType
+	XElemsNameIDFormat
 	XElemsArtifactResolutionService
 }
 
