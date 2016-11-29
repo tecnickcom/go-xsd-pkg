@@ -9,7 +9,7 @@ import (
 
 // XAttrIDXsdtID All elements have an ID
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"id,attr"`
+	ID xsdt.ID `xml:"id,attr,omitempty"`
 }
 
 // XAttsStdAttrs defines XAttsStdAttrs
@@ -39,7 +39,7 @@ func (me TFeatureListType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrRequiredFeaturesTFeatureListType defines attribute RequiredFeaturesTFeatureListType
 type XAttrRequiredFeaturesTFeatureListType struct {
-	RequiredFeatures TFeatureListType `xml:"requiredFeatures,attr"`
+	RequiredFeatures TFeatureListType `xml:"requiredFeatures,attr,omitempty"`
 }
 
 // TExtensionListType extension list specification
@@ -56,7 +56,7 @@ func (me TExtensionListType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrRequiredExtensionsTExtensionListType defines attribute RequiredExtensionsTExtensionListType
 type XAttrRequiredExtensionsTExtensionListType struct {
-	RequiredExtensions TExtensionListType `xml:"requiredExtensions,attr"`
+	RequiredExtensions TExtensionListType `xml:"requiredExtensions,attr,omitempty"`
 }
 
 // TLanguageCodesType a comma-separated list of language codes, as per [RFC3066]
@@ -73,7 +73,7 @@ func (me TLanguageCodesType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrSystemLanguageTLanguageCodesType defines attribute SystemLanguageTLanguageCodesType
 type XAttrSystemLanguageTLanguageCodesType struct {
-	SystemLanguage TLanguageCodesType `xml:"systemLanguage,attr"`
+	SystemLanguage TLanguageCodesType `xml:"systemLanguage,attr,omitempty"`
 }
 
 // XAttsTestAttrs defines XAttsTestAttrs
@@ -107,52 +107,52 @@ func (me TScriptType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrOnmousemoveTScriptType defines attribute OnmousemoveTScriptType
 type XAttrOnmousemoveTScriptType struct {
-	Onmousemove TScriptType `xml:"onmousemove,attr"`
+	Onmousemove TScriptType `xml:"onmousemove,attr,omitempty"`
 }
 
 // XAttrOnmouseoutTScriptType defines attribute OnmouseoutTScriptType
 type XAttrOnmouseoutTScriptType struct {
-	Onmouseout TScriptType `xml:"onmouseout,attr"`
+	Onmouseout TScriptType `xml:"onmouseout,attr,omitempty"`
 }
 
 // XAttrOnfocusinTScriptType defines attribute OnfocusinTScriptType
 type XAttrOnfocusinTScriptType struct {
-	Onfocusin TScriptType `xml:"onfocusin,attr"`
+	Onfocusin TScriptType `xml:"onfocusin,attr,omitempty"`
 }
 
 // XAttrOnclickTScriptType defines attribute OnclickTScriptType
 type XAttrOnclickTScriptType struct {
-	Onclick TScriptType `xml:"onclick,attr"`
+	Onclick TScriptType `xml:"onclick,attr,omitempty"`
 }
 
 // XAttrOnmouseupTScriptType defines attribute OnmouseupTScriptType
 type XAttrOnmouseupTScriptType struct {
-	Onmouseup TScriptType `xml:"onmouseup,attr"`
+	Onmouseup TScriptType `xml:"onmouseup,attr,omitempty"`
 }
 
 // XAttrOnmouseoverTScriptType defines attribute OnmouseoverTScriptType
 type XAttrOnmouseoverTScriptType struct {
-	Onmouseover TScriptType `xml:"onmouseover,attr"`
+	Onmouseover TScriptType `xml:"onmouseover,attr,omitempty"`
 }
 
 // XAttrOnloadTScriptType defines attribute OnloadTScriptType
 type XAttrOnloadTScriptType struct {
-	Onload TScriptType `xml:"onload,attr"`
+	Onload TScriptType `xml:"onload,attr,omitempty"`
 }
 
 // XAttrOnfocusoutTScriptType defines attribute OnfocusoutTScriptType
 type XAttrOnfocusoutTScriptType struct {
-	Onfocusout TScriptType `xml:"onfocusout,attr"`
+	Onfocusout TScriptType `xml:"onfocusout,attr,omitempty"`
 }
 
 // XAttrOnactivateTScriptType defines attribute OnactivateTScriptType
 type XAttrOnactivateTScriptType struct {
-	Onactivate TScriptType `xml:"onactivate,attr"`
+	Onactivate TScriptType `xml:"onactivate,attr,omitempty"`
 }
 
 // XAttrOnmousedownTScriptType defines attribute OnmousedownTScriptType
 type XAttrOnmousedownTScriptType struct {
-	Onmousedown TScriptType `xml:"onmousedown,attr"`
+	Onmousedown TScriptType `xml:"onmousedown,attr,omitempty"`
 }
 
 // XAttsGraphicsElementEvents defines XAttsGraphicsElementEvents
@@ -171,32 +171,32 @@ type XAttsGraphicsElementEvents struct {
 
 // XAttrOnscrollTScriptType defines attribute OnscrollTScriptType
 type XAttrOnscrollTScriptType struct {
-	Onscroll TScriptType `xml:"onscroll,attr"`
+	Onscroll TScriptType `xml:"onscroll,attr,omitempty"`
 }
 
 // XAttrOnzoomTScriptType defines attribute OnzoomTScriptType
 type XAttrOnzoomTScriptType struct {
-	Onzoom TScriptType `xml:"onzoom,attr"`
+	Onzoom TScriptType `xml:"onzoom,attr,omitempty"`
 }
 
 // XAttrOnunloadTScriptType defines attribute OnunloadTScriptType
 type XAttrOnunloadTScriptType struct {
-	Onunload TScriptType `xml:"onunload,attr"`
+	Onunload TScriptType `xml:"onunload,attr,omitempty"`
 }
 
 // XAttrOnabortTScriptType defines attribute OnabortTScriptType
 type XAttrOnabortTScriptType struct {
-	Onabort TScriptType `xml:"onabort,attr"`
+	Onabort TScriptType `xml:"onabort,attr,omitempty"`
 }
 
 // XAttrOnerrorTScriptType defines attribute OnerrorTScriptType
 type XAttrOnerrorTScriptType struct {
-	Onerror TScriptType `xml:"onerror,attr"`
+	Onerror TScriptType `xml:"onerror,attr,omitempty"`
 }
 
 // XAttrOnresizeTScriptType defines attribute OnresizeTScriptType
 type XAttrOnresizeTScriptType struct {
-	Onresize TScriptType `xml:"onresize,attr"`
+	Onresize TScriptType `xml:"onresize,attr,omitempty"`
 }
 
 // XAttsDocumentEvents defines XAttsDocumentEvents
@@ -211,17 +211,17 @@ type XAttsDocumentEvents struct {
 
 // XAttrOnbeginTScriptType defines attribute OnbeginTScriptType
 type XAttrOnbeginTScriptType struct {
-	Onbegin TScriptType `xml:"onbegin,attr"`
+	Onbegin TScriptType `xml:"onbegin,attr,omitempty"`
 }
 
 // XAttrOnendTScriptType defines attribute OnendTScriptType
 type XAttrOnendTScriptType struct {
-	Onend TScriptType `xml:"onend,attr"`
+	Onend TScriptType `xml:"onend,attr,omitempty"`
 }
 
 // XAttrOnrepeatTScriptType defines attribute OnrepeatTScriptType
 type XAttrOnrepeatTScriptType struct {
-	Onrepeat TScriptType `xml:"onrepeat,attr"`
+	Onrepeat TScriptType `xml:"onrepeat,attr,omitempty"`
 }
 
 // XAttsAnimationEvents defines XAttsAnimationEvents
@@ -247,7 +247,7 @@ func (me TColorType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrColorTColorType defines attribute ColorTColorType
 type XAttrColorTColorType struct {
-	Color TColorType `xml:"color,attr"`
+	Color TColorType `xml:"color,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesColorColorInterpolation defines type xsdPresentationAttributesColorColorInterpolation
@@ -288,7 +288,7 @@ func (me TxsdPresentationAttributesColorColorInterpolation) IsInherit() bool {
 
 // XAttrColorInterpolationTxsdPresentationAttributesColorColorInterpolation defines attribute ColorInterpolationTxsdPresentationAttributesColorColorInterpolation
 type XAttrColorInterpolationTxsdPresentationAttributesColorColorInterpolation struct {
-	ColorInterpolation TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation,attr"`
+	ColorInterpolation TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesColorColorRendering defines type xsdPresentationAttributesColorColorRendering
@@ -327,7 +327,7 @@ func (me TxsdPresentationAttributesColorColorRendering) ToXsdtString() xsdt.Stri
 
 // XAttrColorRenderingTxsdPresentationAttributesColorColorRendering defines attribute ColorRenderingTxsdPresentationAttributesColorColorRendering
 type XAttrColorRenderingTxsdPresentationAttributesColorColorRendering struct {
-	ColorRendering TxsdPresentationAttributesColorColorRendering `xml:"color-rendering,attr"`
+	ColorRendering TxsdPresentationAttributesColorColorRendering `xml:"color-rendering,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesColor defines XAttsPresentationAttributesColor
@@ -352,7 +352,7 @@ func (me TEnableBackgroundValueType) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrEnableBackgroundTEnableBackgroundValueType defines attribute EnableBackgroundTEnableBackgroundValueType
 type XAttrEnableBackgroundTEnableBackgroundValueType struct {
-	EnableBackground TEnableBackgroundValueType `xml:"enable-background,attr"`
+	EnableBackground TEnableBackgroundValueType `xml:"enable-background,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesContainers defines XAttsPresentationAttributesContainers
@@ -376,7 +376,7 @@ func (me TOpacityValueType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrFloodOpacityTOpacityValueType defines attribute FloodOpacityTOpacityValueType
 type XAttrFloodOpacityTOpacityValueType struct {
-	FloodOpacity TOpacityValueType `xml:"flood-opacity,attr"`
+	FloodOpacity TOpacityValueType `xml:"flood-opacity,attr,omitempty"`
 }
 
 // TSVGColorType An SVG color value (sRGB plus optional ICC)
@@ -393,7 +393,7 @@ func (me TSVGColorType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrFloodColorTSVGColorType defines attribute FloodColorTSVGColorType
 type XAttrFloodColorTSVGColorType struct {
-	FloodColor TSVGColorType `xml:"flood-color,attr"`
+	FloodColor TSVGColorType `xml:"flood-color,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesFeFlood defines XAttsPresentationAttributesFeFlood
@@ -404,7 +404,7 @@ type XAttsPresentationAttributesFeFlood struct {
 
 // XAttrColorInterpolationFiltersTxsdPresentationAttributesFilterPrimitivesColorInterpolationFilters The following presentation attributes apply to filter primitives
 type XAttrColorInterpolationFiltersTxsdPresentationAttributesFilterPrimitivesColorInterpolationFilters struct {
-	ColorInterpolationFilters TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation-filters,attr"`
+	ColorInterpolationFilters TxsdPresentationAttributesColorColorInterpolation `xml:"color-interpolation-filters,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesFilterPrimitives defines XAttsPresentationAttributesFilterPrimitives
@@ -452,7 +452,7 @@ func (me TxsdPresentationAttributesFillStrokeStrokeLinejoin) String() string {
 
 // XAttrStrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin defines attribute StrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin
 type XAttrStrokeLinejoinTxsdPresentationAttributesFillStrokeStrokeLinejoin struct {
-	StrokeLinejoin TxsdPresentationAttributesFillStrokeStrokeLinejoin `xml:"stroke-linejoin,attr"`
+	StrokeLinejoin TxsdPresentationAttributesFillStrokeStrokeLinejoin `xml:"stroke-linejoin,attr,omitempty"`
 }
 
 // TStrokeMiterLimitValueType 'stroke-miterlimit' property/attribute value (e.g., <number>)
@@ -469,7 +469,7 @@ func (me *TStrokeMiterLimitValueType) Set(s string) { (*xsdt.String)(me).Set(s) 
 
 // XAttrStrokeMiterlimitTStrokeMiterLimitValueType defines attribute StrokeMiterlimitTStrokeMiterLimitValueType
 type XAttrStrokeMiterlimitTStrokeMiterLimitValueType struct {
-	StrokeMiterlimit TStrokeMiterLimitValueType `xml:"stroke-miterlimit,attr"`
+	StrokeMiterlimit TStrokeMiterLimitValueType `xml:"stroke-miterlimit,attr,omitempty"`
 }
 
 // TPaintType a 'fill' or 'stroke' property/attribute value
@@ -486,12 +486,12 @@ func (me TPaintType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrFillTPaintType defines attribute FillTPaintType
 type XAttrFillTPaintType struct {
-	Fill TPaintType `xml:"fill,attr"`
+	Fill TPaintType `xml:"fill,attr,omitempty"`
 }
 
 // XAttrStrokeTPaintType defines attribute StrokeTPaintType
 type XAttrStrokeTPaintType struct {
-	Stroke TPaintType `xml:"stroke,attr"`
+	Stroke TPaintType `xml:"stroke,attr,omitempty"`
 }
 
 // TStrokeDashArrayValueType 'stroke-dasharray' property/attribute value (e.g., 'none', list of <number>s)
@@ -508,7 +508,7 @@ func (me TStrokeDashArrayValueType) ToXsdtString() xsdt.String { return xsdt.Str
 
 // XAttrStrokeDasharrayTStrokeDashArrayValueType defines attribute StrokeDasharrayTStrokeDashArrayValueType
 type XAttrStrokeDasharrayTStrokeDashArrayValueType struct {
-	StrokeDasharray TStrokeDashArrayValueType `xml:"stroke-dasharray,attr"`
+	StrokeDasharray TStrokeDashArrayValueType `xml:"stroke-dasharray,attr,omitempty"`
 }
 
 // TStrokeDashOffsetValueType 'stroke-dashoffset' property/attribute value (e.g., 'none', >length>)
@@ -525,7 +525,7 @@ func (me TStrokeDashOffsetValueType) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrStrokeDashoffsetTStrokeDashOffsetValueType defines attribute StrokeDashoffsetTStrokeDashOffsetValueType
 type XAttrStrokeDashoffsetTStrokeDashOffsetValueType struct {
-	StrokeDashoffset TStrokeDashOffsetValueType `xml:"stroke-dashoffset,attr"`
+	StrokeDashoffset TStrokeDashOffsetValueType `xml:"stroke-dashoffset,attr,omitempty"`
 }
 
 // TStrokeWidthValueType 'stroke-width' property/attribute value (e.g., <length>)
@@ -542,12 +542,12 @@ func (me TStrokeWidthValueType) ToXsdtString() xsdt.String { return xsdt.String(
 
 // XAttrStrokeWidthTStrokeWidthValueType defines attribute StrokeWidthTStrokeWidthValueType
 type XAttrStrokeWidthTStrokeWidthValueType struct {
-	StrokeWidth TStrokeWidthValueType `xml:"stroke-width,attr"`
+	StrokeWidth TStrokeWidthValueType `xml:"stroke-width,attr,omitempty"`
 }
 
 // XAttrFillOpacityTOpacityValueType defines attribute FillOpacityTOpacityValueType
 type XAttrFillOpacityTOpacityValueType struct {
-	FillOpacity TOpacityValueType `xml:"fill-opacity,attr"`
+	FillOpacity TOpacityValueType `xml:"fill-opacity,attr,omitempty"`
 }
 
 // TClipFillRuleType 'clip-rule' or fill-rule property/attribute value
@@ -573,7 +573,7 @@ func (me TClipFillRuleType) IsNonzero() bool { return me.String() == "nonzero" }
 
 // XAttrFillRuleTClipFillRuleType defines attribute FillRuleTClipFillRuleType
 type XAttrFillRuleTClipFillRuleType struct {
-	FillRule TClipFillRuleType `xml:"fill-rule,attr"`
+	FillRule TClipFillRuleType `xml:"fill-rule,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesFillStrokeStrokeLinecap defines type xsdPresentationAttributesFillStrokeStrokeLinecap
@@ -614,12 +614,12 @@ func (me TxsdPresentationAttributesFillStrokeStrokeLinecap) IsButt() bool {
 
 // XAttrStrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap defines attribute StrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap
 type XAttrStrokeLinecapTxsdPresentationAttributesFillStrokeStrokeLinecap struct {
-	StrokeLinecap TxsdPresentationAttributesFillStrokeStrokeLinecap `xml:"stroke-linecap,attr"`
+	StrokeLinecap TxsdPresentationAttributesFillStrokeStrokeLinecap `xml:"stroke-linecap,attr,omitempty"`
 }
 
 // XAttrStrokeOpacityTOpacityValueType defines attribute StrokeOpacityTOpacityValueType
 type XAttrStrokeOpacityTOpacityValueType struct {
-	StrokeOpacity TOpacityValueType `xml:"stroke-opacity,attr"`
+	StrokeOpacity TOpacityValueType `xml:"stroke-opacity,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesFillStroke defines XAttsPresentationAttributesFillStroke
@@ -717,7 +717,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontStretch) IsExpanded() bo
 
 // XAttrFontStretchTxsdPresentationAttributesFontSpecificationFontStretch defines attribute FontStretchTxsdPresentationAttributesFontSpecificationFontStretch
 type XAttrFontStretchTxsdPresentationAttributesFontSpecificationFontStretch struct {
-	FontStretch TxsdPresentationAttributesFontSpecificationFontStretch `xml:"font-stretch,attr"`
+	FontStretch TxsdPresentationAttributesFontSpecificationFontStretch `xml:"font-stretch,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontStyle defines type xsdPresentationAttributesFontSpecificationFontStyle
@@ -760,7 +760,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontStyle) IsItalic() bool {
 
 // XAttrFontStyleTxsdPresentationAttributesFontSpecificationFontStyle defines attribute FontStyleTxsdPresentationAttributesFontSpecificationFontStyle
 type XAttrFontStyleTxsdPresentationAttributesFontSpecificationFontStyle struct {
-	FontStyle TxsdPresentationAttributesFontSpecificationFontStyle `xml:"font-style,attr"`
+	FontStyle TxsdPresentationAttributesFontSpecificationFontStyle `xml:"font-style,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontVariant defines type xsdPresentationAttributesFontSpecificationFontVariant
@@ -798,7 +798,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontVariant) IsNormal() bool
 
 // XAttrFontVariantTxsdPresentationAttributesFontSpecificationFontVariant defines attribute FontVariantTxsdPresentationAttributesFontSpecificationFontVariant
 type XAttrFontVariantTxsdPresentationAttributesFontSpecificationFontVariant struct {
-	FontVariant TxsdPresentationAttributesFontSpecificationFontVariant `xml:"font-variant,attr"`
+	FontVariant TxsdPresentationAttributesFontSpecificationFontVariant `xml:"font-variant,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesFontSpecificationFontWeight defines type xsdPresentationAttributesFontSpecificationFontWeight
@@ -891,7 +891,7 @@ func (me TxsdPresentationAttributesFontSpecificationFontWeight) String() string 
 
 // XAttrFontWeightTxsdPresentationAttributesFontSpecificationFontWeight defines attribute FontWeightTxsdPresentationAttributesFontSpecificationFontWeight
 type XAttrFontWeightTxsdPresentationAttributesFontSpecificationFontWeight struct {
-	FontWeight TxsdPresentationAttributesFontSpecificationFontWeight `xml:"font-weight,attr"`
+	FontWeight TxsdPresentationAttributesFontSpecificationFontWeight `xml:"font-weight,attr,omitempty"`
 }
 
 // TFontFamilyValueType [[ <family-name> | <generic-family> ],]* [<family-name> | <generic-family>] | inherit
@@ -909,7 +909,7 @@ func (me TFontFamilyValueType) ToXsdtString() xsdt.String { return xsdt.String(m
 
 // XAttrFontFamilyTFontFamilyValueType defines attribute FontFamilyTFontFamilyValueType
 type XAttrFontFamilyTFontFamilyValueType struct {
-	FontFamily TFontFamilyValueType `xml:"font-family,attr"`
+	FontFamily TFontFamilyValueType `xml:"font-family,attr,omitempty"`
 }
 
 // TFontSizeValueType 'font-size' property/attribute value
@@ -927,7 +927,7 @@ func (me TFontSizeValueType) ToXsdtString() xsdt.String { return xsdt.String(me)
 
 // XAttrFontSizeTFontSizeValueType defines attribute FontSizeTFontSizeValueType
 type XAttrFontSizeTFontSizeValueType struct {
-	FontSize TFontSizeValueType `xml:"font-size,attr"`
+	FontSize TFontSizeValueType `xml:"font-size,attr,omitempty"`
 }
 
 // TFontSizeAdjustValueType 'font-size-adjust' property/attribute value
@@ -945,7 +945,7 @@ func (me TFontSizeAdjustValueType) ToXsdtString() xsdt.String { return xsdt.Stri
 
 // XAttrFontSizeAdjustTFontSizeAdjustValueType defines attribute FontSizeAdjustTFontSizeAdjustValueType
 type XAttrFontSizeAdjustTFontSizeAdjustValueType struct {
-	FontSizeAdjust TFontSizeAdjustValueType `xml:"font-size-adjust,attr"`
+	FontSizeAdjust TFontSizeAdjustValueType `xml:"font-size-adjust,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesFontSpecification defines XAttsPresentationAttributesFontSpecification
@@ -961,12 +961,12 @@ type XAttsPresentationAttributesFontSpecification struct {
 
 // XAttrStopColorTSVGColorType The following presentation attributes apply to gradient 'stop' elements
 type XAttrStopColorTSVGColorType struct {
-	StopColor TSVGColorType `xml:"stop-color,attr"`
+	StopColor TSVGColorType `xml:"stop-color,attr,omitempty"`
 }
 
 // XAttrStopOpacityTOpacityValueType defines attribute StopOpacityTOpacityValueType
 type XAttrStopOpacityTOpacityValueType struct {
-	StopOpacity TOpacityValueType `xml:"stop-opacity,attr"`
+	StopOpacity TOpacityValueType `xml:"stop-opacity,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesGradients defines XAttsPresentationAttributesGradients
@@ -990,12 +990,12 @@ func (me TClipPathValueType) String() string { return xsdt.String(me).String() }
 
 // XAttrClipPathTClipPathValueType defines attribute ClipPathTClipPathValueType
 type XAttrClipPathTClipPathValueType struct {
-	ClipPath TClipPathValueType `xml:"clip-path,attr"`
+	ClipPath TClipPathValueType `xml:"clip-path,attr,omitempty"`
 }
 
 // XAttrClipRuleTClipFillRuleType defines attribute ClipRuleTClipFillRuleType
 type XAttrClipRuleTClipFillRuleType struct {
-	ClipRule TClipFillRuleType `xml:"clip-rule,attr"`
+	ClipRule TClipFillRuleType `xml:"clip-rule,attr,omitempty"`
 }
 
 // TFilterValueType <uri> | none | inherit
@@ -1012,7 +1012,7 @@ func (me TFilterValueType) String() string { return xsdt.String(me).String() }
 
 // XAttrFilterTFilterValueType defines attribute FilterTFilterValueType
 type XAttrFilterTFilterValueType struct {
-	Filter TFilterValueType `xml:"filter,attr"`
+	Filter TFilterValueType `xml:"filter,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesGraphicsPointerEvents defines type xsdPresentationAttributesGraphicsPointerEvents
@@ -1087,7 +1087,7 @@ func (me TxsdPresentationAttributesGraphicsPointerEvents) IsStroke() bool {
 
 // XAttrPointerEventsTxsdPresentationAttributesGraphicsPointerEvents defines attribute PointerEventsTxsdPresentationAttributesGraphicsPointerEvents
 type XAttrPointerEventsTxsdPresentationAttributesGraphicsPointerEvents struct {
-	PointerEvents TxsdPresentationAttributesGraphicsPointerEvents `xml:"pointer-events,attr"`
+	PointerEvents TxsdPresentationAttributesGraphicsPointerEvents `xml:"pointer-events,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesGraphicsShapeRendering defines type xsdPresentationAttributesGraphicsShapeRendering
@@ -1133,7 +1133,7 @@ func (me TxsdPresentationAttributesGraphicsShapeRendering) ToXsdtString() xsdt.S
 
 // XAttrShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering defines attribute ShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering
 type XAttrShapeRenderingTxsdPresentationAttributesGraphicsShapeRendering struct {
-	ShapeRendering TxsdPresentationAttributesGraphicsShapeRendering `xml:"shape-rendering,attr"`
+	ShapeRendering TxsdPresentationAttributesGraphicsShapeRendering `xml:"shape-rendering,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesGraphicsVisibility defines type xsdPresentationAttributesGraphicsVisibility
@@ -1169,7 +1169,7 @@ func (me TxsdPresentationAttributesGraphicsVisibility) ToXsdtString() xsdt.Strin
 
 // XAttrVisibilityTxsdPresentationAttributesGraphicsVisibility defines attribute VisibilityTxsdPresentationAttributesGraphicsVisibility
 type XAttrVisibilityTxsdPresentationAttributesGraphicsVisibility struct {
-	Visibility TxsdPresentationAttributesGraphicsVisibility `xml:"visibility,attr"`
+	Visibility TxsdPresentationAttributesGraphicsVisibility `xml:"visibility,attr,omitempty"`
 }
 
 // TCursorValueType Value is an optional comma-separated list orf uri references followed by one token from an enumerated list.
@@ -1187,7 +1187,7 @@ func (me TCursorValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrCursorTCursorValueType defines attribute CursorTCursorValueType
 type XAttrCursorTCursorValueType struct {
-	Cursor TCursorValueType `xml:"cursor,attr"`
+	Cursor TCursorValueType `xml:"cursor,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesGraphicsDisplay defines type xsdPresentationAttributesGraphicsDisplay
@@ -1280,12 +1280,12 @@ func (me TxsdPresentationAttributesGraphicsDisplay) IsMarker() bool { return me.
 
 // XAttrDisplayTxsdPresentationAttributesGraphicsDisplay defines attribute DisplayTxsdPresentationAttributesGraphicsDisplay
 type XAttrDisplayTxsdPresentationAttributesGraphicsDisplay struct {
-	Display TxsdPresentationAttributesGraphicsDisplay `xml:"display,attr"`
+	Display TxsdPresentationAttributesGraphicsDisplay `xml:"display,attr,omitempty"`
 }
 
 // XAttrImageRenderingTxsdPresentationAttributesGraphicsImageRendering defines attribute ImageRenderingTxsdPresentationAttributesGraphicsImageRendering
 type XAttrImageRenderingTxsdPresentationAttributesGraphicsImageRendering struct {
-	ImageRendering TxsdPresentationAttributesColorColorRendering `xml:"image-rendering,attr"`
+	ImageRendering TxsdPresentationAttributesColorColorRendering `xml:"image-rendering,attr,omitempty"`
 }
 
 // TMaskValueType 'mask' property/attribute value (e.g., 'none', %URI;)
@@ -1303,12 +1303,12 @@ func (me *TMaskValueType) Set(s string) { (*xsdt.String)(me).Set(s) }
 
 // XAttrMaskTMaskValueType defines attribute MaskTMaskValueType
 type XAttrMaskTMaskValueType struct {
-	Mask TMaskValueType `xml:"mask,attr"`
+	Mask TMaskValueType `xml:"mask,attr,omitempty"`
 }
 
 // XAttrOpacityTOpacityValueType defines attribute OpacityTOpacityValueType
 type XAttrOpacityTOpacityValueType struct {
-	Opacity TOpacityValueType `xml:"opacity,attr"`
+	Opacity TOpacityValueType `xml:"opacity,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesGraphicsTextRendering defines type xsdPresentationAttributesGraphicsTextRendering
@@ -1352,7 +1352,7 @@ func (me TxsdPresentationAttributesGraphicsTextRendering) IsGeometricPrecision()
 
 // XAttrTextRenderingTxsdPresentationAttributesGraphicsTextRendering defines attribute TextRenderingTxsdPresentationAttributesGraphicsTextRendering
 type XAttrTextRenderingTxsdPresentationAttributesGraphicsTextRendering struct {
-	TextRendering TxsdPresentationAttributesGraphicsTextRendering `xml:"text-rendering,attr"`
+	TextRendering TxsdPresentationAttributesGraphicsTextRendering `xml:"text-rendering,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesGraphics defines XAttsPresentationAttributesGraphics
@@ -1373,7 +1373,7 @@ type XAttsPresentationAttributesGraphics struct {
 
 // XAttrColorProfileXsdtString The following presentation attributes apply to 'image' elements
 type XAttrColorProfileXsdtString struct {
-	ColorProfile xsdt.String `xml:"color-profile,attr"`
+	ColorProfile xsdt.String `xml:"color-profile,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesImages defines XAttsPresentationAttributesImages
@@ -1383,7 +1383,7 @@ type XAttsPresentationAttributesImages struct {
 
 // XAttrLightingColorTSVGColorType The following presentation attributes apply to 'feDiffuseLighting' and 'feSpecularLighting' elements
 type XAttrLightingColorTSVGColorType struct {
-	LightingColor TSVGColorType `xml:"lighting-color,attr"`
+	LightingColor TSVGColorType `xml:"lighting-color,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesLightingEffects defines XAttsPresentationAttributesLightingEffects
@@ -1406,17 +1406,17 @@ func (me TMarkerValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrMarkerStartTMarkerValueType defines attribute MarkerStartTMarkerValueType
 type XAttrMarkerStartTMarkerValueType struct {
-	MarkerStart TMarkerValueType `xml:"marker-start,attr"`
+	MarkerStart TMarkerValueType `xml:"marker-start,attr,omitempty"`
 }
 
 // XAttrMarkerMidTMarkerValueType defines attribute MarkerMidTMarkerValueType
 type XAttrMarkerMidTMarkerValueType struct {
-	MarkerMid TMarkerValueType `xml:"marker-mid,attr"`
+	MarkerMid TMarkerValueType `xml:"marker-mid,attr,omitempty"`
 }
 
 // XAttrMarkerEndTMarkerValueType defines attribute MarkerEndTMarkerValueType
 type XAttrMarkerEndTMarkerValueType struct {
-	MarkerEnd TMarkerValueType `xml:"marker-end,attr"`
+	MarkerEnd TMarkerValueType `xml:"marker-end,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesMarkers defines XAttsPresentationAttributesMarkers
@@ -1442,7 +1442,7 @@ func (me TGlyphOrientationHorizontalValueType) ToXsdtString() xsdt.String { retu
 
 // XAttrGlyphOrientationHorizontalTGlyphOrientationHorizontalValueType defines attribute GlyphOrientationHorizontalTGlyphOrientationHorizontalValueType
 type XAttrGlyphOrientationHorizontalTGlyphOrientationHorizontalValueType struct {
-	GlyphOrientationHorizontal TGlyphOrientationHorizontalValueType `xml:"glyph-orientation-horizontal,attr"`
+	GlyphOrientationHorizontal TGlyphOrientationHorizontalValueType `xml:"glyph-orientation-horizontal,attr,omitempty"`
 }
 
 // TGlyphOrientationVerticalValueType 'glyph-orientation-vertical' property/attribute value (e.g., 'auto', <angle>)
@@ -1460,7 +1460,7 @@ func (me TGlyphOrientationVerticalValueType) ToXsdtString() xsdt.String { return
 
 // XAttrGlyphOrientationVerticalTGlyphOrientationVerticalValueType defines attribute GlyphOrientationVerticalTGlyphOrientationVerticalValueType
 type XAttrGlyphOrientationVerticalTGlyphOrientationVerticalValueType struct {
-	GlyphOrientationVertical TGlyphOrientationVerticalValueType `xml:"glyph-orientation-vertical,attr"`
+	GlyphOrientationVertical TGlyphOrientationVerticalValueType `xml:"glyph-orientation-vertical,attr,omitempty"`
 }
 
 // TSpacingValueType 'letter-spacing' or 'word-spacing' property/attribute value (e.g., normal | <length>)
@@ -1477,7 +1477,7 @@ func (me TSpacingValueType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrLetterSpacingTSpacingValueType defines attribute LetterSpacingTSpacingValueType
 type XAttrLetterSpacingTSpacingValueType struct {
-	LetterSpacing TSpacingValueType `xml:"letter-spacing,attr"`
+	LetterSpacing TSpacingValueType `xml:"letter-spacing,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesTextContentElementsUnicodeBidi defines type xsdPresentationAttributesTextContentElementsUnicodeBidi
@@ -1520,12 +1520,12 @@ func (me TxsdPresentationAttributesTextContentElementsUnicodeBidi) IsBidiOverrid
 
 // XAttrUnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi defines attribute UnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi
 type XAttrUnicodeBidiTxsdPresentationAttributesTextContentElementsUnicodeBidi struct {
-	UnicodeBidi TxsdPresentationAttributesTextContentElementsUnicodeBidi `xml:"unicode-bidi,attr"`
+	UnicodeBidi TxsdPresentationAttributesTextContentElementsUnicodeBidi `xml:"unicode-bidi,attr,omitempty"`
 }
 
 // XAttrWordSpacingTSpacingValueType defines attribute WordSpacingTSpacingValueType
 type XAttrWordSpacingTSpacingValueType struct {
-	WordSpacing TSpacingValueType `xml:"word-spacing,attr"`
+	WordSpacing TSpacingValueType `xml:"word-spacing,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesTextContentElementsDominantBaseline defines type xsdPresentationAttributesTextContentElementsDominantBaseline
@@ -1593,7 +1593,7 @@ func (me TxsdPresentationAttributesTextContentElementsDominantBaseline) IsAuto()
 
 // XAttrDominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline defines attribute DominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline
 type XAttrDominantBaselineTxsdPresentationAttributesTextContentElementsDominantBaseline struct {
-	DominantBaseline TxsdPresentationAttributesTextContentElementsDominantBaseline `xml:"dominant-baseline,attr"`
+	DominantBaseline TxsdPresentationAttributesTextContentElementsDominantBaseline `xml:"dominant-baseline,attr,omitempty"`
 }
 
 // TBaselineShiftValueType The actual definition is
@@ -1612,7 +1612,7 @@ func (me TBaselineShiftValueType) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrBaselineShiftTBaselineShiftValueType defines attribute BaselineShiftTBaselineShiftValueType
 type XAttrBaselineShiftTBaselineShiftValueType struct {
-	BaselineShift TBaselineShiftValueType `xml:"baseline-shift,attr"`
+	BaselineShift TBaselineShiftValueType `xml:"baseline-shift,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesTextContentElementsDirection defines type xsdPresentationAttributesTextContentElementsDirection
@@ -1650,7 +1650,7 @@ func (me *TxsdPresentationAttributesTextContentElementsDirection) Set(s string) 
 
 // XAttrDirectionTxsdPresentationAttributesTextContentElementsDirection defines attribute DirectionTxsdPresentationAttributesTextContentElementsDirection
 type XAttrDirectionTxsdPresentationAttributesTextContentElementsDirection struct {
-	Direction TxsdPresentationAttributesTextContentElementsDirection `xml:"direction,attr"`
+	Direction TxsdPresentationAttributesTextContentElementsDirection `xml:"direction,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesTextContentElementsTextAnchor defines type xsdPresentationAttributesTextContentElementsTextAnchor
@@ -1693,7 +1693,7 @@ func (me TxsdPresentationAttributesTextContentElementsTextAnchor) IsInherit() bo
 
 // XAttrTextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor defines attribute TextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor
 type XAttrTextAnchorTxsdPresentationAttributesTextContentElementsTextAnchor struct {
-	TextAnchor TxsdPresentationAttributesTextContentElementsTextAnchor `xml:"text-anchor,attr"`
+	TextAnchor TxsdPresentationAttributesTextContentElementsTextAnchor `xml:"text-anchor,attr,omitempty"`
 }
 
 // TextDecorationValueType 'text-decoration' property/attribute value (e.g., 'none', 'underline')
@@ -1710,7 +1710,7 @@ func (me TextDecorationValueType) String() string { return xsdt.String(me).Strin
 
 // XAttrTextDecorationTextDecorationValueType defines attribute TextDecorationTextDecorationValueType
 type XAttrTextDecorationTextDecorationValueType struct {
-	TextDecoration TextDecorationValueType `xml:"text-decoration,attr"`
+	TextDecoration TextDecorationValueType `xml:"text-decoration,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesTextContentElementsAlignmentBaseline defines type xsdPresentationAttributesTextContentElementsAlignmentBaseline
@@ -1808,7 +1808,7 @@ func (me TxsdPresentationAttributesTextContentElementsAlignmentBaseline) IsHangi
 
 // XAttrAlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline defines attribute AlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline
 type XAttrAlignmentBaselineTxsdPresentationAttributesTextContentElementsAlignmentBaseline struct {
-	AlignmentBaseline TxsdPresentationAttributesTextContentElementsAlignmentBaseline `xml:"alignment-baseline,attr"`
+	AlignmentBaseline TxsdPresentationAttributesTextContentElementsAlignmentBaseline `xml:"alignment-baseline,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesTextContentElements defines XAttsPresentationAttributesTextContentElements
@@ -1873,7 +1873,7 @@ func (me TxsdPresentationAttributesTextElementsWritingMode) IsTbRl() bool {
 
 // XAttrWritingModeTxsdPresentationAttributesTextElementsWritingMode defines attribute WritingModeTxsdPresentationAttributesTextElementsWritingMode
 type XAttrWritingModeTxsdPresentationAttributesTextElementsWritingMode struct {
-	WritingMode TxsdPresentationAttributesTextElementsWritingMode `xml:"writing-mode,attr"`
+	WritingMode TxsdPresentationAttributesTextElementsWritingMode `xml:"writing-mode,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesTextElements defines XAttsPresentationAttributesTextElements
@@ -1896,7 +1896,7 @@ func (me TClipValueType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrClipTClipValueType defines attribute ClipTClipValueType
 type XAttrClipTClipValueType struct {
-	Clip TClipValueType `xml:"clip,attr"`
+	Clip TClipValueType `xml:"clip,attr,omitempty"`
 }
 
 // TxsdPresentationAttributesViewportsOverflow defines type xsdPresentationAttributesViewportsOverflow
@@ -1936,7 +1936,7 @@ func (me TxsdPresentationAttributesViewportsOverflow) IsAuto() bool { return me.
 
 // XAttrOverflowTxsdPresentationAttributesViewportsOverflow defines attribute OverflowTxsdPresentationAttributesViewportsOverflow
 type XAttrOverflowTxsdPresentationAttributesViewportsOverflow struct {
-	Overflow TxsdPresentationAttributesViewportsOverflow `xml:"overflow,attr"`
+	Overflow TxsdPresentationAttributesViewportsOverflow `xml:"overflow,attr,omitempty"`
 }
 
 // XAttsPresentationAttributesViewports defines XAttsPresentationAttributesViewports
@@ -1965,7 +1965,7 @@ type XAttsPresentationAttributesAll struct {
 
 // XAttrResultXsdtString defines attribute Result
 type XAttrResultXsdtString struct {
-	Result xsdt.String `xml:"result,attr"`
+	Result xsdt.String `xml:"result,attr,omitempty"`
 }
 
 // TCoordinateType a <co-ordinate>
@@ -1983,12 +1983,12 @@ func (me TCoordinateType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrXTCoordinateType defines attribute XTCoordinateType
 type XAttrXTCoordinateType struct {
-	X TCoordinateType `xml:"x,attr"`
+	X TCoordinateType `xml:"x,attr,omitempty"`
 }
 
 // XAttrYTCoordinateType defines attribute YTCoordinateType
 type XAttrYTCoordinateType struct {
-	Y TCoordinateType `xml:"y,attr"`
+	Y TCoordinateType `xml:"y,attr,omitempty"`
 }
 
 // TLengthType a <length>
@@ -2005,12 +2005,12 @@ func (me TLengthType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrWidthTLengthType defines attribute WidthTLengthType
 type XAttrWidthTLengthType struct {
-	Width TLengthType `xml:"width,attr"`
+	Width TLengthType `xml:"width,attr,omitempty"`
 }
 
 // XAttrHeightTLengthType defines attribute HeightTLengthType
 type XAttrHeightTLengthType struct {
-	Height TLengthType `xml:"height,attr"`
+	Height TLengthType `xml:"height,attr,omitempty"`
 }
 
 // XAttsFilterPrimitiveAttributes defines XAttsFilterPrimitiveAttributes
@@ -2024,7 +2024,7 @@ type XAttsFilterPrimitiveAttributes struct {
 
 // XAttrInXsdtString defines attribute In
 type XAttrInXsdtString struct {
-	In xsdt.String `xml:"in,attr"`
+	In xsdt.String `xml:"in,attr,omitempty"`
 }
 
 // XAttsFilterPrimitiveAttributesWithIn defines XAttsFilterPrimitiveAttributesWithIn
@@ -2035,27 +2035,27 @@ type XAttsFilterPrimitiveAttributesWithIn struct {
 
 // XAttrSlopeXsdtDouble defines attribute Slope
 type XAttrSlopeXsdtDouble struct {
-	Slope xsdt.Double `xml:"slope,attr"`
+	Slope xsdt.Double `xml:"slope,attr,omitempty"`
 }
 
 // XAttrInterceptXsdtDouble defines attribute Intercept
 type XAttrInterceptXsdtDouble struct {
-	Intercept xsdt.Double `xml:"intercept,attr"`
+	Intercept xsdt.Double `xml:"intercept,attr,omitempty"`
 }
 
 // XAttrAmplitudeXsdtDouble defines attribute Amplitude
 type XAttrAmplitudeXsdtDouble struct {
-	Amplitude xsdt.Double `xml:"amplitude,attr"`
+	Amplitude xsdt.Double `xml:"amplitude,attr,omitempty"`
 }
 
 // XAttrExponentXsdtDouble defines attribute Exponent
 type XAttrExponentXsdtDouble struct {
-	Exponent xsdt.Double `xml:"exponent,attr"`
+	Exponent xsdt.Double `xml:"exponent,attr,omitempty"`
 }
 
 // XAttrOffsetXsdtDouble defines attribute Offset
 type XAttrOffsetXsdtDouble struct {
-	Offset xsdt.Double `xml:"offset,attr"`
+	Offset xsdt.Double `xml:"offset,attr,omitempty"`
 }
 
 // TxsdComponentTransferFunctionAttributesType defines type xsdComponentTransferFunctionAttributesType
@@ -2095,12 +2095,12 @@ func (me TxsdComponentTransferFunctionAttributesType) IsGamma() bool { return me
 
 // XAttrTypeTxsdComponentTransferFunctionAttributesType defines attribute TypeTxsdComponentTransferFunctionAttributesType
 type XAttrTypeTxsdComponentTransferFunctionAttributesType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr,omitempty"`
 }
 
 // XAttrTableValuesXsdtString defines attribute TableValues
 type XAttrTableValuesXsdtString struct {
-	TableValues xsdt.String `xml:"tableValues,attr"`
+	TableValues xsdt.String `xml:"tableValues,attr,omitempty"`
 }
 
 // XAttsComponentTransferFunctionAttributes defines XAttsComponentTransferFunctionAttributes
@@ -2122,12 +2122,12 @@ type XAttsAnimElementAttrs struct {
 
 // XAttrAttributeNameXsdtString defines attribute AttributeName
 type XAttrAttributeNameXsdtString struct {
-	AttributeName xsdt.String `xml:"attributeName,attr"`
+	AttributeName xsdt.String `xml:"attributeName,attr,omitempty"`
 }
 
 // XAttrAttributeTypeXsdtString defines attribute AttributeType
 type XAttrAttributeTypeXsdtString struct {
-	AttributeType xsdt.String `xml:"attributeType,attr"`
+	AttributeType xsdt.String `xml:"attributeType,attr,omitempty"`
 }
 
 // XAttsAnimAttributeAttrs defines XAttsAnimAttributeAttrs
@@ -2144,17 +2144,17 @@ type XAttsAnimTargetAttrs struct {
 
 // XAttrBeginXsdtString defines attribute Begin
 type XAttrBeginXsdtString struct {
-	Begin xsdt.String `xml:"begin,attr"`
+	Begin xsdt.String `xml:"begin,attr,omitempty"`
 }
 
 // XAttrEndXsdtString defines attribute End
 type XAttrEndXsdtString struct {
-	End xsdt.String `xml:"end,attr"`
+	End xsdt.String `xml:"end,attr,omitempty"`
 }
 
 // XAttrMaxXsdtString defines attribute Max
 type XAttrMaxXsdtString struct {
-	Max xsdt.String `xml:"max,attr"`
+	Max xsdt.String `xml:"max,attr,omitempty"`
 }
 
 // TxsdAnimTimingAttrsRestart defines type xsdAnimTimingAttrsRestart
@@ -2180,7 +2180,7 @@ func (me TxsdAnimTimingAttrsRestart) ToXsdtString() xsdt.String { return xsdt.St
 
 // XAttrRestartTxsdAnimTimingAttrsRestartAlways defines attribute RestartTxsdAnimTimingAttrsRestartAlways
 type XAttrRestartTxsdAnimTimingAttrsRestartAlways struct {
-	Restart TxsdAnimTimingAttrsRestart `xml:"restart,attr"`
+	Restart TxsdAnimTimingAttrsRestart `xml:"restart,attr,omitempty"`
 }
 
 // RestartDefault : Returns the default value for Restart -- "always"
@@ -2190,22 +2190,22 @@ func (me XAttrRestartTxsdAnimTimingAttrsRestartAlways) RestartDefault() TxsdAnim
 
 // XAttrRepeatCountXsdtString defines attribute RepeatCount
 type XAttrRepeatCountXsdtString struct {
-	RepeatCount xsdt.String `xml:"repeatCount,attr"`
+	RepeatCount xsdt.String `xml:"repeatCount,attr,omitempty"`
 }
 
 // XAttrRepeatDurXsdtString defines attribute RepeatDur
 type XAttrRepeatDurXsdtString struct {
-	RepeatDur xsdt.String `xml:"repeatDur,attr"`
+	RepeatDur xsdt.String `xml:"repeatDur,attr,omitempty"`
 }
 
 // XAttrDurXsdtString defines attribute Dur
 type XAttrDurXsdtString struct {
-	Dur xsdt.String `xml:"dur,attr"`
+	Dur xsdt.String `xml:"dur,attr,omitempty"`
 }
 
 // XAttrMinXsdtString defines attribute Min
 type XAttrMinXsdtString struct {
-	Min xsdt.String `xml:"min,attr"`
+	Min xsdt.String `xml:"min,attr,omitempty"`
 }
 
 // TxsdAnimTimingAttrsFill defines type xsdAnimTimingAttrsFill
@@ -2228,7 +2228,7 @@ func (me TxsdAnimTimingAttrsFill) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrFillTxsdAnimTimingAttrsFillRemove defines attribute FillTxsdAnimTimingAttrsFillRemove
 type XAttrFillTxsdAnimTimingAttrsFillRemove struct {
-	Fill TxsdAnimTimingAttrsFill `xml:"fill,attr"`
+	Fill TxsdAnimTimingAttrsFill `xml:"fill,attr,omitempty"`
 }
 
 // FillDefault : Returns the default value for Fill -- "remove"
@@ -2251,22 +2251,22 @@ type XAttsAnimTimingAttrs struct {
 
 // XAttrKeySplinesXsdtString defines attribute KeySplines
 type XAttrKeySplinesXsdtString struct {
-	KeySplines xsdt.String `xml:"keySplines,attr"`
+	KeySplines xsdt.String `xml:"keySplines,attr,omitempty"`
 }
 
 // XAttrFromXsdtString defines attribute From
 type XAttrFromXsdtString struct {
-	From xsdt.String `xml:"from,attr"`
+	From xsdt.String `xml:"from,attr,omitempty"`
 }
 
 // XAttrToXsdtString defines attribute To
 type XAttrToXsdtString struct {
-	To xsdt.String `xml:"to,attr"`
+	To xsdt.String `xml:"to,attr,omitempty"`
 }
 
 // XAttrByXsdtString defines attribute By
 type XAttrByXsdtString struct {
-	By xsdt.String `xml:"by,attr"`
+	By xsdt.String `xml:"by,attr,omitempty"`
 }
 
 // TxsdAnimValueAttrsCalcMode defines type xsdAnimValueAttrsCalcMode
@@ -2295,7 +2295,7 @@ func (me *TxsdAnimValueAttrsCalcMode) Set(s string) { (*xsdt.String)(me).Set(s) 
 
 // XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear defines attribute CalcModeTxsdAnimValueAttrsCalcModeLinear
 type XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear struct {
-	CalcMode TxsdAnimValueAttrsCalcMode `xml:"calcMode,attr"`
+	CalcMode TxsdAnimValueAttrsCalcMode `xml:"calcMode,attr,omitempty"`
 }
 
 // CalcModeDefault : Returns the default value for CalcMode -- "linear"
@@ -2305,12 +2305,12 @@ func (me XAttrCalcModeTxsdAnimValueAttrsCalcModeLinear) CalcModeDefault() TxsdAn
 
 // XAttrValuesXsdtString defines attribute Values
 type XAttrValuesXsdtString struct {
-	Values xsdt.String `xml:"values,attr"`
+	Values xsdt.String `xml:"values,attr,omitempty"`
 }
 
 // XAttrKeyTimesXsdtString defines attribute KeyTimes
 type XAttrKeyTimesXsdtString struct {
-	KeyTimes xsdt.String `xml:"keyTimes,attr"`
+	KeyTimes xsdt.String `xml:"keyTimes,attr,omitempty"`
 }
 
 // XAttsAnimValueAttrs defines XAttsAnimValueAttrs
@@ -2344,7 +2344,7 @@ func (me TxsdAnimAdditionAttrsAccumulate) IsNone() bool { return me.String() == 
 
 // XAttrAccumulateTxsdAnimAdditionAttrsAccumulateNone defines attribute AccumulateTxsdAnimAdditionAttrsAccumulateNone
 type XAttrAccumulateTxsdAnimAdditionAttrsAccumulateNone struct {
-	Accumulate TxsdAnimAdditionAttrsAccumulate `xml:"accumulate,attr"`
+	Accumulate TxsdAnimAdditionAttrsAccumulate `xml:"accumulate,attr,omitempty"`
 }
 
 // AccumulateDefault : Returns the default value for Accumulate -- "none"
@@ -2372,7 +2372,7 @@ func (me TxsdAnimAdditionAttrsAdditive) String() string { return xsdt.String(me)
 
 // XAttrAdditiveTxsdAnimAdditionAttrsAdditiveReplace defines attribute AdditiveTxsdAnimAdditionAttrsAdditiveReplace
 type XAttrAdditiveTxsdAnimAdditionAttrsAdditiveReplace struct {
-	Additive TxsdAnimAdditionAttrsAdditive `xml:"additive,attr"`
+	Additive TxsdAnimAdditionAttrsAdditive `xml:"additive,attr,omitempty"`
 }
 
 // AdditiveDefault : Returns the default value for Additive -- "replace"
@@ -2410,7 +2410,7 @@ func (me TClassListType) Values() (list []xsdt.String) {
 
 // XAttrClassTClassListType defines attribute ClassTClassListType
 type XAttrClassTClassListType struct {
-	Class TClassListType `xml:"class,attr"`
+	Class TClassListType `xml:"class,attr,omitempty"`
 }
 
 // TStyleSheetType style sheet data
@@ -2427,17 +2427,17 @@ func (me TStyleSheetType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrStyleTStyleSheetType defines attribute StyleTStyleSheetType
 type XAttrStyleTStyleSheetType struct {
-	Style TStyleSheetType `xml:"style,attr"`
+	Style TStyleSheetType `xml:"style,attr,omitempty"`
 }
 
 // XAttrExternalResourcesRequiredXsdtBoolean defines attribute ExternalResourcesRequired
 type XAttrExternalResourcesRequiredXsdtBoolean struct {
-	ExternalResourcesRequired xsdt.Boolean `xml:"externalResourcesRequired,attr"`
+	ExternalResourcesRequired xsdt.Boolean `xml:"externalResourcesRequired,attr,omitempty"`
 }
 
 // XAttrContentXsdtStringStructuredText A bit simpler than the DTD, but see commented-out alternative
 type XAttrContentXsdtStringStructuredText struct {
-	Content xsdt.String `xml:"content,attr"`
+	Content xsdt.String `xml:"content,attr,omitempty"`
 }
 
 // ContentFixed : Returns the fixed value for Content -- "structured text"
@@ -2735,7 +2735,7 @@ func (me TransformListType) ToXsdtString() xsdt.String { return xsdt.String(me) 
 
 // XAttrTransformTransformListType defines attribute TransformTransformListType
 type XAttrTransformTransformListType struct {
-	Transform TransformListType `xml:"transform,attr"`
+	Transform TransformListType `xml:"transform,attr,omitempty"`
 }
 
 // TanimateColorType defines type animateColorType
@@ -2827,7 +2827,7 @@ func (me TxsdAnimateTransformTypeType) IsSkewX() bool { return me.String() == "s
 
 // XAttrTypeTxsdAnimateTransformTypeTypeTranslate defines attribute TypeTxsdAnimateTransformTypeTypeTranslate
 type XAttrTypeTxsdAnimateTransformTypeTypeTranslate struct {
-	Type TxsdAnimateTransformTypeType `xml:"type,attr"`
+	Type TxsdAnimateTransformTypeType `xml:"type,attr,omitempty"`
 }
 
 // TypeDefault : Returns the default value for Type -- "translate"
@@ -2898,17 +2898,17 @@ func (me *XElemsAnimateTransform) Walk() (err error) {
 
 // XAttrRotateXsdtString defines attribute Rotate
 type XAttrRotateXsdtString struct {
-	Rotate xsdt.String `xml:"rotate,attr"`
+	Rotate xsdt.String `xml:"rotate,attr,omitempty"`
 }
 
 // XAttrOriginXsdtString defines attribute Origin
 type XAttrOriginXsdtString struct {
-	Origin xsdt.String `xml:"origin,attr"`
+	Origin xsdt.String `xml:"origin,attr,omitempty"`
 }
 
 // XAttrPathXsdtString defines attribute Path
 type XAttrPathXsdtString struct {
-	Path xsdt.String `xml:"path,attr"`
+	Path xsdt.String `xml:"path,attr,omitempty"`
 }
 
 // TmpathType defines type mpathType
@@ -2967,7 +2967,7 @@ func (me *XElemMpath) Walk() (err error) {
 
 // XAttrKeyPointsXsdtString defines attribute KeyPoints
 type XAttrKeyPointsXsdtString struct {
-	KeyPoints xsdt.String `xml:"keyPoints,attr"`
+	KeyPoints xsdt.String `xml:"keyPoints,attr,omitempty"`
 }
 
 // TanimateMotionType defines type animateMotionType
@@ -3040,17 +3040,17 @@ func (me *XElemsAnimateMotion) Walk() (err error) {
 
 // XAttrCxTCoordinateType defines attribute CxTCoordinateType
 type XAttrCxTCoordinateType struct {
-	Cx TCoordinateType `xml:"cx,attr"`
+	Cx TCoordinateType `xml:"cx,attr,omitempty"`
 }
 
 // XAttrCyTCoordinateType defines attribute CyTCoordinateType
 type XAttrCyTCoordinateType struct {
-	Cy TCoordinateType `xml:"cy,attr"`
+	Cy TCoordinateType `xml:"cy,attr,omitempty"`
 }
 
 // XAttrRTLengthType defines attribute RTLengthType
 type XAttrRTLengthType struct {
-	R TLengthType `xml:"r,attr"`
+	R TLengthType `xml:"r,attr,omitempty"`
 }
 
 // TanimateType defines type animateType
@@ -3201,12 +3201,12 @@ func (me *XElemsCircle) Walk() (err error) {
 
 // XAttrLocalXsdtString defines attribute Local
 type XAttrLocalXsdtString struct {
-	Local xsdt.String `xml:"local,attr"`
+	Local xsdt.String `xml:"local,attr,omitempty"`
 }
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"name,attr"`
+	Name xsdt.String `xml:"name,attr,omitempty"`
 }
 
 // TxsdColorProfileTypeRenderingIntent defines type xsdColorProfileTypeRenderingIntent
@@ -3242,7 +3242,7 @@ func (me TxsdColorProfileTypeRenderingIntent) String() string { return xsdt.Stri
 
 // XAttrRenderingIntentTxsdColorProfileTypeRenderingIntentAuto defines attribute RenderingIntentTxsdColorProfileTypeRenderingIntentAuto
 type XAttrRenderingIntentTxsdColorProfileTypeRenderingIntentAuto struct {
-	RenderingIntent TxsdColorProfileTypeRenderingIntent `xml:"rendering-intent,attr"`
+	RenderingIntent TxsdColorProfileTypeRenderingIntent `xml:"rendering-intent,attr,omitempty"`
 }
 
 // RenderingIntentDefault : Returns the default value for RenderingIntent -- "auto"
@@ -3322,17 +3322,17 @@ func (me TViewBoxSpecType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrViewBoxTViewBoxSpecType defines attribute ViewBoxTViewBoxSpecType
 type XAttrViewBoxTViewBoxSpecType struct {
-	ViewBox TViewBoxSpecType `xml:"viewBox,attr"`
+	ViewBox TViewBoxSpecType `xml:"viewBox,attr,omitempty"`
 }
 
 // XAttrRyTLengthType defines attribute RyTLengthType
 type XAttrRyTLengthType struct {
-	Ry TLengthType `xml:"ry,attr"`
+	Ry TLengthType `xml:"ry,attr,omitempty"`
 }
 
 // XAttrRxTLengthType defines attribute RxTLengthType
 type XAttrRxTLengthType struct {
-	Rx TLengthType `xml:"rx,attr"`
+	Rx TLengthType `xml:"rx,attr,omitempty"`
 }
 
 // TrectType defines type rectType
@@ -3438,7 +3438,7 @@ func (me TPointsType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrPointsTPointsType defines attribute PointsTPointsType
 type XAttrPointsTPointsType struct {
-	Points TPointsType `xml:"points,attr"`
+	Points TPointsType `xml:"points,attr,omitempty"`
 }
 
 // TpolygonType defines type polygonType
@@ -3617,7 +3617,7 @@ func (me *XElemsImage) Walk() (err error) {
 
 // XAttrPathLengthXsdtDouble defines attribute PathLength
 type XAttrPathLengthXsdtDouble struct {
-	PathLength xsdt.Double `xml:"pathLength,attr"`
+	PathLength xsdt.Double `xml:"pathLength,attr,omitempty"`
 }
 
 // TPathDataType a path data specification
@@ -3635,7 +3635,7 @@ func (me TPathDataType) String() string { return xsdt.String(me).String() }
 
 // XAttrDTPathDataType defines attribute DTPathDataType
 type XAttrDTPathDataType struct {
-	D TPathDataType `xml:"d,attr"`
+	D TPathDataType `xml:"d,attr,omitempty"`
 }
 
 // TpathType defines type pathType
@@ -3923,7 +3923,7 @@ func (me TxsdClipPathTypeClipPathUnits) IsObjectBoundingBox() bool {
 
 // XAttrClipPathUnitsTxsdClipPathTypeClipPathUnits defines attribute ClipPathUnitsTxsdClipPathTypeClipPathUnits
 type XAttrClipPathUnitsTxsdClipPathTypeClipPathUnits struct {
-	ClipPathUnits TxsdClipPathTypeClipPathUnits `xml:"clipPathUnits,attr"`
+	ClipPathUnits TxsdClipPathTypeClipPathUnits `xml:"clipPathUnits,attr,omitempty"`
 }
 
 // XElemsDesc defines element Desc
@@ -4002,7 +4002,7 @@ func (me TxsdTspanTypeLengthAdjust) IsSpacingAndGlyphs() bool {
 
 // XAttrLengthAdjustTxsdTspanTypeLengthAdjust defines attribute LengthAdjustTxsdTspanTypeLengthAdjust
 type XAttrLengthAdjustTxsdTspanTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr,omitempty"`
 }
 
 // TCoordinatesType a space separated list of CoordinateType. Punt to 'string' for now
@@ -4019,7 +4019,7 @@ func (me TCoordinatesType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrYTCoordinatesType defines attribute YTCoordinatesType
 type XAttrYTCoordinatesType struct {
-	Y TCoordinatesType `xml:"y,attr"`
+	Y TCoordinatesType `xml:"y,attr,omitempty"`
 }
 
 // TLengthsType a list of <length>s
@@ -4036,17 +4036,17 @@ func (me TLengthsType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrDxTLengthsType defines attribute DxTLengthsType
 type XAttrDxTLengthsType struct {
-	Dx TLengthsType `xml:"dx,attr"`
+	Dx TLengthsType `xml:"dx,attr,omitempty"`
 }
 
 // XAttrTextLengthTLengthType defines attribute TextLengthTLengthType
 type XAttrTextLengthTLengthType struct {
-	TextLength TLengthType `xml:"textLength,attr"`
+	TextLength TLengthType `xml:"textLength,attr,omitempty"`
 }
 
 // XAttrXTCoordinatesType defines attribute XTCoordinatesType
 type XAttrXTCoordinatesType struct {
-	X TCoordinatesType `xml:"x,attr"`
+	X TCoordinatesType `xml:"x,attr,omitempty"`
 }
 
 // XElemsMetadata defines element Metadata
@@ -4078,12 +4078,12 @@ func (me *XElemsMetadata) Walk() (err error) {
 
 // XAttrLengthAdjustTxsdTrefTypeLengthAdjust defines attribute LengthAdjustTxsdTrefTypeLengthAdjust
 type XAttrLengthAdjustTxsdTrefTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr,omitempty"`
 }
 
 // XAttrDyTLengthsType defines attribute DyTLengthsType
 type XAttrDyTLengthsType struct {
-	Dy TLengthsType `xml:"dy,attr"`
+	Dy TLengthsType `xml:"dy,attr,omitempty"`
 }
 
 // TtrefType defines type trefType
@@ -4216,7 +4216,7 @@ func (me TContentTypeType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrTypeTContentTypeType defines attribute TypeTContentTypeType
 type XAttrTypeTContentTypeType struct {
-	Type TContentTypeType `xml:"type,attr"`
+	Type TContentTypeType `xml:"type,attr,omitempty"`
 }
 
 // TscriptType defines type scriptType
@@ -4377,12 +4377,12 @@ func (me TMediaDescType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrMediaTMediaDescType defines attribute MediaTMediaDescType
 type XAttrMediaTMediaDescType struct {
-	Media TMediaDescType `xml:"media,attr"`
+	Media TMediaDescType `xml:"media,attr,omitempty"`
 }
 
 // XAttrTitleXsdtString defines attribute Title
 type XAttrTitleXsdtString struct {
-	Title xsdt.String `xml:"title,attr"`
+	Title xsdt.String `xml:"title,attr,omitempty"`
 }
 
 // TstyleType defines type styleType
@@ -4552,107 +4552,107 @@ func (me *XElemDefinitionSrc) Walk() (err error) {
 
 // XAttrStemhXsdtDouble defines attribute Stemh
 type XAttrStemhXsdtDouble struct {
-	Stemh xsdt.Double `xml:"stemh,attr"`
+	Stemh xsdt.Double `xml:"stemh,attr,omitempty"`
 }
 
 // XAttrCapHeightXsdtDouble defines attribute CapHeight
 type XAttrCapHeightXsdtDouble struct {
-	CapHeight xsdt.Double `xml:"cap-height,attr"`
+	CapHeight xsdt.Double `xml:"cap-height,attr,omitempty"`
 }
 
 // XAttrDescentXsdtDouble defines attribute Descent
 type XAttrDescentXsdtDouble struct {
-	Descent xsdt.Double `xml:"descent,attr"`
+	Descent xsdt.Double `xml:"descent,attr,omitempty"`
 }
 
 // XAttrFontStyleXsdtString defines attribute FontStyle
 type XAttrFontStyleXsdtString struct {
-	FontStyle xsdt.String `xml:"font-style,attr"`
+	FontStyle xsdt.String `xml:"font-style,attr,omitempty"`
 }
 
 // XAttrAscentXsdtDouble defines attribute Ascent
 type XAttrAscentXsdtDouble struct {
-	Ascent xsdt.Double `xml:"ascent,attr"`
+	Ascent xsdt.Double `xml:"ascent,attr,omitempty"`
 }
 
 // XAttrUnicodeRangeXsdtString defines attribute UnicodeRange
 type XAttrUnicodeRangeXsdtString struct {
-	UnicodeRange xsdt.String `xml:"unicode-range,attr"`
+	UnicodeRange xsdt.String `xml:"unicode-range,attr,omitempty"`
 }
 
 // XAttrPanose1XsdtString defines attribute Panose1
 type XAttrPanose1XsdtString struct {
-	Panose1 xsdt.String `xml:"panose-1,attr"`
+	Panose1 xsdt.String `xml:"panose-1,attr,omitempty"`
 }
 
 // XAttrIDeographicXsdtDouble defines attribute Ideographic
 type XAttrIDeographicXsdtDouble struct {
-	Ideographic xsdt.Double `xml:"ideographic,attr"`
+	Ideographic xsdt.Double `xml:"ideographic,attr,omitempty"`
 }
 
 // XAttrBaselineXsdtDouble defines attribute Baseline
 type XAttrBaselineXsdtDouble struct {
-	Baseline xsdt.Double `xml:"baseline,attr"`
+	Baseline xsdt.Double `xml:"baseline,attr,omitempty"`
 }
 
 // XAttrStrikethroughPositionXsdtDouble defines attribute StrikethroughPosition
 type XAttrStrikethroughPositionXsdtDouble struct {
-	StrikethroughPosition xsdt.Double `xml:"strikethrough-position,attr"`
+	StrikethroughPosition xsdt.Double `xml:"strikethrough-position,attr,omitempty"`
 }
 
 // XAttrOverlinePositionXsdtDouble defines attribute OverlinePosition
 type XAttrOverlinePositionXsdtDouble struct {
-	OverlinePosition xsdt.Double `xml:"overline-position,attr"`
+	OverlinePosition xsdt.Double `xml:"overline-position,attr,omitempty"`
 }
 
 // XAttrUnderlinePositionXsdtDouble defines attribute UnderlinePosition
 type XAttrUnderlinePositionXsdtDouble struct {
-	UnderlinePosition xsdt.Double `xml:"underline-position,attr"`
+	UnderlinePosition xsdt.Double `xml:"underline-position,attr,omitempty"`
 }
 
 // XAttrXHeightXsdtDouble defines attribute XHeight
 type XAttrXHeightXsdtDouble struct {
-	XHeight xsdt.Double `xml:"x-height,attr"`
+	XHeight xsdt.Double `xml:"x-height,attr,omitempty"`
 }
 
 // XAttrStrikethroughThicknessXsdtDouble defines attribute StrikethroughThickness
 type XAttrStrikethroughThicknessXsdtDouble struct {
-	StrikethroughThickness xsdt.Double `xml:"strikethrough-thickness,attr"`
+	StrikethroughThickness xsdt.Double `xml:"strikethrough-thickness,attr,omitempty"`
 }
 
 // XAttrHangingXsdtDouble defines attribute Hanging
 type XAttrHangingXsdtDouble struct {
-	Hanging xsdt.Double `xml:"hanging,attr"`
+	Hanging xsdt.Double `xml:"hanging,attr,omitempty"`
 }
 
 // XAttrCenterlineXsdtDouble defines attribute Centerline
 type XAttrCenterlineXsdtDouble struct {
-	Centerline xsdt.Double `xml:"centerline,attr"`
+	Centerline xsdt.Double `xml:"centerline,attr,omitempty"`
 }
 
 // XAttrStemvXsdtDouble defines attribute Stemv
 type XAttrStemvXsdtDouble struct {
-	Stemv xsdt.Double `xml:"stemv,attr"`
+	Stemv xsdt.Double `xml:"stemv,attr,omitempty"`
 }
 
 // XAttrFontVariantXsdtString defines attribute FontVariant
 type XAttrFontVariantXsdtString struct {
-	FontVariant xsdt.String `xml:"font-variant,attr"`
+	FontVariant xsdt.String `xml:"font-variant,attr,omitempty"`
 }
 
 // XAttrFontStretchXsdtString defines attribute FontStretch
 type XAttrFontStretchXsdtString struct {
-	FontStretch xsdt.String `xml:"font-stretch,attr"`
+	FontStretch xsdt.String `xml:"font-stretch,attr,omitempty"`
 }
 
 // XAttrAccentHeightXsdtDouble defines attribute AccentHeight
 type XAttrAccentHeightXsdtDouble struct {
-	AccentHeight xsdt.Double `xml:"accent-height,attr"`
+	AccentHeight xsdt.Double `xml:"accent-height,attr,omitempty"`
 }
 
 // XAttrStringXsdtString defines attribute String
 type XAttrStringXsdtString struct {
-	String xsdt.String `xml:"string,attr"`
+	String xsdt.String `xml:"string,attr,omitempty"`
 }
 
 // TfontFaceFormatType defines type fontFaceFormatType
@@ -4865,42 +4865,42 @@ func (me *XElemFontFaceSrc) Walk() (err error) {
 
 // XAttrFontWeightXsdtString defines attribute FontWeight
 type XAttrFontWeightXsdtString struct {
-	FontWeight xsdt.String `xml:"font-weight,attr"`
+	FontWeight xsdt.String `xml:"font-weight,attr,omitempty"`
 }
 
 // XAttrUnitsPerEmXsdtDouble defines attribute UnitsPerEm
 type XAttrUnitsPerEmXsdtDouble struct {
-	UnitsPerEm xsdt.Double `xml:"units-per-em,attr"`
+	UnitsPerEm xsdt.Double `xml:"units-per-em,attr,omitempty"`
 }
 
 // XAttrWidthsXsdtString defines attribute Widths
 type XAttrWidthsXsdtString struct {
-	Widths xsdt.String `xml:"widths,attr"`
+	Widths xsdt.String `xml:"widths,attr,omitempty"`
 }
 
 // XAttrToplineXsdtDouble defines attribute Topline
 type XAttrToplineXsdtDouble struct {
-	Topline xsdt.Double `xml:"topline,attr"`
+	Topline xsdt.Double `xml:"topline,attr,omitempty"`
 }
 
 // XAttrOverlineThicknessXsdtDouble defines attribute OverlineThickness
 type XAttrOverlineThicknessXsdtDouble struct {
-	OverlineThickness xsdt.Double `xml:"overline-thickness,attr"`
+	OverlineThickness xsdt.Double `xml:"overline-thickness,attr,omitempty"`
 }
 
 // XAttrMathlineXsdtDouble defines attribute Mathline
 type XAttrMathlineXsdtDouble struct {
-	Mathline xsdt.Double `xml:"mathline,attr"`
+	Mathline xsdt.Double `xml:"mathline,attr,omitempty"`
 }
 
 // XAttrUnderlineThicknessXsdtDouble defines attribute UnderlineThickness
 type XAttrUnderlineThicknessXsdtDouble struct {
-	UnderlineThickness xsdt.Double `xml:"underline-thickness,attr"`
+	UnderlineThickness xsdt.Double `xml:"underline-thickness,attr,omitempty"`
 }
 
 // XAttrBboxXsdtString defines attribute Bbox
 type XAttrBboxXsdtString struct {
-	Bbox xsdt.String `xml:"bbox,attr"`
+	Bbox xsdt.String `xml:"bbox,attr,omitempty"`
 }
 
 // TfontFaceType defines type fontFaceType
@@ -5009,7 +5009,7 @@ func (me TPreserveAspectRatioSpecType) ToXsdtString() xsdt.String { return xsdt.
 
 // XAttrPreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet defines attribute PreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet
 type XAttrPreserveAspectRatioTPreserveAspectRatioSpecTypeXMidYMidMeet struct {
-	PreserveAspectRatio TPreserveAspectRatioSpecType `xml:"preserveAspectRatio,attr"`
+	PreserveAspectRatio TPreserveAspectRatioSpecType `xml:"preserveAspectRatio,attr,omitempty"`
 }
 
 // PreserveAspectRatioDefault : Returns the default value for PreserveAspectRatio -- "xMidYMid meet"
@@ -5040,12 +5040,12 @@ func (me *TxsdMarkerTypeMarkerUnits) Set(s string) { (*xsdt.String)(me).Set(s) }
 
 // XAttrMarkerUnitsTxsdMarkerTypeMarkerUnits defines attribute MarkerUnitsTxsdMarkerTypeMarkerUnits
 type XAttrMarkerUnitsTxsdMarkerTypeMarkerUnits struct {
-	MarkerUnits TxsdMarkerTypeMarkerUnits `xml:"markerUnits,attr"`
+	MarkerUnits TxsdMarkerTypeMarkerUnits `xml:"markerUnits,attr,omitempty"`
 }
 
 // XAttrY1TCoordinateType defines attribute Y1TCoordinateType
 type XAttrY1TCoordinateType struct {
-	Y1 TCoordinateType `xml:"y1,attr"`
+	Y1 TCoordinateType `xml:"y1,attr,omitempty"`
 }
 
 // TxsdLinearGradientTypeSpreadMethod defines type xsdLinearGradientTypeSpreadMethod
@@ -5071,7 +5071,7 @@ func (me TxsdLinearGradientTypeSpreadMethod) IsRepeat() bool { return me.String(
 
 // XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad defines attribute SpreadMethodTxsdLinearGradientTypeSpreadMethodPad
 type XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad struct {
-	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr"`
+	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr,omitempty"`
 }
 
 // SpreadMethodDefault : Returns the default value for SpreadMethod -- "pad"
@@ -5081,17 +5081,17 @@ func (me XAttrSpreadMethodTxsdLinearGradientTypeSpreadMethodPad) SpreadMethodDef
 
 // XAttrY2TCoordinateType defines attribute Y2TCoordinateType
 type XAttrY2TCoordinateType struct {
-	Y2 TCoordinateType `xml:"y2,attr"`
+	Y2 TCoordinateType `xml:"y2,attr,omitempty"`
 }
 
 // XAttrX1TCoordinateType defines attribute X1TCoordinateType
 type XAttrX1TCoordinateType struct {
-	X1 TCoordinateType `xml:"x1,attr"`
+	X1 TCoordinateType `xml:"x1,attr,omitempty"`
 }
 
 // XAttrOffsetTLengthType defines attribute OffsetTLengthType
 type XAttrOffsetTLengthType struct {
-	Offset TLengthType `xml:"offset,attr"`
+	Offset TLengthType `xml:"offset,attr,omitempty"`
 }
 
 // TstopType defines type stopType
@@ -5161,17 +5161,17 @@ func (me *XElemsStop) Walk() (err error) {
 
 // XAttrGradientUnitsTxsdLinearGradientTypeGradientUnits defines attribute GradientUnitsTxsdLinearGradientTypeGradientUnits
 type XAttrGradientUnitsTxsdLinearGradientTypeGradientUnits struct {
-	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr"`
+	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr,omitempty"`
 }
 
 // XAttrX2TCoordinateType defines attribute X2TCoordinateType
 type XAttrX2TCoordinateType struct {
-	X2 TCoordinateType `xml:"x2,attr"`
+	X2 TCoordinateType `xml:"x2,attr,omitempty"`
 }
 
 // XAttrGradientTransformTransformListType defines attribute GradientTransformTransformListType
 type XAttrGradientTransformTransformListType struct {
-	GradientTransform TransformListType `xml:"gradientTransform,attr"`
+	GradientTransform TransformListType `xml:"gradientTransform,attr,omitempty"`
 }
 
 // TlinearGradientType defines type linearGradientType
@@ -5284,7 +5284,7 @@ func (me TxsdFeBlendTypeMode) String() string { return xsdt.String(me).String() 
 
 // XAttrModeTxsdFeBlendTypeModeNormal defines attribute ModeTxsdFeBlendTypeModeNormal
 type XAttrModeTxsdFeBlendTypeModeNormal struct {
-	Mode TxsdFeBlendTypeMode `xml:"mode,attr"`
+	Mode TxsdFeBlendTypeMode `xml:"mode,attr,omitempty"`
 }
 
 // ModeDefault : Returns the default value for Mode -- "normal"
@@ -5294,7 +5294,7 @@ func (me XAttrModeTxsdFeBlendTypeModeNormal) ModeDefault() TxsdFeBlendTypeMode {
 
 // XAttrIn2XsdtString defines attribute In2
 type XAttrIn2XsdtString struct {
-	In2 xsdt.String `xml:"in2,attr"`
+	In2 xsdt.String `xml:"in2,attr,omitempty"`
 }
 
 // TfeBlendType defines type feBlendType
@@ -5359,7 +5359,7 @@ func (me *XElemsFeBlend) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncRTypeType defines attribute TypeTxsdFeFuncRTypeType
 type XAttrTypeTxsdFeFuncRTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr,omitempty"`
 }
 
 // TfeFuncRType defines type feFuncRType
@@ -5421,7 +5421,7 @@ func (me *XElemFeFuncR) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncGTypeType defines attribute TypeTxsdFeFuncGTypeType
 type XAttrTypeTxsdFeFuncGTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr,omitempty"`
 }
 
 // TfeFuncGType defines type feFuncGType
@@ -5483,7 +5483,7 @@ func (me *XElemFeFuncG) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncBTypeType defines attribute TypeTxsdFeFuncBTypeType
 type XAttrTypeTxsdFeFuncBTypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr,omitempty"`
 }
 
 // TfeFuncBType defines type feFuncBType
@@ -5545,7 +5545,7 @@ func (me *XElemFeFuncB) Walk() (err error) {
 
 // XAttrTypeTxsdFeFuncATypeType defines attribute TypeTxsdFeFuncATypeType
 type XAttrTypeTxsdFeFuncATypeType struct {
-	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr"`
+	Type TxsdComponentTransferFunctionAttributesType `xml:"type,attr,omitempty"`
 }
 
 // TfeFuncAType defines type feFuncAType
@@ -5694,7 +5694,7 @@ func (me TxsdFeConvolveMatrixTypeEdgeMode) IsNone() bool { return me.String() ==
 
 // XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate defines attribute EdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate
 type XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate struct {
-	EdgeMode TxsdFeConvolveMatrixTypeEdgeMode `xml:"edgeMode,attr"`
+	EdgeMode TxsdFeConvolveMatrixTypeEdgeMode `xml:"edgeMode,attr,omitempty"`
 }
 
 // EdgeModeDefault : Returns the default value for EdgeMode -- "duplicate"
@@ -5704,42 +5704,42 @@ func (me XAttrEdgeModeTxsdFeConvolveMatrixTypeEdgeModeDuplicate) EdgeModeDefault
 
 // XAttrPreserveAlphaXsdtBoolean defines attribute PreserveAlpha
 type XAttrPreserveAlphaXsdtBoolean struct {
-	PreserveAlpha xsdt.Boolean `xml:"preserveAlpha,attr"`
+	PreserveAlpha xsdt.Boolean `xml:"preserveAlpha,attr,omitempty"`
 }
 
 // XAttrBiasXsdtDouble defines attribute Bias
 type XAttrBiasXsdtDouble struct {
-	Bias xsdt.Double `xml:"bias,attr"`
+	Bias xsdt.Double `xml:"bias,attr,omitempty"`
 }
 
 // XAttrTargetXXsdtInteger defines attribute TargetX
 type XAttrTargetXXsdtInteger struct {
-	TargetX xsdt.Integer `xml:"targetX,attr"`
+	TargetX xsdt.Integer `xml:"targetX,attr,omitempty"`
 }
 
 // XAttrKernelUnitLengthXsdtString defines attribute KernelUnitLength
 type XAttrKernelUnitLengthXsdtString struct {
-	KernelUnitLength xsdt.String `xml:"kernelUnitLength,attr"`
+	KernelUnitLength xsdt.String `xml:"kernelUnitLength,attr,omitempty"`
 }
 
 // XAttrKernelMatrixXsdtString defines attribute KernelMatrix
 type XAttrKernelMatrixXsdtString struct {
-	KernelMatrix xsdt.String `xml:"kernelMatrix,attr"`
+	KernelMatrix xsdt.String `xml:"kernelMatrix,attr,omitempty"`
 }
 
 // XAttrTargetYXsdtInteger defines attribute TargetY
 type XAttrTargetYXsdtInteger struct {
-	TargetY xsdt.Integer `xml:"targetY,attr"`
+	TargetY xsdt.Integer `xml:"targetY,attr,omitempty"`
 }
 
 // XAttrDivisorXsdtDouble defines attribute Divisor
 type XAttrDivisorXsdtDouble struct {
-	Divisor xsdt.Double `xml:"divisor,attr"`
+	Divisor xsdt.Double `xml:"divisor,attr,omitempty"`
 }
 
 // XAttrOrderXsdtString defines attribute Order
 type XAttrOrderXsdtString struct {
-	Order xsdt.String `xml:"order,attr"`
+	Order xsdt.String `xml:"order,attr,omitempty"`
 }
 
 // TfeConvolveMatrixType defines type feConvolveMatrixType
@@ -5875,12 +5875,12 @@ func (me *XElemsFeFlood) Walk() (err error) {
 
 // XAttrPrimitiveUnitsTxsdFilterTypePrimitiveUnits defines attribute PrimitiveUnitsTxsdFilterTypePrimitiveUnits
 type XAttrPrimitiveUnitsTxsdFilterTypePrimitiveUnits struct {
-	PrimitiveUnits TxsdClipPathTypeClipPathUnits `xml:"primitiveUnits,attr"`
+	PrimitiveUnits TxsdClipPathTypeClipPathUnits `xml:"primitiveUnits,attr,omitempty"`
 }
 
 // XAttrStdDeviationXsdtString defines attribute StdDeviation
 type XAttrStdDeviationXsdtString struct {
-	StdDeviation xsdt.String `xml:"stdDeviation,attr"`
+	StdDeviation xsdt.String `xml:"stdDeviation,attr,omitempty"`
 }
 
 // TfeGaussianBlurType defines type feGaussianBlurType
@@ -5944,12 +5944,12 @@ func (me *XElemsFeGaussianBlur) Walk() (err error) {
 
 // XAttrAzimuthXsdtDouble defines attribute Azimuth
 type XAttrAzimuthXsdtDouble struct {
-	Azimuth xsdt.Double `xml:"azimuth,attr"`
+	Azimuth xsdt.Double `xml:"azimuth,attr,omitempty"`
 }
 
 // XAttrElevationXsdtDouble defines attribute Elevation
 type XAttrElevationXsdtDouble struct {
-	Elevation xsdt.Double `xml:"elevation,attr"`
+	Elevation xsdt.Double `xml:"elevation,attr,omitempty"`
 }
 
 // TfeDistantLightType defines type feDistantLightType
@@ -6011,42 +6011,42 @@ func (me *XElemFeDistantLight) Walk() (err error) {
 
 // XAttrYXsdtDouble defines attribute Y
 type XAttrYXsdtDouble struct {
-	Y xsdt.Double `xml:"y,attr"`
+	Y xsdt.Double `xml:"y,attr,omitempty"`
 }
 
 // XAttrPointsAtYXsdtDouble defines attribute PointsAtY
 type XAttrPointsAtYXsdtDouble struct {
-	PointsAtY xsdt.Double `xml:"pointsAtY,attr"`
+	PointsAtY xsdt.Double `xml:"pointsAtY,attr,omitempty"`
 }
 
 // XAttrSpecularExponentXsdtDouble defines attribute SpecularExponent
 type XAttrSpecularExponentXsdtDouble struct {
-	SpecularExponent xsdt.Double `xml:"specularExponent,attr"`
+	SpecularExponent xsdt.Double `xml:"specularExponent,attr,omitempty"`
 }
 
 // XAttrLimitingConeAngleXsdtDouble defines attribute LimitingConeAngle
 type XAttrLimitingConeAngleXsdtDouble struct {
-	LimitingConeAngle xsdt.Double `xml:"limitingConeAngle,attr"`
+	LimitingConeAngle xsdt.Double `xml:"limitingConeAngle,attr,omitempty"`
 }
 
 // XAttrXXsdtDouble defines attribute X
 type XAttrXXsdtDouble struct {
-	X xsdt.Double `xml:"x,attr"`
+	X xsdt.Double `xml:"x,attr,omitempty"`
 }
 
 // XAttrZXsdtDouble defines attribute Z
 type XAttrZXsdtDouble struct {
-	Z xsdt.Double `xml:"z,attr"`
+	Z xsdt.Double `xml:"z,attr,omitempty"`
 }
 
 // XAttrPointsAtXXsdtDouble defines attribute PointsAtX
 type XAttrPointsAtXXsdtDouble struct {
-	PointsAtX xsdt.Double `xml:"pointsAtX,attr"`
+	PointsAtX xsdt.Double `xml:"pointsAtX,attr,omitempty"`
 }
 
 // XAttrPointsAtZXsdtDouble defines attribute PointsAtZ
 type XAttrPointsAtZXsdtDouble struct {
-	PointsAtZ xsdt.Double `xml:"pointsAtZ,attr"`
+	PointsAtZ xsdt.Double `xml:"pointsAtZ,attr,omitempty"`
 }
 
 // TfeSpotLightType defines type feSpotLightType
@@ -6114,7 +6114,7 @@ func (me *XElemFeSpotLight) Walk() (err error) {
 
 // XAttrSpecularConstantXsdtDouble defines attribute SpecularConstant
 type XAttrSpecularConstantXsdtDouble struct {
-	SpecularConstant xsdt.Double `xml:"specularConstant,attr"`
+	SpecularConstant xsdt.Double `xml:"specularConstant,attr,omitempty"`
 }
 
 // TfePointLightType defines type fePointLightType
@@ -6177,7 +6177,7 @@ func (me *XElemFePointLight) Walk() (err error) {
 
 // XAttrSurfaceScaleXsdtDouble defines attribute SurfaceScale
 type XAttrSurfaceScaleXsdtDouble struct {
-	SurfaceScale xsdt.Double `xml:"surfaceScale,attr"`
+	SurfaceScale xsdt.Double `xml:"surfaceScale,attr,omitempty"`
 }
 
 // TfeSpecularLightingType defines type feSpecularLightingType
@@ -6280,7 +6280,7 @@ func (me TxsdFeTurbulenceTypeType) IsTurbulence() bool { return me.String() == "
 
 // XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence defines attribute TypeTxsdFeTurbulenceTypeTypeTurbulence
 type XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence struct {
-	Type TxsdFeTurbulenceTypeType `xml:"type,attr"`
+	Type TxsdFeTurbulenceTypeType `xml:"type,attr,omitempty"`
 }
 
 // TypeDefault : Returns the default value for Type -- "turbulence"
@@ -6290,12 +6290,12 @@ func (me XAttrTypeTxsdFeTurbulenceTypeTypeTurbulence) TypeDefault() TxsdFeTurbul
 
 // XAttrBaseFrequencyXsdtString defines attribute BaseFrequency
 type XAttrBaseFrequencyXsdtString struct {
-	BaseFrequency xsdt.String `xml:"baseFrequency,attr"`
+	BaseFrequency xsdt.String `xml:"baseFrequency,attr,omitempty"`
 }
 
 // XAttrSeedXsdtDouble defines attribute Seed
 type XAttrSeedXsdtDouble struct {
-	Seed xsdt.Double `xml:"seed,attr"`
+	Seed xsdt.Double `xml:"seed,attr,omitempty"`
 }
 
 // TxsdFeTurbulenceTypeStitchTiles defines type xsdFeTurbulenceTypeStitchTiles
@@ -6318,7 +6318,7 @@ func (me *TxsdFeTurbulenceTypeStitchTiles) Set(s string) { (*xsdt.String)(me).Se
 
 // XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch defines attribute StitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch
 type XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch struct {
-	StitchTiles TxsdFeTurbulenceTypeStitchTiles `xml:"stitchTiles,attr"`
+	StitchTiles TxsdFeTurbulenceTypeStitchTiles `xml:"stitchTiles,attr,omitempty"`
 }
 
 // StitchTilesDefault : Returns the default value for StitchTiles -- "noStitch"
@@ -6328,7 +6328,7 @@ func (me XAttrStitchTilesTxsdFeTurbulenceTypeStitchTilesNoStitch) StitchTilesDef
 
 // XAttrNumOctavesXsdtInteger defines attribute NumOctaves
 type XAttrNumOctavesXsdtInteger struct {
-	NumOctaves xsdt.Integer `xml:"numOctaves,attr"`
+	NumOctaves xsdt.Integer `xml:"numOctaves,attr,omitempty"`
 }
 
 // TfeTurbulenceType defines type feTurbulenceType
@@ -6396,7 +6396,7 @@ func (me *XElemsFeTurbulence) Walk() (err error) {
 
 // XAttrK4XsdtDouble defines attribute K4
 type XAttrK4XsdtDouble struct {
-	K4 xsdt.Double `xml:"k4,attr"`
+	K4 xsdt.Double `xml:"k4,attr,omitempty"`
 }
 
 // TxsdFeCompositeTypeOperator defines type xsdFeCompositeTypeOperator
@@ -6431,7 +6431,7 @@ func (me TxsdFeCompositeTypeOperator) IsOver() bool { return me.String() == "ove
 
 // XAttrOperatorTxsdFeCompositeTypeOperatorOver defines attribute OperatorTxsdFeCompositeTypeOperatorOver
 type XAttrOperatorTxsdFeCompositeTypeOperatorOver struct {
-	Operator TxsdFeCompositeTypeOperator `xml:"operator,attr"`
+	Operator TxsdFeCompositeTypeOperator `xml:"operator,attr,omitempty"`
 }
 
 // OperatorDefault : Returns the default value for Operator -- "over"
@@ -6441,17 +6441,17 @@ func (me XAttrOperatorTxsdFeCompositeTypeOperatorOver) OperatorDefault() TxsdFeC
 
 // XAttrK1XsdtDouble defines attribute K1
 type XAttrK1XsdtDouble struct {
-	K1 xsdt.Double `xml:"k1,attr"`
+	K1 xsdt.Double `xml:"k1,attr,omitempty"`
 }
 
 // XAttrK3XsdtDouble defines attribute K3
 type XAttrK3XsdtDouble struct {
-	K3 xsdt.Double `xml:"k3,attr"`
+	K3 xsdt.Double `xml:"k3,attr,omitempty"`
 }
 
 // XAttrK2XsdtDouble defines attribute K2
 type XAttrK2XsdtDouble struct {
-	K2 xsdt.Double `xml:"k2,attr"`
+	K2 xsdt.Double `xml:"k2,attr,omitempty"`
 }
 
 // TfeCompositeType defines type feCompositeType
@@ -6520,7 +6520,7 @@ func (me *XElemsFeComposite) Walk() (err error) {
 
 // XAttrScaleXsdtDouble defines attribute Scale
 type XAttrScaleXsdtDouble struct {
-	Scale xsdt.Double `xml:"scale,attr"`
+	Scale xsdt.Double `xml:"scale,attr,omitempty"`
 }
 
 // TxsdFeDisplacementMapTypeXChannelSelector defines type xsdFeDisplacementMapTypeXChannelSelector
@@ -6551,7 +6551,7 @@ func (me TxsdFeDisplacementMapTypeXChannelSelector) IsG() bool { return me.Strin
 
 // XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA defines attribute XChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA
 type XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA struct {
-	XChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"xChannelSelector,attr"`
+	XChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"xChannelSelector,attr,omitempty"`
 }
 
 // XChannelSelectorDefault : Returns the default value for XChannelSelector -- "A"
@@ -6561,7 +6561,7 @@ func (me XAttrXChannelSelectorTxsdFeDisplacementMapTypeXChannelSelectorA) XChann
 
 // XAttrYChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA defines attribute YChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA
 type XAttrYChannelSelectorTxsdFeDisplacementMapTypeYChannelSelectorA struct {
-	YChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"yChannelSelector,attr"`
+	YChannelSelector TxsdFeDisplacementMapTypeXChannelSelector `xml:"yChannelSelector,attr,omitempty"`
 }
 
 // YChannelSelectorDefault : Returns the default value for YChannelSelector -- "A"
@@ -6659,7 +6659,7 @@ func (me TxsdFeColorMatrixTypeType) IsHueRotate() bool { return me.String() == "
 
 // XAttrTypeTxsdFeColorMatrixTypeTypeMatrix defines attribute TypeTxsdFeColorMatrixTypeTypeMatrix
 type XAttrTypeTxsdFeColorMatrixTypeTypeMatrix struct {
-	Type TxsdFeColorMatrixTypeType `xml:"type,attr"`
+	Type TxsdFeColorMatrixTypeType `xml:"type,attr,omitempty"`
 }
 
 // TypeDefault : Returns the default value for Type -- "matrix"
@@ -6747,7 +6747,7 @@ func (me TxsdFeMorphologyTypeOperator) ToXsdtString() xsdt.String { return xsdt.
 
 // XAttrOperatorTxsdFeMorphologyTypeOperatorErode defines attribute OperatorTxsdFeMorphologyTypeOperatorErode
 type XAttrOperatorTxsdFeMorphologyTypeOperatorErode struct {
-	Operator TxsdFeMorphologyTypeOperator `xml:"operator,attr"`
+	Operator TxsdFeMorphologyTypeOperator `xml:"operator,attr,omitempty"`
 }
 
 // OperatorDefault : Returns the default value for Operator -- "erode"
@@ -6757,7 +6757,7 @@ func (me XAttrOperatorTxsdFeMorphologyTypeOperatorErode) OperatorDefault() TxsdF
 
 // XAttrRadiusTLengthType defines attribute RadiusTLengthType
 type XAttrRadiusTLengthType struct {
-	Radius TLengthType `xml:"radius,attr"`
+	Radius TLengthType `xml:"radius,attr,omitempty"`
 }
 
 // TfeMorphologyType defines type feMorphologyType
@@ -6880,7 +6880,7 @@ func (me *XElemsFeTile) Walk() (err error) {
 
 // XAttrDiffuseConstantXsdtDouble defines attribute DiffuseConstant
 type XAttrDiffuseConstantXsdtDouble struct {
-	DiffuseConstant xsdt.Double `xml:"diffuseConstant,attr"`
+	DiffuseConstant xsdt.Double `xml:"diffuseConstant,attr,omitempty"`
 }
 
 // TfeDiffuseLightingType defines type feDiffuseLightingType
@@ -7034,12 +7034,12 @@ func (me *XElemsFeImage) Walk() (err error) {
 
 // XAttrDxTLengthType defines attribute DxTLengthType
 type XAttrDxTLengthType struct {
-	Dx TLengthType `xml:"dx,attr"`
+	Dx TLengthType `xml:"dx,attr,omitempty"`
 }
 
 // XAttrDyTLengthType defines attribute DyTLengthType
 type XAttrDyTLengthType struct {
-	Dy TLengthType `xml:"dy,attr"`
+	Dy TLengthType `xml:"dy,attr,omitempty"`
 }
 
 // TfeOffsetType defines type feOffsetType
@@ -7104,7 +7104,7 @@ func (me *XElemsFeOffset) Walk() (err error) {
 
 // XAttrFilterResXsdtString defines attribute FilterRes
 type XAttrFilterResXsdtString struct {
-	FilterRes xsdt.String `xml:"filterRes,attr"`
+	FilterRes xsdt.String `xml:"filterRes,attr,omitempty"`
 }
 
 // TfeMergeNodeType defines type feMergeNodeType
@@ -7221,7 +7221,7 @@ func (me *XElemsFeMerge) Walk() (err error) {
 
 // XAttrFilterUnitsTxsdFilterTypeFilterUnits defines attribute FilterUnitsTxsdFilterTypeFilterUnits
 type XAttrFilterUnitsTxsdFilterTypeFilterUnits struct {
-	FilterUnits TxsdClipPathTypeClipPathUnits `xml:"filterUnits,attr"`
+	FilterUnits TxsdClipPathTypeClipPathUnits `xml:"filterUnits,attr,omitempty"`
 }
 
 // TfilterType defines type filterType
@@ -7365,17 +7365,17 @@ func (me *XElemsFilter) Walk() (err error) {
 
 // XAttrMarkerWidthTLengthType defines attribute MarkerWidthTLengthType
 type XAttrMarkerWidthTLengthType struct {
-	MarkerWidth TLengthType `xml:"markerWidth,attr"`
+	MarkerWidth TLengthType `xml:"markerWidth,attr,omitempty"`
 }
 
 // XAttrRefYTCoordinateType defines attribute RefYTCoordinateType
 type XAttrRefYTCoordinateType struct {
-	RefY TCoordinateType `xml:"refY,attr"`
+	RefY TCoordinateType `xml:"refY,attr,omitempty"`
 }
 
 // XAttrOrientXsdtString defines attribute Orient
 type XAttrOrientXsdtString struct {
-	Orient xsdt.String `xml:"orient,attr"`
+	Orient xsdt.String `xml:"orient,attr,omitempty"`
 }
 
 // TforeignObjectType defines type foreignObjectType
@@ -7663,17 +7663,17 @@ func (me *XElemsSwitch) Walk() (err error) {
 
 // XAttrGradientUnitsTxsdRadialGradientTypeGradientUnits defines attribute GradientUnitsTxsdRadialGradientTypeGradientUnits
 type XAttrGradientUnitsTxsdRadialGradientTypeGradientUnits struct {
-	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr"`
+	GradientUnits TxsdClipPathTypeClipPathUnits `xml:"gradientUnits,attr,omitempty"`
 }
 
 // XAttrFxTCoordinateType defines attribute FxTCoordinateType
 type XAttrFxTCoordinateType struct {
-	Fx TCoordinateType `xml:"fx,attr"`
+	Fx TCoordinateType `xml:"fx,attr,omitempty"`
 }
 
 // XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad defines attribute SpreadMethodTxsdRadialGradientTypeSpreadMethodPad
 type XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad struct {
-	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr"`
+	SpreadMethod TxsdLinearGradientTypeSpreadMethod `xml:"spreadMethod,attr,omitempty"`
 }
 
 // SpreadMethodDefault : Returns the default value for SpreadMethod -- "pad"
@@ -7683,7 +7683,7 @@ func (me XAttrSpreadMethodTxsdRadialGradientTypeSpreadMethodPad) SpreadMethodDef
 
 // XAttrFyTCoordinateType defines attribute FyTCoordinateType
 type XAttrFyTCoordinateType struct {
-	Fy TCoordinateType `xml:"fy,attr"`
+	Fy TCoordinateType `xml:"fy,attr,omitempty"`
 }
 
 // TradialGradientType defines type radialGradientType
@@ -7768,12 +7768,12 @@ func (me *XElemsRadialGradient) Walk() (err error) {
 
 // XAttrGlyphRefXsdtString defines attribute GlyphRef
 type XAttrGlyphRefXsdtString struct {
-	GlyphRef xsdt.String `xml:"glyphRef,attr"`
+	GlyphRef xsdt.String `xml:"glyphRef,attr,omitempty"`
 }
 
 // XAttrFormatXsdtString defines attribute Format
 type XAttrFormatXsdtString struct {
-	Format xsdt.String `xml:"format,attr"`
+	Format xsdt.String `xml:"format,attr,omitempty"`
 }
 
 // TglyphRefType defines type glyphRefType
@@ -7948,32 +7948,32 @@ func (me *XElemsAltGlyphDef) Walk() (err error) {
 
 // XAttrMarkerHeightTLengthType defines attribute MarkerHeightTLengthType
 type XAttrMarkerHeightTLengthType struct {
-	MarkerHeight TLengthType `xml:"markerHeight,attr"`
+	MarkerHeight TLengthType `xml:"markerHeight,attr,omitempty"`
 }
 
 // XAttrU1XsdtString defines attribute U1
 type XAttrU1XsdtString struct {
-	U1 xsdt.String `xml:"u1,attr"`
+	U1 xsdt.String `xml:"u1,attr,omitempty"`
 }
 
 // XAttrG1XsdtString defines attribute G1
 type XAttrG1XsdtString struct {
-	G1 xsdt.String `xml:"g1,attr"`
+	G1 xsdt.String `xml:"g1,attr,omitempty"`
 }
 
 // XAttrU2XsdtString defines attribute U2
 type XAttrU2XsdtString struct {
-	U2 xsdt.String `xml:"u2,attr"`
+	U2 xsdt.String `xml:"u2,attr,omitempty"`
 }
 
 // XAttrG2XsdtString defines attribute G2
 type XAttrG2XsdtString struct {
-	G2 xsdt.String `xml:"g2,attr"`
+	G2 xsdt.String `xml:"g2,attr,omitempty"`
 }
 
 // XAttrKXsdtDouble defines attribute K
 type XAttrKXsdtDouble struct {
-	K xsdt.Double `xml:"k,attr"`
+	K xsdt.Double `xml:"k,attr,omitempty"`
 }
 
 // TvkernType defines type vkernType
@@ -8032,7 +8032,7 @@ func (me *XElemsVkern) Walk() (err error) {
 
 // XAttrVertAdvYXsdtDouble defines attribute VertAdvY
 type XAttrVertAdvYXsdtDouble struct {
-	VertAdvY xsdt.Double `xml:"vert-adv-y,attr"`
+	VertAdvY xsdt.Double `xml:"vert-adv-y,attr,omitempty"`
 }
 
 // TxsdViewTypeZoomAndPan defines type xsdViewTypeZoomAndPan
@@ -8058,7 +8058,7 @@ func (me TxsdViewTypeZoomAndPan) IsZoom() bool { return me.String() == "zoom" }
 
 // XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify defines attribute ZoomAndPanTxsdViewTypeZoomAndPanMagnify
 type XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify struct {
-	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr"`
+	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr,omitempty"`
 }
 
 // ZoomAndPanDefault : Returns the default value for ZoomAndPan -- "magnify"
@@ -8068,7 +8068,7 @@ func (me XAttrZoomAndPanTxsdViewTypeZoomAndPanMagnify) ZoomAndPanDefault() TxsdV
 
 // XAttrViewTargetXsdtString defines attribute ViewTarget
 type XAttrViewTargetXsdtString struct {
-	ViewTarget xsdt.String `xml:"viewTarget,attr"`
+	ViewTarget xsdt.String `xml:"viewTarget,attr,omitempty"`
 }
 
 // TviewType defines type viewType
@@ -8131,7 +8131,7 @@ func (me *XElemsView) Walk() (err error) {
 
 // XAttrHorizAdvXXsdtDouble defines attribute HorizAdvX
 type XAttrHorizAdvXXsdtDouble struct {
-	HorizAdvX xsdt.Double `xml:"horiz-adv-x,attr"`
+	HorizAdvX xsdt.Double `xml:"horiz-adv-x,attr,omitempty"`
 }
 
 // TmissingGlyphType defines type missingGlyphType
@@ -8315,32 +8315,32 @@ func (me *XElemMissingGlyph) Walk() (err error) {
 
 // XAttrVertOriginYXsdtDouble defines attribute VertOriginY
 type XAttrVertOriginYXsdtDouble struct {
-	VertOriginY xsdt.Double `xml:"vert-origin-y,attr"`
+	VertOriginY xsdt.Double `xml:"vert-origin-y,attr,omitempty"`
 }
 
 // XAttrHanXsdtString defines attribute Han
 type XAttrHanXsdtString struct {
-	Han xsdt.String `xml:"han,attr"`
+	Han xsdt.String `xml:"han,attr,omitempty"`
 }
 
 // XAttrArabicXsdtString defines attribute Arabic
 type XAttrArabicXsdtString struct {
-	Arabic xsdt.String `xml:"arabic,attr"`
+	Arabic xsdt.String `xml:"arabic,attr,omitempty"`
 }
 
 // XAttrGlyphNameXsdtString defines attribute GlyphName
 type XAttrGlyphNameXsdtString struct {
-	GlyphName xsdt.String `xml:"glyph-name,attr"`
+	GlyphName xsdt.String `xml:"glyph-name,attr,omitempty"`
 }
 
 // XAttrVertTextOrientXsdtString defines attribute VertTextOrient
 type XAttrVertTextOrientXsdtString struct {
-	VertTextOrient xsdt.String `xml:"vert-text-orient,attr"`
+	VertTextOrient xsdt.String `xml:"vert-text-orient,attr,omitempty"`
 }
 
 // XAttrUnicodeXsdtString defines attribute Unicode
 type XAttrUnicodeXsdtString struct {
-	Unicode xsdt.String `xml:"unicode,attr"`
+	Unicode xsdt.String `xml:"unicode,attr,omitempty"`
 }
 
 // TglyphType defines type glyphType
@@ -8610,17 +8610,17 @@ func (me *XElemsHkern) Walk() (err error) {
 
 // XAttrHorizOriginYXsdtDouble defines attribute HorizOriginY
 type XAttrHorizOriginYXsdtDouble struct {
-	HorizOriginY xsdt.Double `xml:"horiz-origin-y,attr"`
+	HorizOriginY xsdt.Double `xml:"horiz-origin-y,attr,omitempty"`
 }
 
 // XAttrVertOriginXXsdtDouble defines attribute VertOriginX
 type XAttrVertOriginXXsdtDouble struct {
-	VertOriginX xsdt.Double `xml:"vert-origin-x,attr"`
+	VertOriginX xsdt.Double `xml:"vert-origin-x,attr,omitempty"`
 }
 
 // XAttrHorizOriginXXsdtDouble defines attribute HorizOriginX
 type XAttrHorizOriginXXsdtDouble struct {
-	HorizOriginX xsdt.Double `xml:"horiz-origin-x,attr"`
+	HorizOriginX xsdt.Double `xml:"horiz-origin-x,attr,omitempty"`
 }
 
 // TfontType defines type fontType
@@ -8708,12 +8708,12 @@ func (me *XElemsFont) Walk() (err error) {
 
 // XAttrPatternTransformTransformListType defines attribute PatternTransformTransformListType
 type XAttrPatternTransformTransformListType struct {
-	PatternTransform TransformListType `xml:"patternTransform,attr"`
+	PatternTransform TransformListType `xml:"patternTransform,attr,omitempty"`
 }
 
 // XAttrPatternUnitsTxsdPatternTypePatternUnits defines attribute PatternUnitsTxsdPatternTypePatternUnits
 type XAttrPatternUnitsTxsdPatternTypePatternUnits struct {
-	PatternUnits TxsdClipPathTypeClipPathUnits `xml:"patternUnits,attr"`
+	PatternUnits TxsdClipPathTypeClipPathUnits `xml:"patternUnits,attr,omitempty"`
 }
 
 // TpatternType defines type patternType
@@ -9101,7 +9101,7 @@ func (me *XElemsDefs) Walk() (err error) {
 
 // XAttrRefXTCoordinateType defines attribute RefXTCoordinateType
 type XAttrRefXTCoordinateType struct {
-	RefX TCoordinateType `xml:"refX,attr"`
+	RefX TCoordinateType `xml:"refX,attr,omitempty"`
 }
 
 // TmarkerType defines type markerType
@@ -9498,7 +9498,7 @@ func (me *XElemsG) Walk() (err error) {
 
 // XAttrMaskUnitsTxsdMaskTypeMaskUnits defines attribute MaskUnitsTxsdMaskTypeMaskUnits
 type XAttrMaskUnitsTxsdMaskTypeMaskUnits struct {
-	MaskUnits TxsdClipPathTypeClipPathUnits `xml:"maskUnits,attr"`
+	MaskUnits TxsdClipPathTypeClipPathUnits `xml:"maskUnits,attr,omitempty"`
 }
 
 // TmaskType defines type maskType
@@ -9705,7 +9705,7 @@ func (me *XElemsMask) Walk() (err error) {
 
 // XAttrTargetXsdtNmtoken defines attribute Target
 type XAttrTargetXsdtNmtoken struct {
-	Target xsdt.Nmtoken `xml:"target,attr"`
+	Target xsdt.Nmtoken `xml:"target,attr,omitempty"`
 }
 
 // TaType defines type aType
@@ -10104,7 +10104,7 @@ func (me *XElemsTspan) Walk() (err error) {
 
 // XAttrLengthAdjustTxsdTextTypeLengthAdjust defines attribute LengthAdjustTxsdTextTypeLengthAdjust
 type XAttrLengthAdjustTxsdTextTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr,omitempty"`
 }
 
 // TxsdTextPathTypeSpacing defines type xsdTextPathTypeSpacing
@@ -10127,17 +10127,17 @@ func (me TxsdTextPathTypeSpacing) ToXsdtString() xsdt.String { return xsdt.Strin
 
 // XAttrSpacingTxsdTextPathTypeSpacing defines attribute SpacingTxsdTextPathTypeSpacing
 type XAttrSpacingTxsdTextPathTypeSpacing struct {
-	Spacing TxsdTextPathTypeSpacing `xml:"spacing,attr"`
+	Spacing TxsdTextPathTypeSpacing `xml:"spacing,attr,omitempty"`
 }
 
 // XAttrStartOffsetXsdtString defines attribute StartOffset
 type XAttrStartOffsetXsdtString struct {
-	StartOffset xsdt.String `xml:"startOffset,attr"`
+	StartOffset xsdt.String `xml:"startOffset,attr,omitempty"`
 }
 
 // XAttrLengthAdjustTxsdTextPathTypeLengthAdjust defines attribute LengthAdjustTxsdTextPathTypeLengthAdjust
 type XAttrLengthAdjustTxsdTextPathTypeLengthAdjust struct {
-	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr"`
+	LengthAdjust TxsdTspanTypeLengthAdjust `xml:"lengthAdjust,attr,omitempty"`
 }
 
 // TxsdTextPathTypeMethod defines type xsdTextPathTypeMethod
@@ -10160,7 +10160,7 @@ func (me TxsdTextPathTypeMethod) IsStretch() bool { return me.String() == "stret
 
 // XAttrMethodTxsdTextPathTypeMethod defines attribute MethodTxsdTextPathTypeMethod
 type XAttrMethodTxsdTextPathTypeMethod struct {
-	Method TxsdTextPathTypeMethod `xml:"method,attr"`
+	Method TxsdTextPathTypeMethod `xml:"method,attr,omitempty"`
 }
 
 // TtextPathType defines type textPathType
@@ -10728,7 +10728,7 @@ func (me *XElemsSymbol) Walk() (err error) {
 
 // XAttrContentStyleTypeTContentTypeTypeTextCSS defines attribute ContentStyleTypeTContentTypeTypeTextCss
 type XAttrContentStyleTypeTContentTypeTypeTextCSS struct {
-	ContentStyleType TContentTypeType `xml:"contentStyleType,attr"`
+	ContentStyleType TContentTypeType `xml:"contentStyleType,attr,omitempty"`
 }
 
 // ContentStyleTypeDefault : Returns the default value for ContentStyleType -- "text/css"
@@ -10738,7 +10738,7 @@ func (me XAttrContentStyleTypeTContentTypeTypeTextCSS) ContentStyleTypeDefault()
 
 // XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify defines attribute ZoomAndPanTxsdSvgTypeZoomAndPanMagnify
 type XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify struct {
-	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr"`
+	ZoomAndPan TxsdViewTypeZoomAndPan `xml:"zoomAndPan,attr,omitempty"`
 }
 
 // ZoomAndPanDefault : Returns the default value for ZoomAndPan -- "magnify"
@@ -10748,7 +10748,7 @@ func (me XAttrZoomAndPanTxsdSvgTypeZoomAndPanMagnify) ZoomAndPanDefault() TxsdVi
 
 // XAttrContentScriptTypeTContentTypeTypeTextEcmascript defines attribute ContentScriptTypeTContentTypeTypeTextEcmascript
 type XAttrContentScriptTypeTContentTypeTypeTextEcmascript struct {
-	ContentScriptType TContentTypeType `xml:"contentScriptType,attr"`
+	ContentScriptType TContentTypeType `xml:"contentScriptType,attr,omitempty"`
 }
 
 // ContentScriptTypeDefault : Returns the default value for ContentScriptType -- "text/ecmascript"

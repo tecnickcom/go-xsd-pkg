@@ -31,7 +31,7 @@ func (me TxsdType) IsExtended() bool { return me.String() == "extended" }
 
 // XAttrType defines attribute Type
 type XAttrType struct {
-	Type TxsdType `xml:"type,attr"`
+	Type TxsdType `xml:"type,attr,omitempty"`
 }
 
 // TypeDefault : Returns the default value for Type -- "simple"
@@ -39,22 +39,22 @@ func (me XAttrType) TypeDefault() TxsdType { return TxsdType("simple") }
 
 // XAttrHref defines attribute Href
 type XAttrHref struct {
-	Href xsdt.AnyURI `xml:"href,attr"`
+	Href xsdt.AnyURI `xml:"href,attr,omitempty"`
 }
 
 // XAttrRole defines attribute Role
 type XAttrRole struct {
-	Role xsdt.String `xml:"role,attr"`
+	Role xsdt.String `xml:"role,attr,omitempty"`
 }
 
 // XAttrArcrole defines attribute Arcrole
 type XAttrArcrole struct {
-	Arcrole xsdt.String `xml:"arcrole,attr"`
+	Arcrole xsdt.String `xml:"arcrole,attr,omitempty"`
 }
 
 // XAttrTitle defines attribute Title
 type XAttrTitle struct {
-	Title xsdt.String `xml:"title,attr"`
+	Title xsdt.String `xml:"title,attr,omitempty"`
 }
 
 // TxsdShow defines type xsdShow
@@ -86,7 +86,7 @@ func (me TxsdShow) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrShow defines attribute Show
 type XAttrShow struct {
-	Show TxsdShow `xml:"show,attr"`
+	Show TxsdShow `xml:"show,attr,omitempty"`
 }
 
 // ShowDefault : Returns the default value for Show -- "embed"
@@ -118,7 +118,7 @@ func (me TxsdActuate) IsOther() bool { return me.String() == "other" }
 
 // XAttrActuate defines attribute Actuate
 type XAttrActuate struct {
-	Actuate TxsdActuate `xml:"actuate,attr"`
+	Actuate TxsdActuate `xml:"actuate,attr,omitempty"`
 }
 
 // ActuateDefault : Returns the default value for Actuate -- "onLoad"
@@ -126,12 +126,12 @@ func (me XAttrActuate) ActuateDefault() TxsdActuate { return TxsdActuate("onLoad
 
 // XAttrFrom defines attribute From
 type XAttrFrom struct {
-	From xsdt.String `xml:"from,attr"`
+	From xsdt.String `xml:"from,attr,omitempty"`
 }
 
 // XAttrTo defines attribute To
 type XAttrTo struct {
-	To xsdt.String `xml:"to,attr"`
+	To xsdt.String `xml:"to,attr,omitempty"`
 }
 
 // XCdata defines type CDATA

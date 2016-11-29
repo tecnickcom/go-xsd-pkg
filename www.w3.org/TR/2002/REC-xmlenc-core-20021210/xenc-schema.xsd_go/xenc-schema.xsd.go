@@ -8,7 +8,7 @@ import (
 
 // XAttrURIXsdtAnyURI defines attribute Uri
 type XAttrURIXsdtAnyURI struct {
-	URI xsdt.AnyURI `xml:"URI,attr"`
+	URI xsdt.AnyURI `xml:"URI,attr,omitempty"`
 }
 
 // TransformsType defines type ransformsType
@@ -241,7 +241,7 @@ func (me *XElemsCipherReference) Walk() (err error) {
 
 // XAttrAlgorithmXsdtAnyURI defines attribute Algorithm
 type XAttrAlgorithmXsdtAnyURI struct {
-	Algorithm xsdt.AnyURI `xml:"Algorithm,attr"`
+	Algorithm xsdt.AnyURI `xml:"Algorithm,attr,omitempty"`
 }
 
 // XCdata defines type CDATA
@@ -383,12 +383,12 @@ func (me *XElemEncryptionMethodsequenceEncryptedTypeschemaEncryptionMethodTEncry
 
 // XAttrTargetXsdtAnyURI defines attribute Target
 type XAttrTargetXsdtAnyURI struct {
-	Target xsdt.AnyURI `xml:"Target,attr"`
+	Target xsdt.AnyURI `xml:"Target,attr,omitempty"`
 }
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"Id,attr"`
+	ID xsdt.ID `xml:"Id,attr,omitempty"`
 }
 
 // TEncryptionPropertyType defines type EncryptionPropertyType
@@ -498,17 +498,17 @@ func (me *XElemEncryptionProperties) Walk() (err error) {
 
 // XAttrMimeTypeXsdtString defines attribute MimeType
 type XAttrMimeTypeXsdtString struct {
-	MimeType xsdt.String `xml:"MimeType,attr"`
+	MimeType xsdt.String `xml:"MimeType,attr,omitempty"`
 }
 
 // XAttrEncodingXsdtAnyURI defines attribute Encoding
 type XAttrEncodingXsdtAnyURI struct {
-	Encoding xsdt.AnyURI `xml:"Encoding,attr"`
+	Encoding xsdt.AnyURI `xml:"Encoding,attr,omitempty"`
 }
 
 // XAttrTypeXsdtAnyURI defines attribute Type
 type XAttrTypeXsdtAnyURI struct {
-	Type xsdt.AnyURI `xml:"Type,attr"`
+	Type xsdt.AnyURI `xml:"Type,attr,omitempty"`
 }
 
 // TEncryptedType defines type EncryptedType
@@ -628,7 +628,7 @@ func (me *XElemsEncryptedData) Walk() (err error) {
 
 // XAttrRecipientXsdtString defines attribute Recipient
 type XAttrRecipientXsdtString struct {
-	Recipient xsdt.String `xml:"Recipient,attr"`
+	Recipient xsdt.String `xml:"Recipient,attr,omitempty"`
 }
 
 // TReferenceType defines type ReferenceType

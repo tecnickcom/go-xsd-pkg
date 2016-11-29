@@ -655,7 +655,7 @@ func TestXMLUnmarshalLogoutResponseSignature(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
-	if !strings.Contains(string(xmldata), "<SignatureValue xmlns=\"http://www.w3.org/2000/09/xmldsig#\" Id=\"\">UEsyvBbilIQFCYk5i63NKwohkV/RGhVlT+Ajx1XBarFyB8rPCYe6NWnoqbzimKiBZaL2eSINyBLzyFdHqbI+K7qP9rmHJmIC8g5M84GJrpHoaIYJkmLjSMf4APTAiKeuW8dVvcnrrzHb8fFV/2Ob6nWG2+K3ixvH1MWh5R0bGbE=</SignatureValue>") {
+	if !strings.Contains(string(xmldata), `<SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">UEsyvBbilIQFCYk5i63NKwohkV/RGhVlT+Ajx1XBarFyB8rPCYe6NWnoqbzimKiBZaL2eSINyBLzyFdHqbI+K7qP9rmHJmIC8g5M84GJrpHoaIYJkmLjSMf4APTAiKeuW8dVvcnrrzHb8fFV/2Ob6nWG2+K3ixvH1MWh5R0bGbE=</SignatureValue>`) {
 		t.Error(fmt.Errorf("The resulting XML is not correct"))
 	}
 }

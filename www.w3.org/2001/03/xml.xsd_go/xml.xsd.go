@@ -12,7 +12,7 @@ import (
 type XAttrLang struct {
 	//	In due course, we should install the relevant ISO 2- and 3-letter
 	//	codes as the enumerated possible values . . .
-	Lang xsdt.Language `xml:"lang,attr"`
+	Lang xsdt.Language `xml:"lang,attr,omitempty"`
 }
 
 // TxsdSpace defines type xsdSpace
@@ -35,7 +35,7 @@ func (me TxsdSpace) IsDefault() bool { return me.String() == "default" }
 
 // XAttrSpace defines attribute Space
 type XAttrSpace struct {
-	Space TxsdSpace `xml:"space,attr"`
+	Space TxsdSpace `xml:"space,attr,omitempty"`
 }
 
 // SpaceDefault : Returns the default value for Space -- "preserve"
@@ -46,7 +46,7 @@ func (me XAttrSpace) SpaceDefault() TxsdSpace { return TxsdSpace("preserve") }
 type XAttrBase struct {
 	//	See http://www.w3.org/TR/xmlbase/ for
 	//	information about this attribute.
-	Base xsdt.AnyURI `xml:"base,attr"`
+	Base xsdt.AnyURI `xml:"base,attr,omitempty"`
 }
 
 // XAttsSpecialAttrs defines XAttsSpecialAttrs
