@@ -37,12 +37,12 @@ func (me *TAuthnMethodBaseType) Walk() (err error) {
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr,omitempty"`
 }
 
 // XAttrKeyValidationXsdtAnyURIUrnIetfRfc3075 defines attribute KeyValidation
 type XAttrKeyValidationXsdtAnyURIUrnIetfRfc3075 struct {
-	KeyValidation xsdt.AnyURI `xml:"keyValidation,attr"`
+	KeyValidation xsdt.AnyURI `xml:"keyValidation,attr,omitempty"`
 }
 
 // KeyValidationFixed : Returns the fixed value for KeyValidation -- "urn:ietf:rfc:3075"
@@ -100,7 +100,7 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType

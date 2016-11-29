@@ -42,12 +42,12 @@ func (me *TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium) Set(s strin
 
 // XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium defines attribute MediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium
 type XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium struct {
-	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr"`
+	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr,omitempty"`
 }
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -166,7 +166,7 @@ func (me *TxsdRedefineIdentificationTypeComplexContentRestrictionNym) Set(s stri
 
 // XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym defines attribute NymTxsdRedefineIdentificationTypeComplexContentRestrictionNym
 type XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym struct {
-	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr"`
+	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr,omitempty"`
 }
 
 // TIdentificationType defines type IdentificationType

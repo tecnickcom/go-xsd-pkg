@@ -31,7 +31,7 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType
@@ -97,7 +97,7 @@ func (me *TAuthnMethodBaseType) Walk() (err error) {
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr,omitempty"`
 }
 
 // TPrincipalAuthenticationMechanismType defines type PrincipalAuthenticationMechanismType
@@ -155,7 +155,7 @@ func (me *TAuthenticatorBaseType) Walk() (err error) {
 
 // XAttrKeyValidationXsdtStringUrnOasisNamesTcSaml20AcClassesSpki defines attribute KeyValidation
 type XAttrKeyValidationXsdtStringUrnOasisNamesTcSaml20AcClassesSpki struct {
-	KeyValidation xsdt.String `xml:"keyValidation,attr"`
+	KeyValidation xsdt.String `xml:"keyValidation,attr,omitempty"`
 }
 
 // KeyValidationFixed : Returns the fixed value for KeyValidation -- "urn:oasis:names:tc:SAML:2.0:ac:classes:SPKI"

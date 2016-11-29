@@ -9,7 +9,7 @@ import (
 
 // XAttrEncoding defines attribute Encoding
 type XAttrEncoding struct {
-	Encoding xsdt.String `xml:"Encoding,attr"`
+	Encoding xsdt.String `xml:"Encoding,attr,omitempty"`
 }
 
 // XCdata defines type CDATA

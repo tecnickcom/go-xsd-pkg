@@ -86,17 +86,17 @@ func (me *XElemsExtensions) Walk() (err error) {
 
 // XAttrBindingXsdtAnyURI defines attribute Binding
 type XAttrBindingXsdtAnyURI struct {
-	Binding xsdt.AnyURI `xml:"Binding,attr"`
+	Binding xsdt.AnyURI `xml:"Binding,attr,omitempty"`
 }
 
 // XAttrLocationXsdtAnyURI defines attribute Location
 type XAttrLocationXsdtAnyURI struct {
-	Location xsdt.AnyURI `xml:"Location,attr"`
+	Location xsdt.AnyURI `xml:"Location,attr,omitempty"`
 }
 
 // XAttrResponseLocationXsdtAnyURI defines attribute ResponseLocation
 type XAttrResponseLocationXsdtAnyURI struct {
-	ResponseLocation xsdt.AnyURI `xml:"ResponseLocation,attr"`
+	ResponseLocation xsdt.AnyURI `xml:"ResponseLocation,attr,omitempty"`
 }
 
 // TEndpointType defines type EndpointType
@@ -338,7 +338,7 @@ func (me TContactTypeType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrContactTypeTContactTypeType defines attribute ContactTypeTContactTypeType
 type XAttrContactTypeTContactTypeType struct {
-	ContactType TContactTypeType `xml:"contactType,attr"`
+	ContactType TContactTypeType `xml:"contactType,attr,omitempty"`
 }
 
 // TContactType defines type ContactType
@@ -416,17 +416,17 @@ func (me *XElemsContactPerson) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // XAttrValidUntilXsdtDateTime defines attribute ValidUntil
 type XAttrValidUntilXsdtDateTime struct {
-	ValidUntil xsdt.DateTime `xml:"validUntil,attr"`
+	ValidUntil xsdt.DateTime `xml:"validUntil,attr,omitempty"`
 }
 
 // XAttrCacheDurationXsdtDuration defines attribute CacheDuration
 type XAttrCacheDurationXsdtDuration struct {
-	CacheDuration xsdt.Duration `xml:"cacheDuration,attr"`
+	CacheDuration xsdt.Duration `xml:"cacheDuration,attr,omitempty"`
 }
 
 // TanyURIListType defines type anyURIListType
@@ -453,7 +453,7 @@ func (me TanyURIListType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrProtocolSupportEnumerationTanyURIListType defines attribute ProtocolSupportEnumerationTanyURIListType
 type XAttrProtocolSupportEnumerationTanyURIListType struct {
-	ProtocolSupportEnumeration TanyURIListType `xml:"protocolSupportEnumeration,attr"`
+	ProtocolSupportEnumeration TanyURIListType `xml:"protocolSupportEnumeration,attr,omitempty"`
 }
 
 // XElemsEncryptionMethod defines element EncryptionMethod
@@ -498,7 +498,7 @@ func (me TKeyTypes) String() string { return xsdt.String(me).String() }
 
 // XAttrUseTKeyTypes defines attribute UseTKeyTypes
 type XAttrUseTKeyTypes struct {
-	Use TKeyTypes `xml:"use,attr"`
+	Use TKeyTypes `xml:"use,attr,omitempty"`
 }
 
 // TKeyDescriptorType defines type KeyDescriptorType
@@ -751,7 +751,7 @@ func (me *XElemOrganization) Walk() (err error) {
 
 // XAttrErrorURLXsdtAnyURI defines attribute ErrorURL
 type XAttrErrorURLXsdtAnyURI struct {
-	ErrorURL xsdt.AnyURI `xml:"errorURL,attr"`
+	ErrorURL xsdt.AnyURI `xml:"errorURL,attr,omitempty"`
 }
 
 // TRoleDescriptorType defines type RoleDescriptorType
@@ -799,12 +799,12 @@ func (me *TRoleDescriptorType) Walk() (err error) {
 
 // XAttrIndexXsdtUnsignedShort defines attribute Index
 type XAttrIndexXsdtUnsignedShort struct {
-	Index xsdt.UnsignedShort `xml:"index,attr"`
+	Index xsdt.UnsignedShort `xml:"index,attr,omitempty"`
 }
 
 // XAttrIsDefaultXsdtBoolean defines attribute IsDefault
 type XAttrIsDefaultXsdtBoolean struct {
-	IsDefault xsdt.Boolean `xml:"isDefault,attr"`
+	IsDefault xsdt.Boolean `xml:"isDefault,attr,omitempty"`
 }
 
 // TIndexedEndpointType defines type IndexedEndpointType
@@ -865,8 +865,8 @@ func (me *XElemsArtifactResolutionService) Walk() (err error) {
 type TSSODescriptorType struct {
 	XElemsSingleLogoutService
 	XElemsManageNameIDService
-	XElemsNameIDFormat
 	TRoleDescriptorType
+	XElemsNameIDFormat
 	XElemsArtifactResolutionService
 }
 
@@ -1007,7 +1007,7 @@ func (me *XElemsAttributeProfile) Walk() (err error) {
 
 // XAttrWantAuthnRequestsSignedXsdtBoolean defines attribute WantAuthnRequestsSigned
 type XAttrWantAuthnRequestsSignedXsdtBoolean struct {
-	WantAuthnRequestsSigned xsdt.Boolean `xml:"WantAuthnRequestsSigned,attr"`
+	WantAuthnRequestsSigned xsdt.Boolean `xml:"WantAuthnRequestsSigned,attr,omitempty"`
 }
 
 // TIDPSSODescriptorType defines type IDPSSODescriptorType
@@ -1163,7 +1163,7 @@ func (me *XElemsServiceDescription) Walk() (err error) {
 
 // XAttrIsRequiredXsdtBoolean defines attribute IsRequired
 type XAttrIsRequiredXsdtBoolean struct {
-	IsRequired xsdt.Boolean `xml:"isRequired,attr"`
+	IsRequired xsdt.Boolean `xml:"isRequired,attr,omitempty"`
 }
 
 // TRequestedAttributeType defines type RequestedAttributeType
@@ -1307,12 +1307,12 @@ func (me *XElemsAttributeConsumingService) Walk() (err error) {
 
 // XAttrAuthnRequestsSignedXsdtBoolean defines attribute AuthnRequestsSigned
 type XAttrAuthnRequestsSignedXsdtBoolean struct {
-	AuthnRequestsSigned xsdt.Boolean `xml:"AuthnRequestsSigned,attr"`
+	AuthnRequestsSigned xsdt.Boolean `xml:"AuthnRequestsSigned,attr,omitempty"`
 }
 
 // XAttrWantAssertionsSignedXsdtBoolean defines attribute WantAssertionsSigned
 type XAttrWantAssertionsSignedXsdtBoolean struct {
-	WantAssertionsSigned xsdt.Boolean `xml:"WantAssertionsSigned,attr"`
+	WantAssertionsSigned xsdt.Boolean `xml:"WantAssertionsSigned,attr,omitempty"`
 }
 
 // TSPSSODescriptorType defines type SPSSODescriptorType
@@ -1561,7 +1561,7 @@ func (me *XElemsPDPDescriptor) Walk() (err error) {
 
 // XAttrNamespaceXsdtAnyURI defines attribute Namespace
 type XAttrNamespaceXsdtAnyURI struct {
-	Namespace xsdt.AnyURI `xml:"namespace,attr"`
+	Namespace xsdt.AnyURI `xml:"namespace,attr,omitempty"`
 }
 
 // TAdditionalMetadataLocationType defines type AdditionalMetadataLocationType
@@ -1724,7 +1724,7 @@ func (me TentityIDType) ToXsdtAnyURI() xsdt.AnyURI { return xsdt.AnyURI(me) }
 
 // XAttrEntityIDTentityIDType defines attribute EntityIDTentityIDType
 type XAttrEntityIDTentityIDType struct {
-	EntityID TentityIDType `xml:"entityID,attr"`
+	EntityID TentityIDType `xml:"entityID,attr,omitempty"`
 }
 
 // XElemsAffiliateMember defines element AffiliateMember
@@ -1751,7 +1751,7 @@ func (me *XElemsAffiliateMember) Walk() (err error) {
 
 // XAttrAffiliationOwnerIDTentityIDType defines attribute AffiliationOwnerIDTentityIDType
 type XAttrAffiliationOwnerIDTentityIDType struct {
-	AffiliationOwnerID TentityIDType `xml:"affiliationOwnerID,attr"`
+	AffiliationOwnerID TentityIDType `xml:"affiliationOwnerID,attr,omitempty"`
 }
 
 // TAffiliationDescriptorType defines type AffiliationDescriptorType
@@ -1938,7 +1938,7 @@ func (me *XElemsEntitiesDescriptor) Walk() (err error) {
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"Name,attr"`
+	Name xsdt.String `xml:"Name,attr,omitempty"`
 }
 
 // TEntitiesDescriptorType defines type EntitiesDescriptorType

@@ -12,12 +12,12 @@ import (
 
 // XAttrProviderNameXsdtString defines attribute ProviderName
 type XAttrProviderNameXsdtString struct {
-	ProviderName xsdt.String `xml:"ProviderName,attr"`
+	ProviderName xsdt.String `xml:"ProviderName,attr,omitempty"`
 }
 
 // XAttrIsPassiveXsdtBoolean defines attribute IsPassive
 type XAttrIsPassiveXsdtBoolean struct {
-	IsPassive xsdt.Boolean `xml:"IsPassive,attr"`
+	IsPassive xsdt.Boolean `xml:"IsPassive,attr,omitempty"`
 }
 
 // TRequestType defines type RequestType
@@ -101,7 +101,7 @@ func (me *XElemsRequest) Walk() (err error) {
 
 // XAttrAssertionConsumerServiceURLXsdtAnyURI defines attribute AssertionConsumerServiceURL
 type XAttrAssertionConsumerServiceURLXsdtAnyURI struct {
-	AssertionConsumerServiceURL xsdt.AnyURI `xml:"AssertionConsumerServiceURL,attr"`
+	AssertionConsumerServiceURL xsdt.AnyURI `xml:"AssertionConsumerServiceURL,attr,omitempty"`
 }
 
 // TResponseType defines type ResponseType

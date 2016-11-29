@@ -89,7 +89,7 @@ func (me *TAuthenticatorBaseType) Walk() (err error) {
 
 // XAttrMethodXsdtAnyURIUrnIetfRfc2945 defines attribute Method
 type XAttrMethodXsdtAnyURIUrnIetfRfc2945 struct {
-	Method xsdt.AnyURI `xml:"method,attr"`
+	Method xsdt.AnyURI `xml:"method,attr,omitempty"`
 }
 
 // MethodFixed : Returns the fixed value for Method -- "urn:ietf:rfc:2945"
@@ -147,7 +147,7 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType

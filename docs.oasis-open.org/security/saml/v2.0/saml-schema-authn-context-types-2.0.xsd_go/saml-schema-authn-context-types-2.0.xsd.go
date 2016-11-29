@@ -14,7 +14,7 @@ import (
 // human readable) documents in which additional business agreements,
 // (e.g. liability constraints, obligations, etc) can be placed.
 type XAttrGoverningAgreementRefXsdtAnyURI struct {
-	GoverningAgreementRef xsdt.AnyURI `xml:"governingAgreementRef,attr"`
+	GoverningAgreementRef xsdt.AnyURI `xml:"governingAgreementRef,attr,omitempty"`
 }
 
 // TGoverningAgreementRefType defines type GoverningAgreementRefType
@@ -169,7 +169,7 @@ func (me *XElemsExtension) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TxsdPhysicalVerificationCredentialLevel Refers to those characteristics that describe the processes and mechanisms the Authentication Authority uses to initially create an association between a Principal and the identity (or name) by which the Principal will be known This element indicates that identification has been performed in a physical face-to-face meeting with the principal and not in an online manner.
@@ -196,7 +196,7 @@ func (me TxsdPhysicalVerificationCredentialLevel) ToXsdtNmtoken() xsdt.Nmtoken {
 
 // XAttrCredentialLevelTxsdPhysicalVerificationCredentialLevel defines attribute CredentialLevelTxsdPhysicalVerificationCredentialLevel
 type XAttrCredentialLevelTxsdPhysicalVerificationCredentialLevel struct {
-	CredentialLevel TxsdPhysicalVerificationCredentialLevel `xml:"credentialLevel,attr"`
+	CredentialLevel TxsdPhysicalVerificationCredentialLevel `xml:"credentialLevel,attr,omitempty"`
 }
 
 // TxsdPhysicalVerification defines type xsdPhysicalVerification
@@ -328,7 +328,7 @@ type XAttrNymTnymType struct {
 	//	This attribute indicates whether or not the
 	//	Identification mechanisms allow the actions of the Principal to be
 	//	linked to an actual end user.
-	Nym TnymType `xml:"nym,attr"`
+	Nym TnymType `xml:"nym,attr,omitempty"`
 }
 
 // TIdentificationType defines type IdentificationType
@@ -405,12 +405,12 @@ func (me *XElemIdentification) Walk() (err error) {
 
 // XAttrMaxXsdtInteger Refers to those characterstics that describe how the 'secret' (the knowledge or possession of which allows the Principal to authenticate to the Authentication Authority) is kept secure This element indicates the types and strengths of facilities of a UA used to protect a shared secret key from unauthorized access and/or use. The actions that must be performed before the private key can be used. This element indicates that a Pin (Personal Identification Number) has been used to authenticate the Principal to some local system in order to activate a key. This element indicates the minimum and/or maximum ASCII length of the password which is enforced (by the UA or the IdP). In other words, this is the minimum and/or maximum number of ASCII characters required to represent a valid password. min - the minimum number of ASCII characters required in a valid password, as enforced by the UA or the IdP. max - the maximum number of ASCII characters required in a valid password, as enforced by the UA or the IdP.
 type XAttrMaxXsdtInteger struct {
-	Max xsdt.Integer `xml:"max,attr"`
+	Max xsdt.Integer `xml:"max,attr,omitempty"`
 }
 
 // XAttrMinXsdtInteger defines attribute Min
 type XAttrMinXsdtInteger struct {
-	Min xsdt.Integer `xml:"min,attr"`
+	Min xsdt.Integer `xml:"min,attr,omitempty"`
 }
 
 // TLengthType defines type LengthType
@@ -471,17 +471,17 @@ func (me *XElemLength) Walk() (err error) {
 
 // XAttrExcludedCharsXsdtString defines attribute ExcludedChars
 type XAttrExcludedCharsXsdtString struct {
-	ExcludedChars xsdt.String `xml:"excludedChars,attr"`
+	ExcludedChars xsdt.String `xml:"excludedChars,attr,omitempty"`
 }
 
 // XAttrCaseXsdtString defines attribute Case
 type XAttrCaseXsdtString struct {
-	Case xsdt.String `xml:"case,attr"`
+	Case xsdt.String `xml:"case,attr,omitempty"`
 }
 
 // XAttrRequiredCharsXsdtString defines attribute RequiredChars
 type XAttrRequiredCharsXsdtString struct {
-	RequiredChars xsdt.String `xml:"requiredChars,attr"`
+	RequiredChars xsdt.String `xml:"requiredChars,attr,omitempty"`
 }
 
 // TAlphabetType defines type AlphabetType
@@ -553,7 +553,7 @@ func (me *TxsdGenerationMechanism) Set(s string) { (*xsdt.Nmtoken)(me).Set(s) }
 
 // XAttrMechanismTxsdGenerationMechanism defines attribute MechanismTxsdGenerationMechanism
 type XAttrMechanismTxsdGenerationMechanism struct {
-	Mechanism TxsdGenerationMechanism `xml:"mechanism,attr"`
+	Mechanism TxsdGenerationMechanism `xml:"mechanism,attr,omitempty"`
 }
 
 // TxsdGeneration defines type xsdGeneration
@@ -619,7 +619,7 @@ func (me *XElemGeneration) Walk() (err error) {
 // This element indicates that the Key Activation Limit is
 // defined as a specific duration of time.
 type XAttrDurationXsdtDuration struct {
-	Duration xsdt.Duration `xml:"duration,attr"`
+	Duration xsdt.Duration `xml:"duration,attr,omitempty"`
 }
 
 // TActivationLimitDurationType defines type ActivationLimitDurationType
@@ -674,7 +674,7 @@ func (me *XElemActivationLimitDuration) Walk() (err error) {
 // XAttrNumberXsdtInteger This element indicates that the Key Activation Limit is
 // defined as a number of usages.
 type XAttrNumberXsdtInteger struct {
-	Number xsdt.Integer `xml:"number,attr"`
+	Number xsdt.Integer `xml:"number,attr,omitempty"`
 }
 
 // TActivationLimitUsagesType defines type ActivationLimitUsagesType
@@ -995,7 +995,7 @@ func (me TmediumType) IsMobileAuthCard() bool { return me.String() == "MobileAut
 
 // XAttrMediumTmediumType defines attribute MediumTmediumType
 type XAttrMediumTmediumType struct {
-	Medium TmediumType `xml:"medium,attr"`
+	Medium TmediumType `xml:"medium,attr,omitempty"`
 }
 
 // TKeyStorageType defines type KeyStorageType
@@ -1121,7 +1121,7 @@ func (me *XElemSecretKeyProtection) Walk() (err error) {
 // Whether or not the private key is shared
 // with the certificate authority.
 type XAttrSharingXsdtBoolean struct {
-	Sharing xsdt.Boolean `xml:"sharing,attr"`
+	Sharing xsdt.Boolean `xml:"sharing,attr,omitempty"`
 }
 
 // TKeySharingType defines type KeySharingType
@@ -1468,7 +1468,7 @@ func (me *XElemOperationalProtection) Walk() (err error) {
 
 // XAttrExternalVerificationXsdtAnyURI Refers to those characteristics that define the mechanisms by which the Principal authenticates to the Authentication Authority. The method that a Principal employs to perform authentication to local system components. This element indicates that a password (or passphrase) has been used to authenticate the Principal to a remote system.
 type XAttrExternalVerificationXsdtAnyURI struct {
-	ExternalVerification xsdt.AnyURI `xml:"ExternalVerification,attr"`
+	ExternalVerification xsdt.AnyURI `xml:"ExternalVerification,attr,omitempty"`
 }
 
 // TPasswordType defines type PasswordType
@@ -1557,7 +1557,7 @@ func (me TxsdRestrictedLengthTypeComplexContentRestrictionMin) ToXsdtInteger() x
 
 // XAttrMinTxsdRestrictedLengthTypeComplexContentRestrictionMin defines attribute MinTxsdRestrictedLengthTypeComplexContentRestrictionMin
 type XAttrMinTxsdRestrictedLengthTypeComplexContentRestrictionMin struct {
-	Min TxsdRestrictedLengthTypeComplexContentRestrictionMin `xml:"min,attr"`
+	Min TxsdRestrictedLengthTypeComplexContentRestrictionMin `xml:"min,attr,omitempty"`
 }
 
 // TRestrictedLengthType defines type RestrictedLengthType
@@ -1695,12 +1695,12 @@ func (me TDeviceTypeType) String() string { return xsdt.Nmtoken(me).String() }
 
 // XAttrDeviceTypeTDeviceTypeType defines attribute DeviceTypeTDeviceTypeType
 type XAttrDeviceTypeTDeviceTypeType struct {
-	DeviceType TDeviceTypeType `xml:"DeviceType,attr"`
+	DeviceType TDeviceTypeType `xml:"DeviceType,attr,omitempty"`
 }
 
 // XAttrSeedLengthXsdtInteger defines attribute SeedLength
 type XAttrSeedLengthXsdtInteger struct {
-	SeedLength xsdt.Integer `xml:"SeedLength,attr"`
+	SeedLength xsdt.Integer `xml:"SeedLength,attr,omitempty"`
 }
 
 // TbooleanType defines type booleanType
@@ -1723,7 +1723,7 @@ func (me TbooleanType) IsFalse() bool { return me.String() == "false" }
 
 // XAttrDeviceInHandTbooleanType defines attribute DeviceInHandTbooleanType
 type XAttrDeviceInHandTbooleanType struct {
-	DeviceInHand TbooleanType `xml:"DeviceInHand,attr"`
+	DeviceInHand TbooleanType `xml:"DeviceInHand,attr,omitempty"`
 }
 
 // TimeSyncTokenType defines type imeSyncTokenType
@@ -1870,7 +1870,7 @@ func (me *XElemSmartcard) Walk() (err error) {
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr,omitempty"`
 }
 
 // TPrincipalAuthenticationMechanismType defines type PrincipalAuthenticationMechanismType
@@ -1954,7 +1954,7 @@ func (me *XElemPrincipalAuthenticationMechanism) Walk() (err error) {
 // local system's public key: the local system then proves it has
 // decrypted the secret.
 type XAttrKeyValidationXsdtString struct {
-	KeyValidation xsdt.String `xml:"keyValidation,attr"`
+	KeyValidation xsdt.String `xml:"keyValidation,attr,omitempty"`
 }
 
 // TPublicKeyType defines type PublicKeyType
@@ -2078,7 +2078,7 @@ func (me *XElemResumeSession) Walk() (err error) {
 // authenticated by a challenge-response protocol utilizing shared secret
 // keys and symmetric cryptography.
 type XAttrMethodXsdtAnyURI struct {
-	Method xsdt.AnyURI `xml:"method,attr"`
+	Method xsdt.AnyURI `xml:"method,attr,omitempty"`
 }
 
 // TSharedSecretChallengeResponseType defines type SharedSecretChallengeResponseType
