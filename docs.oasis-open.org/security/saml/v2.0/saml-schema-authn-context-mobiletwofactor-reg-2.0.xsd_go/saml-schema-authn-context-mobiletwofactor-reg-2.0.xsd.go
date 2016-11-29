@@ -41,7 +41,7 @@ func (me TxsdRedefineIdentificationTypeComplexContentRestrictionNym) IsPseudonym
 
 // XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym defines attribute NymTxsdRedefineIdentificationTypeComplexContentRestrictionNym
 type XAttrNymTxsdRedefineIdentificationTypeComplexContentRestrictionNym struct {
-	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr"`
+	Nym TxsdRedefineIdentificationTypeComplexContentRestrictionNym `xml:"nym,attr,omitempty"`
 }
 
 // XCdata defines type CDATA
@@ -157,7 +157,7 @@ func (me TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium) IsMobileDevi
 
 // XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium defines attribute MediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium
 type XAttrMediumTxsdRedefineKeyStorageTypeComplexContentRestrictionMedium struct {
-	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr"`
+	Medium TxsdRedefineKeyStorageTypeComplexContentRestrictionMedium `xml:"medium,attr,omitempty"`
 }
 
 // TKeyStorageType defines type KeyStorageType
@@ -336,7 +336,7 @@ func (me *TIdentificationType) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthenticatorTransportProtocolType defines type AuthenticatorTransportProtocolType

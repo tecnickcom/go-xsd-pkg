@@ -152,7 +152,7 @@ func (me *XElemStatusDetail) Walk() (err error) {
 
 // XAttrValueXsdtAnyURI defines attribute Value
 type XAttrValueXsdtAnyURI struct {
-	Value xsdt.AnyURI `xml:"Value,attr"`
+	Value xsdt.AnyURI `xml:"Value,attr,omitempty"`
 }
 
 // TStatusCodeType defines type StatusCodeType
@@ -366,27 +366,27 @@ func (me *XElemsStatusDetail) Walk() (err error) {
 
 // XAttrDestinationXsdtAnyURI defines attribute Destination
 type XAttrDestinationXsdtAnyURI struct {
-	Destination xsdt.AnyURI `xml:"Destination,attr"`
+	Destination xsdt.AnyURI `xml:"Destination,attr,omitempty"`
 }
 
 // XAttrConsentXsdtAnyURI defines attribute Consent
 type XAttrConsentXsdtAnyURI struct {
-	Consent xsdt.AnyURI `xml:"Consent,attr"`
+	Consent xsdt.AnyURI `xml:"Consent,attr,omitempty"`
 }
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // XAttrVersionXsdtString defines attribute Version
 type XAttrVersionXsdtString struct {
-	Version xsdt.String `xml:"Version,attr"`
+	Version xsdt.String `xml:"Version,attr,omitempty"`
 }
 
 // XAttrIssueInstantXsdtDateTime defines attribute IssueInstant
 type XAttrIssueInstantXsdtDateTime struct {
-	IssueInstant xsdt.DateTime `xml:"IssueInstant,attr"`
+	IssueInstant xsdt.DateTime `xml:"IssueInstant,attr,omitempty"`
 }
 
 // TRequestAbstractType defines type RequestAbstractType
@@ -603,7 +603,7 @@ func (me *TAuthnContextComparisonType) Set(s string) { (*xsdt.String)(me).Set(s)
 
 // XAttrComparisonTAuthnContextComparisonType defines attribute ComparisonTAuthnContextComparisonType
 type XAttrComparisonTAuthnContextComparisonType struct {
-	Comparison TAuthnContextComparisonType `xml:"Comparison,attr"`
+	Comparison TAuthnContextComparisonType `xml:"Comparison,attr,omitempty"`
 }
 
 // TRequestedAuthnContextType defines type RequestedAuthnContextType
@@ -657,7 +657,7 @@ func (me *XElemRequestedAuthnContext) Walk() (err error) {
 
 // XAttrSessionIndexXsdtString defines attribute SessionIndex
 type XAttrSessionIndexXsdtString struct {
-	SessionIndex xsdt.String `xml:"SessionIndex,attr"`
+	SessionIndex xsdt.String `xml:"SessionIndex,attr,omitempty"`
 }
 
 // TAuthnQueryType defines type AuthnQueryType
@@ -849,7 +849,7 @@ func (me *XElemsAttributeQuery) Walk() (err error) {
 
 // XAttrResourceXsdtAnyURI defines attribute Resource
 type XAttrResourceXsdtAnyURI struct {
-	Resource xsdt.AnyURI `xml:"Resource,attr"`
+	Resource xsdt.AnyURI `xml:"Resource,attr,omitempty"`
 }
 
 // TAuthzDecisionQueryType defines type AuthzDecisionQueryType
@@ -934,37 +934,37 @@ func (me *XElemsAuthzDecisionQuery) Walk() (err error) {
 
 // XAttrAttributeConsumingServiceIndexXsdtUnsignedShort defines attribute AttributeConsumingServiceIndex
 type XAttrAttributeConsumingServiceIndexXsdtUnsignedShort struct {
-	AttributeConsumingServiceIndex xsdt.UnsignedShort `xml:"AttributeConsumingServiceIndex,attr"`
+	AttributeConsumingServiceIndex xsdt.UnsignedShort `xml:"AttributeConsumingServiceIndex,attr,omitempty"`
 }
 
 // XAttrProviderNameXsdtString defines attribute ProviderName
 type XAttrProviderNameXsdtString struct {
-	ProviderName xsdt.String `xml:"ProviderName,attr"`
+	ProviderName xsdt.String `xml:"ProviderName,attr,omitempty"`
 }
 
 // XAttrIsPassiveXsdtBoolean defines attribute IsPassive
 type XAttrIsPassiveXsdtBoolean struct {
-	IsPassive xsdt.Boolean `xml:"IsPassive,attr"`
+	IsPassive xsdt.Boolean `xml:"IsPassive,attr,omitempty"`
 }
 
 // XAttrAssertionConsumerServiceIndexXsdtUnsignedShort defines attribute AssertionConsumerServiceIndex
 type XAttrAssertionConsumerServiceIndexXsdtUnsignedShort struct {
-	AssertionConsumerServiceIndex xsdt.UnsignedShort `xml:"AssertionConsumerServiceIndex,attr"`
+	AssertionConsumerServiceIndex xsdt.UnsignedShort `xml:"AssertionConsumerServiceIndex,attr,omitempty"`
 }
 
 // XAttrFormatXsdtAnyURI defines attribute Format
 type XAttrFormatXsdtAnyURI struct {
-	Format xsdt.AnyURI `xml:"Format,attr"`
+	Format xsdt.AnyURI `xml:"Format,attr,omitempty"`
 }
 
 // XAttrSPNameQualifierXsdtString defines attribute SPNameQualifier
 type XAttrSPNameQualifierXsdtString struct {
-	SPNameQualifier xsdt.String `xml:"SPNameQualifier,attr"`
+	SPNameQualifier xsdt.String `xml:"SPNameQualifier,attr,omitempty"`
 }
 
 // XAttrAllowCreateXsdtBoolean defines attribute AllowCreate
 type XAttrAllowCreateXsdtBoolean struct {
-	AllowCreate xsdt.Boolean `xml:"AllowCreate,attr"`
+	AllowCreate xsdt.Boolean `xml:"AllowCreate,attr,omitempty"`
 }
 
 // TNameIDPolicyType defines type NameIDPolicyType
@@ -1018,17 +1018,17 @@ func (me *XElemNameIDPolicy) Walk() (err error) {
 
 // XAttrLocXsdtAnyURI defines attribute Loc
 type XAttrLocXsdtAnyURI struct {
-	Loc xsdt.AnyURI `xml:"Loc,attr"`
+	Loc xsdt.AnyURI `xml:"Loc,attr,omitempty"`
 }
 
 // XAttrProviderIDXsdtAnyURI defines attribute ProviderID
 type XAttrProviderIDXsdtAnyURI struct {
-	ProviderID xsdt.AnyURI `xml:"ProviderID,attr"`
+	ProviderID xsdt.AnyURI `xml:"ProviderID,attr,omitempty"`
 }
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"Name,attr"`
+	Name xsdt.String `xml:"Name,attr,omitempty"`
 }
 
 // TIDPEntryType defines type IDPEntryType
@@ -1182,7 +1182,7 @@ func (me *XElemsRequesterID) Walk() (err error) {
 
 // XAttrProxyCountXsdtNonNegativeInteger defines attribute ProxyCount
 type XAttrProxyCountXsdtNonNegativeInteger struct {
-	ProxyCount xsdt.NonNegativeInteger `xml:"ProxyCount,attr"`
+	ProxyCount xsdt.NonNegativeInteger `xml:"ProxyCount,attr,omitempty"`
 }
 
 // TScopingType defines type ScopingType
@@ -1242,17 +1242,17 @@ func (me *XElemScoping) Walk() (err error) {
 
 // XAttrAssertionConsumerServiceURLXsdtAnyURI defines attribute AssertionConsumerServiceURL
 type XAttrAssertionConsumerServiceURLXsdtAnyURI struct {
-	AssertionConsumerServiceURL xsdt.AnyURI `xml:"AssertionConsumerServiceURL,attr"`
+	AssertionConsumerServiceURL xsdt.AnyURI `xml:"AssertionConsumerServiceURL,attr,omitempty"`
 }
 
 // XAttrForceAuthnXsdtBoolean defines attribute ForceAuthn
 type XAttrForceAuthnXsdtBoolean struct {
-	ForceAuthn xsdt.Boolean `xml:"ForceAuthn,attr"`
+	ForceAuthn xsdt.Boolean `xml:"ForceAuthn,attr,omitempty"`
 }
 
 // XAttrProtocolBindingXsdtAnyURI defines attribute ProtocolBinding
 type XAttrProtocolBindingXsdtAnyURI struct {
-	ProtocolBinding xsdt.AnyURI `xml:"ProtocolBinding,attr"`
+	ProtocolBinding xsdt.AnyURI `xml:"ProtocolBinding,attr,omitempty"`
 }
 
 // TAuthnRequestType defines type AuthnRequestType
@@ -1505,7 +1505,7 @@ func (me *XElemsGetComplete) Walk() (err error) {
 
 // XAttrInResponseToXsdtNCName defines attribute InResponseTo
 type XAttrInResponseToXsdtNCName struct {
-	InResponseTo xsdt.NCName `xml:"InResponseTo,attr"`
+	InResponseTo xsdt.NCName `xml:"InResponseTo,attr,omitempty"`
 }
 
 // TStatusResponseType defines type StatusResponseType
@@ -2154,12 +2154,12 @@ func (me *XElemsSessionIndex) Walk() (err error) {
 
 // XAttrReasonXsdtString defines attribute Reason
 type XAttrReasonXsdtString struct {
-	Reason xsdt.String `xml:"Reason,attr"`
+	Reason xsdt.String `xml:"Reason,attr,omitempty"`
 }
 
 // XAttrNotOnOrAfterXsdtDateTime defines attribute NotOnOrAfter
 type XAttrNotOnOrAfterXsdtDateTime struct {
-	NotOnOrAfter xsdt.DateTime `xml:"NotOnOrAfter,attr"`
+	NotOnOrAfter xsdt.DateTime `xml:"NotOnOrAfter,attr,omitempty"`
 }
 
 // TLogoutRequestType defines type LogoutRequestType

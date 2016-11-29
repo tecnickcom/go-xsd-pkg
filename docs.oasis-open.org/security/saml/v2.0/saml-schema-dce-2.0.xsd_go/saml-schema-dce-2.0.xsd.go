@@ -9,12 +9,12 @@ import (
 
 // XAttrRealm defines attribute Realm
 type XAttrRealm struct {
-	Realm xsdt.AnyURI `xml:"Realm,attr"`
+	Realm xsdt.AnyURI `xml:"Realm,attr,omitempty"`
 }
 
 // XAttrFriendlyName defines attribute FriendlyName
 type XAttrFriendlyName struct {
-	FriendlyName xsdt.String `xml:"FriendlyName,attr"`
+	FriendlyName xsdt.String `xml:"FriendlyName,attr,omitempty"`
 }
 
 // XAnyURICdata defines XAnyURICdata

@@ -8,7 +8,7 @@ import (
 
 // XAttrPreauthXsdtInteger defines attribute Preauth
 type XAttrPreauthXsdtInteger struct {
-	Preauth xsdt.Integer `xml:"preauth,attr"`
+	Preauth xsdt.Integer `xml:"preauth,attr,omitempty"`
 }
 
 // TPrincipalAuthenticationMechanismType defines type PrincipalAuthenticationMechanismType
@@ -66,7 +66,7 @@ func (me *TAuthenticatorBaseType) Walk() (err error) {
 
 // XAttrKeyValidationXsdtStringUrnOasisNamesTcSaml20AcClassesPgp defines attribute KeyValidation
 type XAttrKeyValidationXsdtStringUrnOasisNamesTcSaml20AcClassesPgp struct {
-	KeyValidation xsdt.String `xml:"keyValidation,attr"`
+	KeyValidation xsdt.String `xml:"keyValidation,attr,omitempty"`
 }
 
 // KeyValidationFixed : Returns the fixed value for KeyValidation -- "urn:oasis:names:tc:SAML:2.0:ac:classes:PGP"
@@ -131,7 +131,7 @@ func (me *TAuthnMethodBaseType) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType

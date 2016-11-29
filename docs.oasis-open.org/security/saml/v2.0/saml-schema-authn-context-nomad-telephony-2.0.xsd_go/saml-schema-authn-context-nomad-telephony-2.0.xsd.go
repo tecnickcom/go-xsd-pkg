@@ -59,7 +59,7 @@ func (me *XCdata) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // TAuthnContextDeclarationBaseType defines type AuthnContextDeclarationBaseType

@@ -9,7 +9,7 @@ import (
 
 // XAttrDataType defines attribute DataType
 type XAttrDataType struct {
-	DataType xsdt.AnyURI `xml:"DataType,attr"`
+	DataType xsdt.AnyURI `xml:"DataType,attr,omitempty"`
 }
 
 // XCdata defines type CDATA

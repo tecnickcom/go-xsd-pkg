@@ -11,12 +11,12 @@ import (
 
 // XAttrNameQualifierXsdtString defines attribute NameQualifier
 type XAttrNameQualifierXsdtString struct {
-	NameQualifier xsdt.String `xml:"NameQualifier,attr"`
+	NameQualifier xsdt.String `xml:"NameQualifier,attr,omitempty"`
 }
 
 // XAttrSPNameQualifierXsdtString defines attribute SPNameQualifier
 type XAttrSPNameQualifierXsdtString struct {
-	SPNameQualifier xsdt.String `xml:"SPNameQualifier,attr"`
+	SPNameQualifier xsdt.String `xml:"SPNameQualifier,attr,omitempty"`
 }
 
 // XAttsIDNameQualifiers defines XAttsIDNameQualifiers
@@ -101,12 +101,12 @@ func (me *XElemBaseID) Walk() (err error) {
 
 // XAttrFormatXsdtAnyURI defines attribute Format
 type XAttrFormatXsdtAnyURI struct {
-	Format xsdt.AnyURI `xml:"Format,attr"`
+	Format xsdt.AnyURI `xml:"Format,attr,omitempty"`
 }
 
 // XAttrSPProvidedIDXsdtString defines attribute SPProvidedID
 type XAttrSPProvidedIDXsdtString struct {
-	SPProvidedID xsdt.String `xml:"SPProvidedID,attr"`
+	SPProvidedID xsdt.String `xml:"SPProvidedID,attr,omitempty"`
 }
 
 // TNameIDType defines type NameIDType
@@ -424,12 +424,12 @@ func (me *TStatementAbstractType) Walk() (err error) {
 
 // XAttrAddressXsdtString defines attribute Address
 type XAttrAddressXsdtString struct {
-	Address xsdt.String `xml:"Address,attr"`
+	Address xsdt.String `xml:"Address,attr,omitempty"`
 }
 
 // XAttrDNSNameXsdtString defines attribute DNSName
 type XAttrDNSNameXsdtString struct {
-	DNSName xsdt.String `xml:"DNSName,attr"`
+	DNSName xsdt.String `xml:"DNSName,attr,omitempty"`
 }
 
 // TSubjectLocalityType defines type SubjectLocalityType
@@ -632,17 +632,17 @@ func (me *XElemAuthnContext) Walk() (err error) {
 
 // XAttrSessionNotOnOrAfterXsdtDateTime defines attribute SessionNotOnOrAfter
 type XAttrSessionNotOnOrAfterXsdtDateTime struct {
-	SessionNotOnOrAfter xsdt.DateTime `xml:"SessionNotOnOrAfter,attr"`
+	SessionNotOnOrAfter xsdt.DateTime `xml:"SessionNotOnOrAfter,attr,omitempty"`
 }
 
 // XAttrAuthnInstantXsdtDateTime defines attribute AuthnInstant
 type XAttrAuthnInstantXsdtDateTime struct {
-	AuthnInstant xsdt.DateTime `xml:"AuthnInstant,attr"`
+	AuthnInstant xsdt.DateTime `xml:"AuthnInstant,attr,omitempty"`
 }
 
 // XAttrSessionIndexXsdtString defines attribute SessionIndex
 type XAttrSessionIndexXsdtString struct {
-	SessionIndex xsdt.String `xml:"SessionIndex,attr"`
+	SessionIndex xsdt.String `xml:"SessionIndex,attr,omitempty"`
 }
 
 // TAuthnStatementType defines type AuthnStatementType
@@ -710,22 +710,22 @@ func (me *XElemsAuthnStatement) Walk() (err error) {
 
 // XAttrNotBeforeXsdtDateTime defines attribute NotBefore
 type XAttrNotBeforeXsdtDateTime struct {
-	NotBefore xsdt.DateTime `xml:"NotBefore,attr"`
+	NotBefore xsdt.DateTime `xml:"NotBefore,attr,omitempty"`
 }
 
 // XAttrNotOnOrAfterXsdtDateTime defines attribute NotOnOrAfter
 type XAttrNotOnOrAfterXsdtDateTime struct {
-	NotOnOrAfter xsdt.DateTime `xml:"NotOnOrAfter,attr"`
+	NotOnOrAfter xsdt.DateTime `xml:"NotOnOrAfter,attr,omitempty"`
 }
 
 // XAttrRecipientXsdtAnyURI defines attribute Recipient
 type XAttrRecipientXsdtAnyURI struct {
-	Recipient xsdt.AnyURI `xml:"Recipient,attr"`
+	Recipient xsdt.AnyURI `xml:"Recipient,attr,omitempty"`
 }
 
 // XAttrInResponseToXsdtNCName defines attribute InResponseTo
 type XAttrInResponseToXsdtNCName struct {
-	InResponseTo xsdt.NCName `xml:"InResponseTo,attr"`
+	InResponseTo xsdt.NCName `xml:"InResponseTo,attr,omitempty"`
 }
 
 // XAnyTypeCdata defines XAnyTypeCdata
@@ -787,7 +787,7 @@ func (me *XElemSubjectConfirmationData) Walk() (err error) {
 
 // XAttrMethodXsdtAnyURI defines attribute Method
 type XAttrMethodXsdtAnyURI struct {
-	Method xsdt.AnyURI `xml:"Method,attr"`
+	Method xsdt.AnyURI `xml:"Method,attr,omitempty"`
 }
 
 // TSubjectConfirmationType defines type SubjectConfirmationType
@@ -1030,12 +1030,12 @@ func (me *XElemAdvice) Walk() (err error) {
 
 // XAttrIDXsdtID defines attribute Id
 type XAttrIDXsdtID struct {
-	ID xsdt.ID `xml:"ID,attr"`
+	ID xsdt.ID `xml:"ID,attr,omitempty"`
 }
 
 // XAttrIssueInstantXsdtDateTime defines attribute IssueInstant
 type XAttrIssueInstantXsdtDateTime struct {
-	IssueInstant xsdt.DateTime `xml:"IssueInstant,attr"`
+	IssueInstant xsdt.DateTime `xml:"IssueInstant,attr,omitempty"`
 }
 
 // XElemsStatement defines element Statement
@@ -1067,7 +1067,7 @@ func (me *XElemsStatement) Walk() (err error) {
 
 // XAttrNamespaceXsdtAnyURI defines attribute Namespace
 type XAttrNamespaceXsdtAnyURI struct {
-	Namespace xsdt.AnyURI `xml:"Namespace,attr"`
+	Namespace xsdt.AnyURI `xml:"Namespace,attr,omitempty"`
 }
 
 // TActionType defines type ActionType
@@ -1184,7 +1184,7 @@ func (me *XElemEvidence) Walk() (err error) {
 
 // XAttrResourceXsdtAnyURI defines attribute Resource
 type XAttrResourceXsdtAnyURI struct {
-	Resource xsdt.AnyURI `xml:"Resource,attr"`
+	Resource xsdt.AnyURI `xml:"Resource,attr,omitempty"`
 }
 
 // TDecisionType defines type DecisionType
@@ -1210,7 +1210,7 @@ func (me TDecisionType) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrDecisionTDecisionType defines attribute DecisionTDecisionType
 type XAttrDecisionTDecisionType struct {
-	Decision TDecisionType `xml:"Decision,attr"`
+	Decision TDecisionType `xml:"Decision,attr,omitempty"`
 }
 
 // TAuthzDecisionStatementType defines type AuthzDecisionStatementType
@@ -1299,17 +1299,17 @@ func (me *XElemsAttributeValue) Walk() (err error) {
 
 // XAttrNameXsdtString defines attribute Name
 type XAttrNameXsdtString struct {
-	Name xsdt.String `xml:"Name,attr"`
+	Name xsdt.String `xml:"Name,attr,omitempty"`
 }
 
 // XAttrNameFormatXsdtAnyURI defines attribute NameFormat
 type XAttrNameFormatXsdtAnyURI struct {
-	NameFormat xsdt.AnyURI `xml:"NameFormat,attr"`
+	NameFormat xsdt.AnyURI `xml:"NameFormat,attr,omitempty"`
 }
 
 // XAttrFriendlyNameXsdtString defines attribute FriendlyName
 type XAttrFriendlyNameXsdtString struct {
-	FriendlyName xsdt.String `xml:"FriendlyName,attr"`
+	FriendlyName xsdt.String `xml:"FriendlyName,attr,omitempty"`
 }
 
 // TAttributeType defines type AttributeType
@@ -1634,7 +1634,7 @@ func (me *XElemsOneTimeUse) Walk() (err error) {
 
 // XAttrCountXsdtNonNegativeInteger defines attribute Count
 type XAttrCountXsdtNonNegativeInteger struct {
-	Count xsdt.NonNegativeInteger `xml:"Count,attr"`
+	Count xsdt.NonNegativeInteger `xml:"Count,attr,omitempty"`
 }
 
 // TProxyRestrictionType defines type ProxyRestrictionType
@@ -1760,7 +1760,7 @@ func (me *XElemConditions) Walk() (err error) {
 
 // XAttrVersionXsdtString defines attribute Version
 type XAttrVersionXsdtString struct {
-	Version xsdt.String `xml:"Version,attr"`
+	Version xsdt.String `xml:"Version,attr,omitempty"`
 }
 
 // TAssertionType defines type AssertionType
