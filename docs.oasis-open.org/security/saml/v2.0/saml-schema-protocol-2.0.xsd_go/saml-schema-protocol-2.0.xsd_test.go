@@ -345,7 +345,7 @@ func TestXMLUnmarshalResponseSignedMessageAndAssertion(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
-	if !strings.Contains(string(xmldata), "<NameID xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\" NameQualifier=\"\" SPNameQualifier=\"http://sp.example.com/demo1/metadata.php\" Format=\"urn:oasis:names:tc:SAML:2.0:nameid-format:transient\" SPProvidedID=\"\">_ce3d2948b4cf20146dee0a0b3dd6f69b6cf86f62d7</NameID>") {
+	if !strings.Contains(string(xmldata), `<NameID xmlns="urn:oasis:names:tc:SAML:2.0:assertion" SPNameQualifier="http://sp.example.com/demo1/metadata.php" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">_ce3d2948b4cf20146dee0a0b3dd6f69b6cf86f62d7</NameID>`) {
 		t.Error(fmt.Errorf("The resulting XML is not correct"))
 	}
 }
@@ -528,7 +528,7 @@ func TestXMLUnmarshalLogoutRequest(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
-	if !strings.Contains(string(xmldata), "<NameID xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\" NameQualifier=\"\" SPNameQualifier=\"http://sp.example.com/demo1/metadata.php\" Format=\"urn:oasis:names:tc:SAML:2.0:nameid-format:transient\" SPProvidedID=\"\">ONELOGIN_f92cc1834efc0f73e9c09f482fce80037a6251e7</NameID>") {
+	if !strings.Contains(string(xmldata), `<NameID xmlns="urn:oasis:names:tc:SAML:2.0:assertion" SPNameQualifier="http://sp.example.com/demo1/metadata.php" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">ONELOGIN_f92cc1834efc0f73e9c09f482fce80037a6251e7</NameID>`) {
 		t.Error(fmt.Errorf("The resulting XML is not correct"))
 	}
 }
