@@ -799,7 +799,7 @@ func (me *TRoleDescriptorType) Walk() (err error) {
 
 // XAttrIndexXsdtUnsignedShort defines attribute Index
 type XAttrIndexXsdtUnsignedShort struct {
-	Index xsdt.UnsignedShort `xml:"index,attr,omitempty"`
+	Index *xsdt.UnsignedShort `xml:"index,attr,omitempty"`
 }
 
 // XAttrIsDefaultXsdtBoolean defines attribute IsDefault
