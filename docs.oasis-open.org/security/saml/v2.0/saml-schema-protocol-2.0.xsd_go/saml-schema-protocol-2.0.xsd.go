@@ -934,7 +934,7 @@ func (me *XElemsAuthzDecisionQuery) Walk() (err error) {
 
 // XAttrAttributeConsumingServiceIndexXsdtUnsignedShort defines attribute AttributeConsumingServiceIndex
 type XAttrAttributeConsumingServiceIndexXsdtUnsignedShort struct {
-	AttributeConsumingServiceIndex xsdt.UnsignedShort `xml:"AttributeConsumingServiceIndex,attr,omitempty"`
+	AttributeConsumingServiceIndex *xsdt.UnsignedShort `xml:"AttributeConsumingServiceIndex,attr,omitempty"`
 }
 
 // XAttrProviderNameXsdtString defines attribute ProviderName
@@ -949,7 +949,7 @@ type XAttrIsPassiveXsdtBoolean struct {
 
 // XAttrAssertionConsumerServiceIndexXsdtUnsignedShort defines attribute AssertionConsumerServiceIndex
 type XAttrAssertionConsumerServiceIndexXsdtUnsignedShort struct {
-	AssertionConsumerServiceIndex xsdt.UnsignedShort `xml:"AssertionConsumerServiceIndex,attr,omitempty"`
+	AssertionConsumerServiceIndex *xsdt.UnsignedShort `xml:"AssertionConsumerServiceIndex,attr,omitempty"`
 }
 
 // XAttrFormatXsdtAnyURI defines attribute Format

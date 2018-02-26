@@ -3,6 +3,7 @@ package goSamlProtocol20
 import (
 	"encoding/xml"
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
 	//xsdt "github.com/miracl/go-xsd-pkg/xsdt"
@@ -17,11 +18,11 @@ func TestUnmarshalAuthNRequest(t *testing.T) {
 		TAuthnRequestType
 	}
 
-	xmlstr := `<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ONELOGIN_809707f0030a5d00620c9d9df97f627afe9dcc24" Version="2.0" ProviderName="SP test" IssueInstant="2014-07-16T23:52:45Z" Destination="http://idp.example.com/SSOService.php" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="http://sp.example.com/demo1/index.php?acs">
-  <saml:Issuer>http://sp.example.com/demo1/metadata.php</saml:Issuer>
-  <samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress" AllowCreate="true"/>
+	xmlstr := `<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="theID" Version="theVersion" ProviderName="theProviderName" IssueInstant="2014-07-16T23:52:45Z" Destination="theDestination" ProtocolBinding="theProtocolBinding" AssertionConsumerServiceURL="theAssertionConsumerServiceURL" AssertionConsumerServiceIndex="123">
+  <saml:Issuer>theIssuer</saml:Issuer>
+  <samlp:NameIDPolicy Format="theFormat" AllowCreate="true"/>
   <samlp:RequestedAuthnContext Comparison="exact">
-    <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef>
+    <saml:AuthnContextClassRef>theAuthnContextClassRef</saml:AuthnContextClassRef>
   </samlp:RequestedAuthnContext>
 </samlp:AuthnRequest>`
 
@@ -30,14 +31,49 @@ func TestUnmarshalAuthNRequest(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
 	}
+	assert.Equal(t, data.ID.String(), "theID")
+	assert.Equal(t, data.ProviderName.String(), "theProviderName")
+	assert.Equal(t, data.Destination.String(), "theDestination")
+	assert.Equal(t, data.ProtocolBinding.String(), "theProtocolBinding")
+	assert.Equal(t, data.AssertionConsumerServiceURL.String(), "theAssertionConsumerServiceURL")
+	assert.Equal(t, data.AssertionConsumerServiceIndex.N(), uint16(123))
+	assert.Equal(t, data.Issuer.XCDATA, "theIssuer")
+	assert.Equal(t, data.NameIDPolicy.Format.String(), "theFormat")
+	assert.Equal(t, data.RequestedAuthnContext.AuthnContextClassRefs[0].String(), "theAuthnContextClassRef")
 
 	xmldata, err := xml.MarshalIndent(data, "", "\t")
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
-	if !strings.Contains(string(xmldata), "<AuthnContextClassRef xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\">urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</AuthnContextClassRef>") {
+	if !strings.Contains(string(xmldata), "<AuthnContextClassRef xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\">theAuthnContextClassRef</AuthnContextClassRef>") {
 		t.Error(fmt.Errorf("The resulting XML is not correct"))
 	}
+}
+
+func TestUnmarshalAuthNRequest_Defaults(t *testing.T) {
+
+	type AuthnRequest struct {
+		XMLName xml.Name `xml:"urn:oasis:names:tc:SAML:2.0:protocol AuthnRequest"`
+		TAuthnRequestType
+	}
+
+	xmlstr := `<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>`
+
+	data := new(AuthnRequest)
+	err := xml.Unmarshal([]byte(xmlstr), data)
+	if err != nil {
+		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
+	}
+	assert.Equal(t, data.ID.String(), "")
+	assert.Equal(t, data.ProviderName.String(), "")
+	assert.Equal(t, data.Destination.String(), "")
+	assert.Equal(t, data.ProtocolBinding.String(), "")
+	assert.Equal(t, data.AssertionConsumerServiceURL.String(), "")
+	assert.Nil(t, data.AssertionConsumerServiceIndex)
+	assert.Nil(t, data.Issuer)
+	assert.Nil(t, data.NameIDPolicy)
+	assert.Empty(t, data.RequestedAuthnContext)
+
 }
 
 func TestUnmarshalAuthNRequestSig(t *testing.T) {
