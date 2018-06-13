@@ -328,6 +328,7 @@ type TEncryptionMethodType struct {
 	XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType
 	XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary
 	XAttrAlgorithmXsdtAnyURI
+	ds.XElemDigestMethod
 }
 
 // Walk : if the WalkHandlers.TEncryptionMethodType function is not nil (ie. was set by outside code), calls it with this TEncryptionMethodType instance as the single argument. Then calls the Walk() method on 3/4 embed(s) and 0/0 field(s) belonging to this TEncryptionMethodType instance.
@@ -345,6 +346,9 @@ func (me *TEncryptionMethodType) Walk() (err error) {
 			return
 		}
 		if err = me.XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemDigestMethod.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
 			return
 		}
 		if fn != nil {
