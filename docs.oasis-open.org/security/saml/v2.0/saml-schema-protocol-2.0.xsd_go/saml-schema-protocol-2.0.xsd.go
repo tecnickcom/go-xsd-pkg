@@ -84,7 +84,7 @@ func (me *XElemsExtensions) Walk() (err error) {
 
 // XElemStatusMessage defines element StatusMessage
 type XElemStatusMessage struct {
-	StatusMessage xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:protocol StatusMessage"`
+	StatusMessage *xsdt.String `xml:"urn:oasis:names:tc:SAML:2.0:protocol StatusMessage"`
 }
 
 // Walk : if the WalkHandlers.XElemStatusMessage function is not nil (ie. was set by outside code), calls it with this XElemStatusMessage instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemStatusMessage instance.
@@ -205,9 +205,9 @@ func (me *XElemStatusCode) Walk() (err error) {
 
 // TStatusType defines type StatusType
 type TStatusType struct {
+	XElemStatusCode
 	XElemStatusMessage
 	XElemStatusDetail
-	XElemStatusCode
 }
 
 // Walk : if the WalkHandlers.TStatusType function is not nil (ie. was set by outside code), calls it with this TStatusType instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TStatusType instance.
@@ -1510,16 +1510,16 @@ type XAttrInResponseToXsdtNCName struct {
 
 // TStatusResponseType defines type StatusResponseType
 type TStatusResponseType struct {
+	XAttrIDXsdtID
+	XAttrInResponseToXsdtNCName
 	XAttrVersionXsdtString
+	XAttrIssueInstantXsdtDateTime
 	XAttrDestinationXsdtAnyURI
 	XAttrConsentXsdtAnyURI
 	saml.XElemIssuer
-	XElemStatus
-	XAttrInResponseToXsdtNCName
-	XAttrIssueInstantXsdtDateTime
 	ds.XElemSignature
 	XElemExtensions
-	XAttrIDXsdtID
+	XElemStatus
 }
 
 // Walk : if the WalkHandlers.TStatusResponseType function is not nil (ie. was set by outside code), calls it with this TStatusResponseType instance as the single argument. Then calls the Walk() method on 2/10 embed(s) and 0/0 field(s) belonging to this TStatusResponseType instance.
