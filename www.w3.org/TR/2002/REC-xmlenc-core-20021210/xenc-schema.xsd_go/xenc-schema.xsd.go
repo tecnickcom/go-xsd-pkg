@@ -280,7 +280,7 @@ func (me TKeySizeType) ToXsdtInteger() xsdt.Integer { return xsdt.Integer(me) }
 
 // XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType defines element KeySize
 type XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType struct {
-	KeySize TKeySizeType `xml:"http://www.w3.org/2001/04/xmlenc# KeySize"`
+	KeySize *TKeySizeType `xml:"http://www.w3.org/2001/04/xmlenc# KeySize"`
 }
 
 // Walk : if the WalkHandlers.XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType function is not nil (ie. was set by outside code), calls it with this XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType instance.
@@ -302,7 +302,7 @@ func (me *XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType) Wal
 
 // XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary defines element OAEPparams
 type XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary struct {
-	OAEPparams xsdt.Base64Binary `xml:"http://www.w3.org/2001/04/xmlenc# OAEPparams"`
+	OAEPparams *xsdt.Base64Binary `xml:"http://www.w3.org/2001/04/xmlenc# OAEPparams"`
 }
 
 // Walk : if the WalkHandlers.XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary function is not nil (ie. was set by outside code), calls it with this XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary instance.
@@ -763,7 +763,7 @@ func (me *XElemReferenceList) Walk() (err error) {
 
 // XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString defines element CarriedKeyName
 type XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString struct {
-	CarriedKeyName xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# CarriedKeyName"`
+	CarriedKeyName *xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# CarriedKeyName"`
 }
 
 // Walk : if the WalkHandlers.XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString function is not nil (ie. was set by outside code), calls it with this XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString instance.
