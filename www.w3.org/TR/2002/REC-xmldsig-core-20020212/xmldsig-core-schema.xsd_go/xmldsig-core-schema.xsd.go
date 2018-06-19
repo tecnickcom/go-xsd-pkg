@@ -1574,7 +1574,6 @@ type TKeyInfoType struct {
 	XElemsRetrievalMethod
 	XElemsPGPData
 	XElemsSPKIData
-	XCdata
 	XElemsKeyName
 }
 
@@ -1593,9 +1592,6 @@ func (me *TKeyInfoType) Walk() (err error) {
 			return
 		}
 		if err = me.XElemsMgmtData.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
-			return
-		}
-		if err = me.XCdata.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
 			return
 		}
 		if err = me.XElemsKeyName.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
