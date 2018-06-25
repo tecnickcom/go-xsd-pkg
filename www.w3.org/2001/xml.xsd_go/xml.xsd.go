@@ -19,7 +19,7 @@ func (me TxsdLang) ToXsdtString() xsdt.String { return xsdt.String(me) }
 
 // XAttrLang defines attribute Lang
 type XAttrLang struct {
-	Lang TxsdLang `xml:"lang,attr,omitempty"`
+	Lang TxsdLang `xml:"http://www.w3.org/XML/1998/namespace lang,attr,omitempty"`
 }
 
 // TxsdSpace defines type xsdSpace
@@ -42,17 +42,17 @@ func (me *TxsdSpace) Set(s string) { (*xsdt.NCName)(me).Set(s) }
 
 // XAttrSpace defines attribute Space
 type XAttrSpace struct {
-	Space TxsdSpace `xml:"space,attr,omitempty"`
+	Space TxsdSpace `xml:"http://www.w3.org/XML/1998/namespace space,attr,omitempty"`
 }
 
 // XAttrBase defines attribute Base
 type XAttrBase struct {
-	Base xsdt.AnyURI `xml:"base,attr,omitempty"`
+	Base xsdt.AnyURI `xml:"http://www.w3.org/XML/1998/namespace base,attr,omitempty"`
 }
 
 // XAttrID defines attribute Id
 type XAttrID struct {
-	ID xsdt.ID `xml:"id,attr,omitempty"`
+	ID xsdt.ID `xml:"http://www.w3.org/XML/1998/namespace id,attr,omitempty"`
 }
 
 // XAttsSpecialAttrs defines XAttsSpecialAttrs
@@ -65,7 +65,7 @@ type XAttsSpecialAttrs struct {
 
 // XCdata defines type CDATA
 type XCdata struct {
-	XCDATA string `xml:",chardata"`
+	XCDATA string `xml:"http://www.w3.org/XML/1998/namespace ,chardata"`
 }
 
 // Walk : if the WalkHandlers.XCdata function is not nil (ie. was set by outside code), calls it with this XCdata instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XCdata instance.
