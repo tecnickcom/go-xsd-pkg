@@ -1257,19 +1257,19 @@ type XAttrProtocolBindingXsdtAnyURI struct {
 
 // TAuthnRequestType defines type AuthnRequestType
 type TAuthnRequestType struct {
-	XAttrForceAuthnXsdtBoolean
-	XAttrProtocolBindingXsdtAnyURI
-	XElemNameIDPolicy
-	saml.XElemConditions
-	XElemScoping
-	XAttrAssertionConsumerServiceURLXsdtAnyURI
-	XAttrProviderNameXsdtString
-	XAttrIsPassiveXsdtBoolean
-	XAttrAssertionConsumerServiceIndexXsdtUnsignedShort
 	TRequestAbstractType
 	saml.XElemSubject
+	XElemNameIDPolicy
+	saml.XElemConditions
 	XElemRequestedAuthnContext
+	XElemScoping
+	XAttrForceAuthnXsdtBoolean
+	XAttrIsPassiveXsdtBoolean
+	XAttrProtocolBindingXsdtAnyURI
+	XAttrAssertionConsumerServiceIndexXsdtUnsignedShort
+	XAttrAssertionConsumerServiceURLXsdtAnyURI
 	XAttrAttributeConsumingServiceIndexXsdtUnsignedShort
+	XAttrProviderNameXsdtString
 }
 
 // Walk : if the WalkHandlers.TAuthnRequestType function is not nil (ie. was set by outside code), calls it with this TAuthnRequestType instance as the single argument. Then calls the Walk() method on 4/13 embed(s) and 0/0 field(s) belonging to this TAuthnRequestType instance.

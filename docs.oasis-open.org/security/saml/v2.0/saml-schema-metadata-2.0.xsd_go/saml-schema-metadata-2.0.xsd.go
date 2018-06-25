@@ -13,6 +13,7 @@ import (
 
 // TExtensionsType defines type ExtensionsType
 type TExtensionsType struct {
+	InnerXML string `xml:",innerxml"`
 }
 
 // Walk : if the WalkHandlers.TExtensionsType function is not nil (ie. was set by outside code), calls it with this TExtensionsType instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/0 field(s) belonging to this TExtensionsType instance.
@@ -343,13 +344,13 @@ type XAttrContactTypeTContactTypeType struct {
 
 // TContactType defines type ContactType
 type TContactType struct {
+	XElemExtensions
+	XElemCompany
 	XElemGivenName
 	XElemSurName
 	XElemsEmailAddress
 	XElemsTelephoneNumber
 	XAttrContactTypeTContactTypeType
-	XElemExtensions
-	XElemCompany
 }
 
 // Walk : if the WalkHandlers.TContactType function is not nil (ie. was set by outside code), calls it with this TContactType instance as the single argument. Then calls the Walk() method on 6/7 embed(s) and 0/0 field(s) belonging to this TContactType instance.
@@ -689,10 +690,10 @@ func (me *XElemsOrganizationDisplayName) Walk() (err error) {
 
 // TOrganizationType defines type OrganizationType
 type TOrganizationType struct {
-	XElemsOrganizationDisplayName
-	XElemsOrganizationURL
 	XElemExtensions
 	XElemsOrganizationName
+	XElemsOrganizationDisplayName
+	XElemsOrganizationURL
 }
 
 // Walk : if the WalkHandlers.TOrganizationType function is not nil (ie. was set by outside code), calls it with this TOrganizationType instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TOrganizationType instance.
@@ -863,11 +864,11 @@ func (me *XElemsArtifactResolutionService) Walk() (err error) {
 
 // TSSODescriptorType defines type SSODescriptorType
 type TSSODescriptorType struct {
+	TRoleDescriptorType
+	XElemsArtifactResolutionService
 	XElemsSingleLogoutService
 	XElemsManageNameIDService
-	TRoleDescriptorType
 	XElemsNameIDFormat
-	XElemsArtifactResolutionService
 }
 
 // Walk : if the WalkHandlers.TSSODescriptorType function is not nil (ie. was set by outside code), calls it with this TSSODescriptorType instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TSSODescriptorType instance.
@@ -1819,22 +1820,22 @@ func (me *XElemAffiliationDescriptor) Walk() (err error) {
 
 // TEntityDescriptorType defines type EntityDescriptorType
 type TEntityDescriptorType struct {
-	XElemOrganization
-	XAttrEntityIDTentityIDType
-	XElemsAttributeAuthorityDescriptor
+	ds.XElemSignature
 	XElemExtensions
+	XElemsRoleDescriptor
+	XElemsIDPSSODescriptor
+	XElemsSPSSODescriptor
+	XElemsAuthnAuthorityDescriptor
+	XElemsAttributeAuthorityDescriptor
+	XElemsPDPDescriptor
 	XElemAffiliationDescriptor
-	XAttrValidUntilXsdtDateTime
+	XElemOrganization
 	XElemsContactPerson
+	XElemsAdditionalMetadataLocation
+	XAttrEntityIDTentityIDType
+	XAttrValidUntilXsdtDateTime
 	XAttrCacheDurationXsdtDuration
 	XAttrIDXsdtID
-	XElemsIDPSSODescriptor
-	ds.XElemSignature
-	XElemsAuthnAuthorityDescriptor
-	XElemsPDPDescriptor
-	XElemsAdditionalMetadataLocation
-	XElemsRoleDescriptor
-	XElemsSPSSODescriptor
 }
 
 // Walk : if the WalkHandlers.TEntityDescriptorType function is not nil (ie. was set by outside code), calls it with this TEntityDescriptorType instance as the single argument. Then calls the Walk() method on 11/16 embed(s) and 0/0 field(s) belonging to this TEntityDescriptorType instance.
