@@ -13,6 +13,7 @@ import (
 
 // TExtensionsType defines type ExtensionsType
 type TExtensionsType struct {
+	InnerXML string `xml:",innerxml"`
 }
 
 // Walk : if the WalkHandlers.TExtensionsType function is not nil (ie. was set by outside code), calls it with this TExtensionsType instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/0 field(s) belonging to this TExtensionsType instance.
