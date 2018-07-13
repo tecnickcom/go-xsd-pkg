@@ -182,10 +182,12 @@ func (me DateTime) String() string {
 	return string(me)
 }
 
+// SetTime : Sets the DateTime string representation from a time.Time
 func (me *DateTime) SetTime(t time.Time) {
 	me.Set(t.Format(time.RFC3339Nano))
 }
 
+// GetTime : Gets a time.Time from the DateTime string representation
 func (me DateTime) GetTime() (time.Time, error) {
 	if len(me) == 0 {
 		return time.Time{}, nil
