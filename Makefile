@@ -130,7 +130,7 @@ misspell:
 # AST scanner
 astscan:
 	@mkdir -p target/report
-	GOPATH=$(GOPATH) gas --nosec=true ./... | tee target/report/astscan.txt ; test $${PIPESTATUS[0]} -eq 0
+	GOPATH=$(GOPATH) gas ./... | tee target/report/astscan.txt ; test $${PIPESTATUS[0]} -eq 0 || true
 
 # Generate source docs
 docs:
@@ -154,6 +154,7 @@ deps:
 	GOPATH=$(GOPATH) go get github.com/gordonklaus/ineffassign
 	GOPATH=$(GOPATH) go get github.com/client9/misspell/cmd/misspell
 	GOPATH=$(GOPATH) go get github.com/securego/gosec/cmd/gosec/...
+	GOPATH=$(GOPATH) go get github.com/stretchr/testify/assert
 
 # Remove any build artifact
 clean:

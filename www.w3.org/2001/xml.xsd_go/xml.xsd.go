@@ -65,7 +65,7 @@ type XAttsSpecialAttrs struct {
 
 // XCdata defines type CDATA
 type XCdata struct {
-	XCDATA string `xml:"http://www.w3.org/XML/1998/namespace ,chardata"`
+	XCDATA string `xml:"http://www.w3.org/XML/1998/namespace,chardata"`
 }
 
 // Walk : if the WalkHandlers.XCdata function is not nil (ie. was set by outside code), calls it with this XCdata instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XCdata instance.
