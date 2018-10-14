@@ -4,7 +4,7 @@ package goSamlAuthnContext20
 //	Document identifier: saml-schema-authn-context-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V2.0 (March, 2005): New core authentication context schema for SAML V2.0. This is just an include of all types from the schema referred to in the include statement below.
 
 import (
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrGoverningAgreementRefXsdtAnyURI A particular assertion on an identity

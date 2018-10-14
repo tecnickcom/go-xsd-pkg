@@ -2,7 +2,7 @@
 package goXml
 
 import (
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrLang The content of the lang attribute is a hyphen-separated list of case-insensitive tokens where the first token, if one character, is "i" or "x"; if two characters, is an ISO 639-1 language code; if three characters, is an ISO 639-2 language code. The second token, if two characters, is an ISO 3166-1 country code; if from three to eight characters, is an IANA-registered language code. The meaning of other tokens is undefined. This documentation briefly summarizes  RFC3066, which obseletes RFC1766.

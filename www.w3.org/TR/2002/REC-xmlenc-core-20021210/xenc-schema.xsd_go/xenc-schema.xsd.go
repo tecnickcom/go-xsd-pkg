@@ -2,8 +2,8 @@
 package goXenc
 
 import (
-	ds "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	ds "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrURIXsdtAnyURI defines attribute Uri

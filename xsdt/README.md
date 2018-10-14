@@ -1,7 +1,7 @@
 # xsdt
 
 
-    import "github.com/miracl/go-xsd-pkg/xsdt"
+    import "github.com/tecnickcom/go-xsd-pkg/xsdt"
 
 A tiny package imported by all "go-xsd"-generated packages.
 

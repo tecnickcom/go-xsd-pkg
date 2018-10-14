@@ -2,8 +2,8 @@
 package goSamlAuthnContextPgp20
 
 import (
-	sac "github.com/miracl/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-authn-context-2.0.xsd_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	sac "github.com/tecnickcom/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-authn-context-2.0.xsd_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrPreauthXsdtInteger defines attribute Preauth

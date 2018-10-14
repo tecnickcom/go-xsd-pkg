@@ -4,10 +4,10 @@ package goSamlEcp20
 //	Document identifier: saml-schema-ecp-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V2.0 (March, 2005): Custom schema for ECP profile, first published in SAML 2.0.
 
 import (
-	saml "github.com/miracl/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-assertion-2.0.xsd_go"
-	samlp "github.com/miracl/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-protocol-2.0.xsd_go"
-	S "github.com/miracl/go-xsd-pkg/schemas.xmlsoap.org/soap/envelope_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	saml "github.com/tecnickcom/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-assertion-2.0.xsd_go"
+	samlp "github.com/tecnickcom/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-protocol-2.0.xsd_go"
+	S "github.com/tecnickcom/go-xsd-pkg/schemas.xmlsoap.org/soap/envelope_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrProviderNameXsdtString defines attribute ProviderName

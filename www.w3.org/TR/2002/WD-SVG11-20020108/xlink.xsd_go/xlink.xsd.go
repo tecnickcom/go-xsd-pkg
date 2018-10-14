@@ -2,7 +2,7 @@
 package goXlink
 
 import (
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // TxsdType defines type xsdType

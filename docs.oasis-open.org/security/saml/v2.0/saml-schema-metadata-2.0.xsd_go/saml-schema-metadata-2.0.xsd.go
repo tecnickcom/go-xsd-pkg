@@ -4,11 +4,11 @@ package goSamlMetadata20
 //	Document identifier: saml-schema-metadata-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V2.0 (March, 2005): Schema for SAML metadata, first published in SAML 2.0.
 
 import (
-	saml "github.com/miracl/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-assertion-2.0.xsd_go"
-	xml "github.com/miracl/go-xsd-pkg/www.w3.org/2001/xml.xsd_go"
-	ds "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
-	xenc "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/REC-xmlenc-core-20021210/xenc-schema.xsd_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	saml "github.com/tecnickcom/go-xsd-pkg/docs.oasis-open.org/security/saml/v2.0/saml-schema-assertion-2.0.xsd_go"
+	xml "github.com/tecnickcom/go-xsd-pkg/www.w3.org/2001/xml.xsd_go"
+	ds "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
+	xenc "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/REC-xmlenc-core-20021210/xenc-schema.xsd_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // TExtensionsType defines type ExtensionsType

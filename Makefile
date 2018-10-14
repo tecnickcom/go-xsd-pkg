@@ -1,7 +1,7 @@
 # MAKEFILE
 #
 # @author      Nicola Asuni <info@tecnick.com>
-# @link        https://github.com/miracl/go-xsd-pkg
+# @link        https://github.com/tecnickcom/go-xsd-pkg
 # ------------------------------------------------------------------------------
 
 # List special make targets that are not associated with files

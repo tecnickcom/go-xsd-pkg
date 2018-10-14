@@ -4,9 +4,9 @@ package goSamlAssertion20
 //	Document identifier: saml-schema-assertion-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V1.0 (November, 2002): Initial Standard Schema. V1.1 (September, 2003): Updates within the same V1.0 namespace. V2.0 (March, 2005): New assertion schema for SAML V2.0 namespace.
 
 import (
-	ds "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
-	xenc "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/REC-xmlenc-core-20021210/xenc-schema.xsd_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	ds "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd_go"
+	xenc "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/REC-xmlenc-core-20021210/xenc-schema.xsd_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrNameQualifierXsdtString defines attribute NameQualifier

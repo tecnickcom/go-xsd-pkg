@@ -2,9 +2,9 @@
 package goSvg
 
 import (
-	xlink "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/xlink.xsd_go"
-	xml "github.com/miracl/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/xml.xsd_go"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xlink "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/xlink.xsd_go"
+	xml "github.com/tecnickcom/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/xml.xsd_go"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrIDXsdtID All elements have an ID

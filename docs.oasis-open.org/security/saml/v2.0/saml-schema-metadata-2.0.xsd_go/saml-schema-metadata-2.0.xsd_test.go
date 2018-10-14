@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	//"github.com/davecgh/go-spew/spew"
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 func TestMarshalEntityDescriptor(t *testing.T) {

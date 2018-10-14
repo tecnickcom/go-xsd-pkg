@@ -4,7 +4,7 @@ package goSamlDce20
 //	Document identifier: saml-schema-dce-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V2.0 (March, 2005): Custom schema for DCE attribute profile, first published in SAML 2.0.
 
 import (
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrRealm defines attribute Realm

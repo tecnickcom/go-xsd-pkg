@@ -4,7 +4,7 @@ package goSamlX50020
 //	Document identifier: saml-schema-x500-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision history: V2.0 (March, 2005): Custom schema for X.500 attribute profile, first published in SAML 2.0.
 
 import (
-	xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // XAttrEncoding defines attribute Encoding

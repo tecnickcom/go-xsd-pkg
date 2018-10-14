@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
-	//xsdt "github.com/miracl/go-xsd-pkg/xsdt"
+	//xsdt "github.com/tecnickcom/go-xsd-pkg/xsdt"
 )
 
 // --- Request
