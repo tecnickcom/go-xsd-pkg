@@ -482,7 +482,7 @@ func (me *XElemSubjectLocality) Walk() (err error) {
 
 // XElemAuthnContextDecl defines element AuthnContextDecl
 type XElemAuthnContextDecl struct {
-	AuthnContextDecl xsdt.AnyType `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextDecl"`
+	AuthnContextDecl *xsdt.AnyType `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextDecl"`
 }
 
 // Walk : if the WalkHandlers.XElemAuthnContextDecl function is not nil (ie. was set by outside code), calls it with this XElemAuthnContextDecl instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemAuthnContextDecl instance.
@@ -504,7 +504,7 @@ func (me *XElemAuthnContextDecl) Walk() (err error) {
 
 // XElemAuthnContextDeclRef defines element AuthnContextDeclRef
 type XElemAuthnContextDeclRef struct {
-	AuthnContextDeclRef xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextDeclRef"`
+	AuthnContextDeclRef *xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextDeclRef"`
 }
 
 // Walk : if the WalkHandlers.XElemAuthnContextDeclRef function is not nil (ie. was set by outside code), calls it with this XElemAuthnContextDeclRef instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemAuthnContextDeclRef instance.
@@ -548,7 +548,7 @@ func (me *XElemsAuthenticatingAuthority) Walk() (err error) {
 
 // XElemAuthnContextClassRef defines element AuthnContextClassRef
 type XElemAuthnContextClassRef struct {
-	AuthnContextClassRef xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextClassRef"`
+	AuthnContextClassRef *xsdt.AnyURI `xml:"urn:oasis:names:tc:SAML:2.0:assertion AuthnContextClassRef"`
 }
 
 // Walk : if the WalkHandlers.XElemAuthnContextClassRef function is not nil (ie. was set by outside code), calls it with this XElemAuthnContextClassRef instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemAuthnContextClassRef instance.
@@ -570,10 +570,10 @@ func (me *XElemAuthnContextClassRef) Walk() (err error) {
 
 // TAuthnContextType defines type AuthnContextType
 type TAuthnContextType struct {
+	XElemAuthnContextClassRef
 	XElemAuthnContextDecl
 	XElemAuthnContextDeclRef
 	XElemsAuthenticatingAuthority
-	XElemAuthnContextClassRef
 }
 
 // Walk : if the WalkHandlers.TAuthnContextType function is not nil (ie. was set by outside code), calls it with this TAuthnContextType instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TAuthnContextType instance.
@@ -735,12 +735,12 @@ type XAnyTypeCdata struct {
 
 // TSubjectConfirmationDataType defines type SubjectConfirmationDataType
 type TSubjectConfirmationDataType struct {
+	XAttrNotBeforeXsdtDateTime
+	XAttrNotOnOrAfterXsdtDateTime
 	XAttrRecipientXsdtAnyURI
 	XAttrInResponseToXsdtNCName
 	XAttrAddressXsdtString
 	XAnyTypeCdata
-	XAttrNotBeforeXsdtDateTime
-	XAttrNotOnOrAfterXsdtDateTime
 }
 
 // Walk : if the WalkHandlers.TSubjectConfirmationDataType function is not nil (ie. was set by outside code), calls it with this TSubjectConfirmationDataType instance as the single argument. Then calls the Walk() method on 0/6 embed(s) and 0/0 field(s) belonging to this TSubjectConfirmationDataType instance.
@@ -857,10 +857,10 @@ func (me *XElemsSubjectConfirmation) Walk() (err error) {
 
 // TSubjectType defines type SubjectType
 type TSubjectType struct {
-	XElemsSubjectConfirmation
 	XElemBaseID
 	XElemNameID
 	XElemEncryptedID
+	XElemsSubjectConfirmation
 }
 
 // Walk : if the WalkHandlers.TSubjectType function is not nil (ie. was set by outside code), calls it with this TSubjectType instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TSubjectType instance.
@@ -1765,18 +1765,18 @@ type XAttrVersionXsdtString struct {
 
 // TAssertionType defines type AssertionType
 type TAssertionType struct {
-	XElemsStatement
-	XElemsAuthzDecisionStatement
-	XElemsAttributeStatement
-	XElemIssuer
-	XElemConditions
 	XAttrVersionXsdtString
-	XElemsAuthnStatement
-	ds.XElemSignature
-	XElemSubject
-	XElemAdvice
 	XAttrIDXsdtID
 	XAttrIssueInstantXsdtDateTime
+	XElemIssuer
+	ds.XElemSignature
+	XElemSubject
+	XElemConditions
+	XElemAdvice
+	XElemsStatement
+	XElemsAuthnStatement
+	XElemsAuthzDecisionStatement
+	XElemsAttributeStatement
 }
 
 // Walk : if the WalkHandlers.TAssertionType function is not nil (ie. was set by outside code), calls it with this TAssertionType instance as the single argument. Then calls the Walk() method on 8/12 embed(s) and 0/0 field(s) belonging to this TAssertionType instance.

@@ -3,6 +3,7 @@ package goSamlMetadata20
 import (
 	"encoding/xml"
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
 
@@ -96,6 +97,10 @@ func TestUnmarshalEntityDescriptor(t *testing.T) {
 <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://127.0.0.1:8000/sso"></SingleSignOnService>
 <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://127.0.0.1:8000/sso"></SingleSignOnService>
 </IDPSSODescriptor>
+<SPSSODescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<AssertionConsumerService Binding="binding1" Location="location1" index="1"></AssertionConsumerService>
+<AssertionConsumerService Binding="binding2" Location="location2"></AssertionConsumerService>
+</SPSSODescriptor>
 </EntityDescriptor>`
 
 	data := new(EntityDescriptor)
@@ -103,6 +108,17 @@ func TestUnmarshalEntityDescriptor(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Unmarshal error was not expected: %v", err))
 	}
+
+	// check AssertionConsumerServices
+	acs := data.XElemsSPSSODescriptor.SPSSODescriptors[0].XElemsAssertionConsumerService.AssertionConsumerServices
+	assert.Len(t, acs, 2)
+	t.Log(acs)
+	assert.Equal(t, acs[0].Binding.String(), "binding1")
+	assert.Equal(t, acs[0].Location.String(), "location1")
+	assert.Equal(t, acs[0].Index.N(), uint16(1))
+	assert.Equal(t, acs[1].Binding.String(), "binding2")
+	assert.Equal(t, acs[1].Location.String(), "location2")
+	assert.Nil(t, acs[1].Index)
 
 	//scsNoPtrAddr := &spew.ConfigState{
 	//	Indent:                  "\t",

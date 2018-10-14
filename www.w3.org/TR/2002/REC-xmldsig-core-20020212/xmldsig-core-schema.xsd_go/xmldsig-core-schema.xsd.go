@@ -167,7 +167,7 @@ func (me THMACOutputLengthType) String() string { return xsdt.Integer(me).String
 
 // XElemHMACOutputLengthsequenceSignatureMethodTypeschemaHMACOutputLengthTHMACOutputLengthType defines element HMACOutputLength
 type XElemHMACOutputLengthsequenceSignatureMethodTypeschemaHMACOutputLengthTHMACOutputLengthType struct {
-	HMACOutputLength THMACOutputLengthType `xml:"http://www.w3.org/2000/09/xmldsig# HMACOutputLength"`
+	HMACOutputLength *THMACOutputLengthType `xml:"http://www.w3.org/2000/09/xmldsig# HMACOutputLength"`
 }
 
 // Walk : if the WalkHandlers.XElemHMACOutputLengthsequenceSignatureMethodTypeschemaHMACOutputLengthTHMACOutputLengthType function is not nil (ie. was set by outside code), calls it with this XElemHMACOutputLengthsequenceSignatureMethodTypeschemaHMACOutputLengthTHMACOutputLengthType instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemHMACOutputLengthsequenceSignatureMethodTypeschemaHMACOutputLengthTHMACOutputLengthType instance.
@@ -1389,7 +1389,7 @@ func (me *XElemX509IssuerSerialchoicesequenceX509DataTypeschemaX509IssuerSerialT
 
 // XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary defines element X509SKI
 type XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary struct {
-	X509Ski xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509SKI"`
+	X509Ski *xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509SKI"`
 }
 
 // Walk : if the WalkHandlers.XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary function is not nil (ie. was set by outside code), calls it with this XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary instance.
@@ -1411,7 +1411,7 @@ func (me *XElemX509SKIchoicesequenceX509DataTypeschemaX509SkiXsdtBase64Binary) W
 
 // XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsdtString defines element X509SubjectName
 type XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsdtString struct {
-	X509SubjectName xsdt.String `xml:"http://www.w3.org/2000/09/xmldsig# X509SubjectName"`
+	X509SubjectName *xsdt.String `xml:"http://www.w3.org/2000/09/xmldsig# X509SubjectName"`
 }
 
 // Walk : if the WalkHandlers.XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsdtString function is not nil (ie. was set by outside code), calls it with this XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsdtString instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsdtString instance.
@@ -1433,7 +1433,7 @@ func (me *XElemX509SubjectNamechoicesequenceX509DataTypeschemaX509SubjectNameXsd
 
 // XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsdtBase64Binary defines element X509Certificate
 type XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsdtBase64Binary struct {
-	X509Certificate xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509Certificate"`
+	X509Certificate *xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509Certificate"`
 }
 
 // Walk : if the WalkHandlers.XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsdtBase64Binary function is not nil (ie. was set by outside code), calls it with this XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsdtBase64Binary instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsdtBase64Binary instance.
@@ -1455,7 +1455,7 @@ func (me *XElemX509CertificatechoicesequenceX509DataTypeschemaX509CertificateXsd
 
 // XElemX509CRLchoicesequenceX509DataTypeschemaX509CrlXsdtBase64Binary defines element X509CRL
 type XElemX509CRLchoicesequenceX509DataTypeschemaX509CrlXsdtBase64Binary struct {
-	X509Crl xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509CRL"`
+	X509Crl *xsdt.Base64Binary `xml:"http://www.w3.org/2000/09/xmldsig# X509CRL"`
 }
 
 // Walk : if the WalkHandlers.XElemX509CRLchoicesequenceX509DataTypeschemaX509CrlXsdtBase64Binary function is not nil (ie. was set by outside code), calls it with this XElemX509CRLchoicesequenceX509DataTypeschemaX509CrlXsdtBase64Binary instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemX509CRLchoicesequenceX509DataTypeschemaX509CrlXsdtBase64Binary instance.
@@ -1574,7 +1574,6 @@ type TKeyInfoType struct {
 	XElemsRetrievalMethod
 	XElemsPGPData
 	XElemsSPKIData
-	XCdata
 	XElemsKeyName
 }
 
@@ -1593,9 +1592,6 @@ func (me *TKeyInfoType) Walk() (err error) {
 			return
 		}
 		if err = me.XElemsMgmtData.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
-			return
-		}
-		if err = me.XCdata.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
 			return
 		}
 		if err = me.XElemsKeyName.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
