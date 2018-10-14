@@ -46,7 +46,7 @@ func TestUnmarshalAuthNRequest(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<AuthnContextClassRef xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\">theAuthnContextClassRef</AuthnContextClassRef>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -122,7 +122,7 @@ func TestUnmarshalAuthNRequestSig(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<X509Certificate xmlns=\"http://www.w3.org/2000/09/xmldsig#\">MIICajCCAdOgAwIBAgIBADANBgkqhkiG9w0BAQQFADBSMQswCQYDVQQGEwJ1czETMBEGA1UECAwKQ2FsaWZvcm5pYTEVMBMGA1UECgwMT25lbG9naW4gSW5jMRcwFQYDVQQDDA5zcC5leGFtcGxlLmNvbTAeFw0xNDA3MTcwMDI5MjdaFw0xNTA3MTcwMDI5MjdaMFIxCzAJBgNVBAYTAnVzMRMwEQYDVQQIDApDYWxpZm9ybmlhMRUwEwYDVQQKDAxPbmVsb2dpbiBJbmMxFzAVBgNVBAMMDnNwLmV4YW1wbGUuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7vU/6R/OBA6BKsZH4L2bIQ2cqBO7/aMfPjUPJPSn59d/f0aRqSC58YYrPuQODydUABiCknOn9yV0fEYm4bNvfjroTEd8bDlqo5oAXAUAI8XHPppJNz7pxbhZW0u35q45PJzGM9nCv9bglDQYJLby1ZUdHsSiDIpMbGgf/ZrxqawIDAQABo1AwTjAdBgNVHQ4EFgQU3s2NEpYx7wH6bq7xJFKa46jBDf4wHwYDVR0jBBgwFoAU3s2NEpYx7wH6bq7xJFKa46jBDf4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQQFAAOBgQCPsNO2FG+zmk5miXEswAs30E14rBJpe/64FBpM1rPzOleexvMgZlr0/smF3P5TWb7H8Fy5kEiByxMjaQmml/nQx6qgVVzdhaTANpIE1ywEzVJlhdvw4hmRuEKYqTaFMLez0sRL79LUeDxPWw7Mj9FkpRYT+kAGiFomHop1nErV6Q==</X509Certificate>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -184,7 +184,7 @@ func TestXMLUnmarshalResponse(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<Conditions xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\" NotBefore=\"2014-07-17T01:01:18Z\" NotOnOrAfter=\"2024-01-18T06:21:48Z\">") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -248,7 +248,7 @@ func TestXMLUnmarshalResponseSignedAssertion(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<X509Certificate xmlns=\"http://www.w3.org/2000/09/xmldsig#\">MIICajCCAdOgAwIBAgIBADANBgkqhkiG9w0BAQ0FADBSMQswCQYDVQQGEwJ1czETMBEGA1UECAwKQ2FsaWZvcm5pYTEVMBMGA1UECgwMT25lbG9naW4gSW5jMRcwFQYDVQQDDA5zcC5leGFtcGxlLmNvbTAeFw0xNDA3MTcxNDEyNTZaFw0xNTA3MTcxNDEyNTZaMFIxCzAJBgNVBAYTAnVzMRMwEQYDVQQIDApDYWxpZm9ybmlhMRUwEwYDVQQKDAxPbmVsb2dpbiBJbmMxFzAVBgNVBAMMDnNwLmV4YW1wbGUuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZx+ON4IUoIWxgukTb1tOiX3bMYzYQiwWPUNMp+Fq82xoNogso2bykZG0yiJm5o8zv/sd6pGouayMgkx/2FSOdc36T0jGbCHuRSbtia0PEzNIRtmViMrt3AeoWBidRXmZsxCNLwgIV6dn2WpuE5Az0bHgpZnQxTKFek0BMKU/d8wIDAQABo1AwTjAdBgNVHQ4EFgQUGHxYqZYyX7cTxKVODVgZwSTdCnwwHwYDVR0jBBgwFoAUGHxYqZYyX7cTxKVODVgZwSTdCnwwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOBgQByFOl+hMFICbd3DJfnp2Rgd/dqttsZG/tyhILWvErbio/DEe98mXpowhTkC04ENprOyXi7ZbUqiicF89uAGyt1oqgTUCD1VsLahqIcmrzgumNyTwLGWo17WDAa1/usDhetWAMhgzF/Cnf5ek0nK00m0YZGyc4LzgD0CROMASTWNg==</X509Certificate>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -313,7 +313,7 @@ func TestXMLUnmarshalResponseSignedMessage(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<AuthnContextClassRef xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\">urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -382,7 +382,7 @@ func TestXMLUnmarshalResponseSignedMessageAndAssertion(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), `<NameID xmlns="urn:oasis:names:tc:SAML:2.0:assertion" SPNameQualifier="http://sp.example.com/demo1/metadata.php" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">_ce3d2948b4cf20146dee0a0b3dd6f69b6cf86f62d7</NameID>`) {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -418,7 +418,7 @@ func TestXMLUnmarshalResponseEncryptedAssertion(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<CipherValue xmlns=\"http://www.w3.org/2001/04/xmlenc#\">WGj9w6BBPNGdkLRr9Oi5d") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -454,7 +454,7 @@ func TestXMLUnmarshalResponseSignedAndEncryptedAssertion(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<CipherValue xmlns=\"http://www.w3.org/2001/04/xmlenc#\">abMeXys3/QSrisZE+TCZu4Tcb") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -494,8 +494,8 @@ func TestXMLUnmarshalResponseSignedMessageAndEncryptedAssertion(t *testing.T) {
 	if err != nil {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
-	if !strings.Contains(string(xmldata), "<HMACOutputLength xmlns=\"http://www.w3.org/2000/09/xmldsig#\">0</HMACOutputLength>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+	if !strings.Contains(string(xmldata), "<X509Data xmlns=\"http://www.w3.org/2000/09/xmldsig#\">") {
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -536,7 +536,7 @@ func TestXMLUnmarshalResponseSignedMessageAndSignedAndEncryptedAssertion(t *test
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<CipherValue xmlns=\"http://www.w3.org/2001/04/xmlenc#\">abMeXys3/QSrisZE+TCZu4T") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -565,7 +565,7 @@ func TestXMLUnmarshalLogoutRequest(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), `<NameID xmlns="urn:oasis:names:tc:SAML:2.0:assertion" SPNameQualifier="http://sp.example.com/demo1/metadata.php" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">ONELOGIN_f92cc1834efc0f73e9c09f482fce80037a6251e7</NameID>`) {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -612,7 +612,7 @@ func TestXMLUnmarshalLogoutRequestSignature(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<DigestValue xmlns=\"http://www.w3.org/2000/09/xmldsig#\">Q9PRlugQZKSBt+Ed9i6bKUGWND0=</DigestValue>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -643,7 +643,7 @@ func TestXMLUnmarshalLogoutResponse(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<StatusCode xmlns=\"urn:oasis:names:tc:SAML:2.0:protocol\" Value=\"urn:oasis:names:tc:SAML:2.0:status:Success\"></StatusCode>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
 
@@ -692,6 +692,6 @@ func TestXMLUnmarshalLogoutResponseSignature(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), `<SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">UEsyvBbilIQFCYk5i63NKwohkV/RGhVlT+Ajx1XBarFyB8rPCYe6NWnoqbzimKiBZaL2eSINyBLzyFdHqbI+K7qP9rmHJmIC8g5M84GJrpHoaIYJkmLjSMf4APTAiKeuW8dVvcnrrzHb8fFV/2Ob6nWG2+K3ixvH1MWh5R0bGbE=</SignatureValue>`) {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }

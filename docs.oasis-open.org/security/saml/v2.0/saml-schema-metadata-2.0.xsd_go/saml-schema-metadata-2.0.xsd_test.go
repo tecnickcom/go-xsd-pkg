@@ -55,7 +55,7 @@ func TestMarshalEntityDescriptor(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<EmailAddress xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\">second@example.com</EmailAddress>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 
 	result := new(EntityDescriptor)
@@ -132,6 +132,6 @@ func TestUnmarshalEntityDescriptor(t *testing.T) {
 		t.Error(fmt.Errorf("An XML Marshal error was not expected: %v", err))
 	}
 	if !strings.Contains(string(xmldata), "<NameIDFormat xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\">urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>") {
-		t.Error(fmt.Errorf("The resulting XML is not correct"))
+		t.Error(fmt.Errorf("The resulting XML is not correct: %s", string(xmldata)))
 	}
 }
