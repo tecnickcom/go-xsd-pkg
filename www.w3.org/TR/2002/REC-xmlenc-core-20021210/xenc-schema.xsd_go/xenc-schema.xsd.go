@@ -280,7 +280,7 @@ func (me TKeySizeType) ToXsdtInteger() xsdt.Integer { return xsdt.Integer(me) }
 
 // XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType defines element KeySize
 type XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType struct {
-	KeySize TKeySizeType `xml:"http://www.w3.org/2001/04/xmlenc# KeySize"`
+	KeySize *TKeySizeType `xml:"http://www.w3.org/2001/04/xmlenc# KeySize"`
 }
 
 // Walk : if the WalkHandlers.XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType function is not nil (ie. was set by outside code), calls it with this XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType instance.
@@ -302,7 +302,7 @@ func (me *XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType) Wal
 
 // XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary defines element OAEPparams
 type XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary struct {
-	OAEPparams xsdt.Base64Binary `xml:"http://www.w3.org/2001/04/xmlenc# OAEPparams"`
+	OAEPparams *xsdt.Base64Binary `xml:"http://www.w3.org/2001/04/xmlenc# OAEPparams"`
 }
 
 // Walk : if the WalkHandlers.XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary function is not nil (ie. was set by outside code), calls it with this XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary instance.
@@ -328,6 +328,7 @@ type TEncryptionMethodType struct {
 	XElemKeySizesequenceEncryptionMethodTypeschemaKeySizeTKeySizeType
 	XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary
 	XAttrAlgorithmXsdtAnyURI
+	ds.XElemDigestMethod
 }
 
 // Walk : if the WalkHandlers.TEncryptionMethodType function is not nil (ie. was set by outside code), calls it with this TEncryptionMethodType instance as the single argument. Then calls the Walk() method on 3/4 embed(s) and 0/0 field(s) belonging to this TEncryptionMethodType instance.
@@ -345,6 +346,9 @@ func (me *TEncryptionMethodType) Walk() (err error) {
 			return
 		}
 		if err = me.XElemOAEPparamssequenceEncryptionMethodTypeschemaOAEPparamsXsdtBase64Binary.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemDigestMethod.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
 			return
 		}
 		if fn != nil {
@@ -517,7 +521,7 @@ type TEncryptedType struct {
 	XAttrIDXsdtID
 	XAttrTypeXsdtAnyURI
 	XElemEncryptionMethodsequenceEncryptedTypeschemaEncryptionMethodTEncryptionMethodType
-	ds.XElemKeyInfo
+	XElemKeyInfo
 	XElemCipherData
 	XElemEncryptionProperties
 	XAttrMimeTypeXsdtString
@@ -763,7 +767,7 @@ func (me *XElemReferenceList) Walk() (err error) {
 
 // XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString defines element CarriedKeyName
 type XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString struct {
-	CarriedKeyName xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# CarriedKeyName"`
+	CarriedKeyName *xsdt.String `xml:"http://www.w3.org/2001/04/xmlenc# CarriedKeyName"`
 }
 
 // Walk : if the WalkHandlers.XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString function is not nil (ie. was set by outside code), calls it with this XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 0/1 field(s) belonging to this XElemCarriedKeyNamesequenceextensioncomplexContentEncryptedKeyTypeschemaCarriedKeyNameXsdtString instance.
@@ -1362,6 +1366,89 @@ func (me *XElemsEncryptionMethodsequenceEncryptedTypeschemaEncryptionMethodTEncr
 	return
 }
 
+// TKeyInfoType defines type KeyInfoType
+type TKeyInfoType struct {
+	ds.XElemsMgmtData
+	ds.XAttrIDXsdtID
+	ds.XElemsKeyValue
+	ds.XElemsX509Data
+	ds.XElemsRetrievalMethod
+	ds.XElemsPGPData
+	ds.XElemsSPKIData
+	ds.XCdata
+	ds.XElemsKeyName
+	XElemEncryptedKey
+}
+
+// Walk : if the WalkHandlers.TKeyInfoType function is not nil (ie. was set by outside code), calls it with this TKeyInfoType instance as the single argument. Then calls the Walk() method on 8/9 embed(s) and 0/0 field(s) belonging to this TKeyInfoType instance.
+func (me *TKeyInfoType) Walk() (err error) {
+	if fn := WalkHandlers.TKeyInfoType; me != nil {
+		if fn != nil {
+			if err = fn(me, true); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+				return
+			}
+		}
+		if err = me.XElemsKeyValue.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsX509Data.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsMgmtData.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XCdata.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsKeyName.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsRetrievalMethod.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsPGPData.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemsSPKIData.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if err = me.XElemEncryptedKey.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if fn != nil {
+			if err = fn(me, false); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+				return
+			}
+		}
+	}
+	return
+}
+
+// XElemKeyInfo defines element KeyInfo
+type XElemKeyInfo struct {
+	KeyInfo *TKeyInfoType `xml:"http://www.w3.org/2000/09/xmldsig# KeyInfo"`
+}
+
+// Walk : if the WalkHandlers.XElemKeyInfo function is not nil (ie. was set by outside code), calls it with this XElemKeyInfo instance as the single argument. Then calls the Walk() method on 0/0 embed(s) and 1/1 field(s) belonging to this XElemKeyInfo instance.
+func (me *XElemKeyInfo) Walk() (err error) {
+	if fn := WalkHandlers.XElemKeyInfo; me != nil {
+		if fn != nil {
+			if err = fn(me, true); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+				return
+			}
+		}
+		if err = me.KeyInfo.Walk(); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+			return
+		}
+		if fn != nil {
+			if err = fn(me, false); xsdt.OnWalkError(&err, &WalkErrors, WalkContinueOnError, WalkOnError) {
+				return
+			}
+		}
+	}
+	return
+}
+
 var (
 	// WalkContinueOnError can be set to false to break a Walk() immediately as soon as the first error is returned by a custom handler function.
 	// If true, Walk() proceeds and accumulates all errors in the WalkErrors slice.
@@ -1429,4 +1516,6 @@ type XWalkHandlers struct {
 	XElemsCipherData                                                                                  func(*XElemsCipherData, bool) error
 	XElemEncryptionProperties                                                                         func(*XElemEncryptionProperties, bool) error
 	XElemsOriginatorKeyInfosequenceAgreementMethodTypeschemaOriginatorKeyInfoDsTKeyInfoType           func(*XElemsOriginatorKeyInfosequenceAgreementMethodTypeschemaOriginatorKeyInfoDsTKeyInfoType, bool) error
+	TKeyInfoType                                                                                      func(*TKeyInfoType, bool) error
+	XElemKeyInfo                                                                                      func(*XElemKeyInfo, bool) error
 }

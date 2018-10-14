@@ -2,6 +2,7 @@ package xsdt
 
 import (
 	"strconv"
+	"time"
 )
 
 // notation defines notation
@@ -179,6 +180,27 @@ func (me *DateTime) Set(v string) {
 // String : Since this is just a simple String type, this merely returns its current string value.
 func (me DateTime) String() string {
 	return string(me)
+}
+
+// SetTime : Sets the DateTime string representation from a time.Time
+func (me *DateTime) SetTime(t time.Time) {
+	me.Set(t.Format(time.RFC3339Nano))
+}
+
+// GetTime : Gets a time.Time from the DateTime string representation
+func (me DateTime) GetTime() (time.Time, error) {
+	if len(me) == 0 {
+		return time.Time{}, nil
+	}
+	t, err := time.Parse(time.RFC3339, me.String())
+	if err == nil {
+		return t, nil
+	}
+	t, err = time.Parse(time.RFC3339Nano, me.String())
+	if err == nil {
+		return t, nil
+	}
+	return time.Parse("2006-01-02T15:04:05.999999999", me.String())
 }
 
 // ToXsdtDateTime A convenience interface that declares a type conversion to DateTime.
