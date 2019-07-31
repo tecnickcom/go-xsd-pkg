@@ -4,9 +4,6 @@
 # @link        https://github.com/tecnickcom/go-xsd-pkg
 # ------------------------------------------------------------------------------
 
-# List special make targets that are not associated with files
-.PHONY: help all test format fmtcheck vet lint coverage cyclo ineffassign misspell astscan qa deps clean nuke
-
 # Use bash as shell (Note: Ubuntu now uses dash which doesn't support PIPESTATUS).
 SHELL=/bin/bash
 
@@ -50,6 +47,7 @@ export PATH := $(GOPATH)/bin:$(PATH)
 # --- MAKE TARGETS ---
 
 # Display general help about this command
+.PHONY: help
 help:
 	@echo ""
 	@echo "$(PROJECT) Makefile."
@@ -80,6 +78,7 @@ help:
 all: help
 
 # Run the unit tests
+.PHONY: test
 test:
 	@mkdir -p target/test
 	GOPATH=$(GOPATH) \
@@ -88,24 +87,29 @@ test:
 	test $${PIPESTATUS[0]} -eq 0
 
 # Format the source code
+.PHONY: format
 format:
 	@find . -type f -name "*.go" -exec gofmt -s -w {} \;
 
 # Check if the source code has been formatted
+.PHONY: fmtcheck
 fmtcheck:
 	@mkdir -p target
 	@find . -type f -name "*.go" -exec gofmt -s -d {} \; | tee target/format.diff
 	@test ! -s target/format.diff || { echo "ERROR: the source code has not been formatted - please use 'make format' or 'gofmt'"; exit 1; }
 
 # Check for syntax errors
+.PHONY: vet
 vet:
 	GOPATH=$(GOPATH) go vet ./...
 
 # Check for style errors
+.PHONY: lint
 lint:
 	GOPATH=$(GOPATH) PATH=$(GOPATH)/bin:$(PATH) golint ./...
 
 # Generate the coverage report
+.PHONY: coverage
 coverage:
 	mkdir -p target/report/
 	echo "mode: count" > target/report/coverage.out
@@ -113,26 +117,31 @@ coverage:
 	GOPATH=$(GOPATH) go tool cover -html=target/report/coverage.out -o target/report/coverage.html
 
 # Report cyclomatic complexity
+.PHONY: cyclo
 cyclo:
 	@mkdir -p target/report
 	GOPATH=$(GOPATH) gocyclo -avg . | tee target/report/cyclo.txt ; test $${PIPESTATUS[0]} -eq 0
 
 # Detect ineffectual assignments
+.PHONY: ineffassign
 ineffassign:
 	@mkdir -p target/report
 	GOPATH=$(GOPATH) ineffassign . | tee target/report/ineffassign.txt ; test $${PIPESTATUS[0]} -eq 0
 
 # Detect commonly misspelled words in source files
+.PHONY: misspell
 misspell:
 	@mkdir -p target/report
 	GOPATH=$(GOPATH) misspell -error ./...  | tee target/report/misspell.txt ; test $${PIPESTATUS[0]} -eq 0
 
 # AST scanner
+.PHONY: astscan
 astscan:
 	@mkdir -p target/report
-	GOPATH=$(GOPATH) gas ./... | tee target/report/astscan.txt ; test $${PIPESTATUS[0]} -eq 0 || true
+	GOPATH=$(GOPATH) gosec ./... | tee target/report/astscan.txt ; test $${PIPESTATUS[0]} -eq 0 || true
 
 # Generate source docs
+.PHONY: docs
 docs:
 	@mkdir -p target/docs
 	nohup sh -c 'GOPATH=$(GOPATH) godoc -http=127.0.0.1:6060' > target/godoc_server.log 2>&1 &
@@ -141,9 +150,11 @@ docs:
 
 # Alias to run targets: fmtcheck test vet lint coverage
 #qa: fmtcheck test vet lint coverage cyclo ineffassign misspell astscan
+.PHONY: qa
 qa: fmtcheck test vet lint ineffassign misspell astscan
 
 # Get the dependencies
+.PHONY: deps
 deps:
 	GOPATH=$(GOPATH) go get ./...
 	GOPATH=$(GOPATH) go get github.com/inconshreveable/mousetrap
@@ -157,6 +168,7 @@ deps:
 	GOPATH=$(GOPATH) go get github.com/stretchr/testify/assert
 
 # Remove any build artifact
+.PHONY: clean
 clean:
 	rm -rf ./target
 	GOPATH=$(GOPATH) go clean -i ./...
